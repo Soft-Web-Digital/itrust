@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Fellix";
+    src: url("./assets/fonts/Fellix-Regular.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-Regular.woff") format("woff"),
+            url("./assets/fonts/Fellix-Regular.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-Regular.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Fellix-Bold";
+    src: url("./assets/fonts/Fellix-Bold.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-Bold.woff") format("woff"),
+            url("./assets/fonts/Fellix-Bold.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-Bold.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Fellix-Medium";
+    src: url("./assets/fonts/Fellix-Medium.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-Medium.woff") format("woff"),
+            url("./assets/fonts/Fellix-Medium.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-Medium.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Fellix-Medium-Italic";
+    src: url("./assets/fonts/Fellix-MediumItalic.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-MediumItalic.woff") format("woff"),
+            url("./assets/fonts/Fellix-MediumItalic.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-MediumItalic.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Fellix-Light";
+    src: url("./assets/fonts/Fellix-Light.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-Light.woff") format("woff"),
+            url("./assets/fonts/Fellix-Light.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-Light.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Fellix-Light-Italic";
+    src: url("./assets/fonts/Fellix-LightItalic.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-LightItalic.woff") format("woff"),
+            url("./assets/fonts/Fellix-LightItalic.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-LightItalic.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Fellix-Semibold";
+    src: url("./assets/fonts/Fellix-Semibold.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-Semibold.woff") format("woff"),
+            url("./assets/fonts/Fellix-Semibold.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-Semibold.eot") format("embedded-opentype");
+}
+
+.wallpaper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.wallpaper img{
+    position: absolute;
+    z-index: -10;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; 
+}
+
+.drop:hover .dropdown{
+    display: flex;
+    transition: all 700ms ease;
+}

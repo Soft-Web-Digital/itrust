@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itrust</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <nav class="flex justify-around items-center pt-[17px]">
+        <div class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </div>
+        <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
+            <div class="list-container">
+                <ul class="md:flex hidden items-center gap-10">
+                    <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
+                        </div>
+                    </li>
+                    <li><a href="#" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex items-center relative drop gap-2 cursor-pointer" > <p class="font-fellixMedium">Learn</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        
+                    </li>
+                    <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        
+                    </li>
+                    <li><a href="#" class="font-fellixMedium">F.A.Q</a></li>
+                </ul>
+                <img src="./assets/ham.svg" class="md:hidden" alt="Ham menu">
+            </div>
+            <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="CTA flex flex-col gap-[51px] items-center pt-[76px] relative">
+        <div class="wallpaper hidden md:flex">
+            <img src="./assets/circle-tl.svg" alt="wallpaper">
+            <img src="./assets/circle-bl.svg" alt="wallpaper" class="top-[391px] left-4">
+            <img src="./assets/circle-tr.svg" alt="wallpaper" class=" right-0">
+            <img src="./assets/circle-br.svg" alt="wallpaper" class="right-0 top-[573px]">
+        </div>
+        <div class="hero-text flex flex-col gap-10 text-center items-center">
+            <h1 class="font-fellixBold text-[42px] md:text-[52px] text-darkCharcoal md:max-w-[500px] text-center">Invest the way you want to</h1>
+            <p class="text-slateGray md:font-fellixMedium font-fellix px-[15px] md:px-0 text-sm md:text-lg max-w-[640px]">Whether you are an active trader, investing or saving for the futre, we can help you reach your goals. Invest globally in stocks, options and many more from a single unified platform. Earn the best interest rate 5.0% APY on your cash.</p>
+            <div class="button">
+                <button type="submit" class="py-3 px-10 text-white font-inter font-semibold bg-periwinkle rounded-[5px]">Get Started</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/dashboard.svg" alt="dashboard" class="hidden md:block"/>
+            <img src="./assets/mobile-dashboard.svg" alt="dashboard" class="md:hidden">
+        </div>
+    </section>
+
+    <section class="investments mx-4 md:flex-row flex-col gap-[47px] md:gap-0 flex items-center mt-[146px] justify-around">
+        <div class="options flex flex-col gap-12">
+            <h2 class="text-darkCharcoal capitalize font-fellixBold text-2xl md:text-[32px]">A smart way to invest</h2>
+            <ul class="flex flex-col gap-8">
+                <li class="border-b border-b-lightGray flex pb-8 gap-8">
+                    <p class="text-lavenderBlue font-fellixBold text-2xl">01</p>
+                    <div class="desc max-w-[293px] flex flex-col gap-2 md:max-w-[359px]">
+                        <h3 class="text-darkCharcoal font-fellixBold text-lg md:text-2xl">Choose how you want to invest</h3>
+                        <p class="text-charcoalGray md:text-base text-sm font-fellix">Pick one of our diversified portfolios that interests you. They’re built by experts using low-cost exchange-traded funds.</p>
+                    </div>
+                </li>
+                <li class="border-b border-b-lightGray flex pb-8 gap-8">
+                    <p class="text-lavenderBlue font-fellixBold text-2xl">02</p>
+                    <div class="desc max-w-[293px] flex flex-col gap-2 md:max-w-[359px]">
+                        <h3 class="text-darkCharcoal font-fellixBold text-lg md:text-2xl">We put your money to work</h3>
+                        <p class="text-charcoalGray md:text-base text-sm font-fellix">Automated trading, rebalancing, and dividend reinvestment, we put our technology behind every dollar you invest.</p>
+                    </div>
+                </li>
+                <li class="flex pb-8 gap-8">
+                    <p class="text-lavenderBlue font-fellixBold text-2xl">03</p>
+                    <div class="desc max-w-[293px] flex flex-col gap-2 md:max-w-[359px]">
+                        <h3 class="text-darkCharcoal font-fellixBold text-lg md:text-2xl">Investing for you, Managed by us</h3>
+                        <p class="text-charcoalGray md:text-base text-sm font-fellix">Everyone’s financial situation is different. Get personal recommendations based on what you want to accomplish, whether that’s retirement or simply building wealth.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="illu">
+            <img src="./assets/investment-illustration.svg" alt="illustration" class="hidden md:block">
+            <img src="./assets/mobile-investments.svg" alt="illustration" class="md:hidden">
+        </div>
+    </section>
+
+    <section class="stocks flex md:flex-row flex-col-reverse mx-4 md:mx-0 gap-[30px] md:gap-[69px] mt-[110px] justify-center items-center">
+        <div class="illustration">
+            <img src="./assets/stocks-illustration.svg" alt="illustration">
+        </div>
+        <div class="stocks max-w-[502px] flex flex-col gap-4">
+            <h2 class="text-raisinBlack font-fellixBold text-[24px] md:text-[32px]">Automated, diversified <br /> index investing.</h2>
+            <p class="text-charcoalGray font-fellix text-sm md:text-lg">Come bears or bulls, our expert-built portfolios help you stay diversified for your goals. Limit your risk, minimize your taxes, and maximize your returns — all with built-in automated easy-ness.</p>
+        </div>
+    </section>
+
+    <section class="treasuries mt-[110px] flex md:flex-row flex-col mx-[15px] md:mx-0 justify-center gap-[30px] md:gap-28 items-center">
+        <div class="treasuries max-w-[502px] flex flex-col gap-4">
+            <h2 class="font-fellixBold text-[24px] md:text-[32px] text-raisinBlack" >Using a ladder of Treasuries, maintain a high yield. <br> (And avoid paying state income taxes.)</h2>
+            <p class="font-fellix text-sm md:text-lg text-charcoalGray">Safety, security and compliance. Adapting to legal verification and complying with federal regulations guarantees the lifetime safety of your assets and funds.</p>
+        </div>
+        <div class="illustration">
+            <img src="./assets/treasuries-illustration.svg" alt="illustration">
+        </div>
+    </section>
+
+    <section class="start flex flex-col px-[15px] md:px-0 gap-[50px] items-center mt-[81px] pb-[74px] pt-[70px] bg-ghostWhite">
+        <div class="header flex flex-col gap-[10px] items-center">
+            <h2 class="font-fellixBold text-2xl md:text-[32px] text-darkCharcoal">Get Started in Just Few Minute</h2>
+            <p class="font-fellix text-sm text-center md:text-lg text-charcoalGray">Has a variety of features that make it the best place to start trading</p>
+        </div>
+        <div class="cards flex gap-6 justify-center flex-wrap">
+            <div class="card bg-white flex flex-col gap-4 max-w-[345px] md:max-w-[383px] rounded-[20px] items-center px-6 py-10">
+                <div class="ill">
+                    <img src="./assets/sign-card.svg" alt="illustration" class="hidden md:block">
+                    <img src="./assets/mobile-sign.svg" alt="illustration" class="md:hidden">
+                </div>
+                <div class="description flex gap-4 flex-col items-center">
+                    <h3 class="text-darkCharcoal font-fellixBold text-lg md:text-2xl">Sign Up</h3>
+                    <p class="font-inter text-sm md:text-base text-charcoalGray text-center">Create an account to get started with us, submit verifiable informations for swift verification.</p>
+                </div>
+            </div>
+            <div class="card bg-white flex flex-col gap-4 max-w-[345px] md:max-w-[383px] rounded-[20px] items-center px-6 py-10">
+                <div class="ill">
+                    <img src="./assets/fund-card.svg" alt="illustration" class="hidden md:block">
+                    <img src="./assets/mobile-fund.svg" alt="illustration" class="md:hidden">
+                </div>
+                <div class="description flex gap-4 flex-col items-center">
+                    <h3 class="text-darkCharcoal font-fellixBold text-lg md:text-2xl">Fund</h3>
+                    <p class="font-inter text-sm md:text-base text-charcoalGray text-center">Choose you preferred payment method such as bank transfer or cryptocurrency to add cash to your account.</p>
+                </div>
+            </div>
+            <div class="card bg-white flex flex-col gap-4 max-w-[345px] md:max-w-[383px] rounded-[20px] items-center px-6 py-10">
+                <div class="ill">
+                    <img src="./assets/crypto-card.svg" alt="illustration" class="hidden md:block">
+                    <img src="./assets/mobile-crypto.svg" alt="illustration" class="md:hidden">
+                </div>
+                <div class="description flex gap-4 flex-col items-center">
+                    <h3 class="text-darkCharcoal font-fellixBold text-lg md:text-2xl">Buy Stocks/Crypto</h3>
+                    <p class="font-inter text-sm md:text-base text-charcoalGray text-center">Start buying stocks and crypto on your account, Invest and Save for the future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews hidden md:flex flex-col gap-10 pt-[60px] mt-10">
+        <h2 class="font-fellixBold text-[48px] md:pl-20">Don’t just take our word for it <br> <span class="font-fellixMediumItalic">Read what other people are saying</span></h2>
+        <div class="review flex gap-5 justify-center flex-wrap">
+            <div class="card bg-honeyDew max-w-[377px] p-5 rounded-[12px]">
+                <div class="stars pb-5">
+                    <img src="./assets/stars.svg" alt="stars">
+                </div>
+                <p class="font-fellixMedium text-2xl pb-8">“The best way for me to maximize every one of my hard earned dollars.”</p>
+                <div class="identity">
+                    <p class="font-fellixLight text-lg">– Lilyana , Itrust User Review on</p>
+                    <p class="font-fellixLight text-lg text-teal">Trustpilot.com</p>
+                </div>
+            </div>
+            <div class="card bg-honeyDew max-w-[377px] p-5 rounded-[12px]">
+                <div class="stars pb-5">
+                    <img src="./assets/stars.svg" alt="stars">
+                </div>
+                <p class="font-fellixMedium text-2xl pb-8">“The best way for me to maximize every one of my hard earned dollars.”</p>
+                <div class="identity">
+                    <p class="font-fellixLight text-lg">– Lilyana , Itrust User Review on</p>
+                    <p class="font-fellixLight text-lg text-teal">Trustpilot.com</p>
+                </div>
+            </div>
+            <div class="card bg-honeyDew max-w-[377px] p-5 rounded-[12px]">
+                <div class="stars pb-5">
+                    <img src="./assets/stars.svg" alt="stars">
+                </div>
+                <p class="font-fellixMedium text-2xl pb-8">“The best way for me to maximize every one of my hard earned dollars.”</p>
+                <div class="identity">
+                    <p class="font-fellixLight text-lg">– Lilyana , Itrust User Review on</p>
+                    <p class="font-fellixLight text-lg text-teal">Trustpilot.com</p>
+                </div>
+            </div>
+            <div class="card bg-honeyDew max-w-[377px] p-5 rounded-[12px]">
+                <div class="stars pb-5">
+                    <img src="./assets/stars.svg" alt="stars">
+                </div>
+                <p class="font-fellixMedium text-2xl pb-8">“The best way for me to maximize every one of my hard earned dollars.”</p>
+                <div class="identity">
+                    <p class="font-fellixLight text-lg">– Lilyana , Itrust User Review on</p>
+                    <p class="font-fellixLight text-lg text-teal">Trustpilot.com</p>
+                </div>
+            </div>
+            <div class="card bg-honeyDew max-w-[377px] p-5 rounded-[12px]">
+                <div class="stars pb-5">
+                    <img src="./assets/stars.svg" alt="stars">
+                </div>
+                <p class="font-fellixMedium text-2xl pb-8">“The best way for me to maximize every one of my hard earned dollars.”</p>
+                <div class="identity">
+                    <p class="font-fellixLight text-lg">– Lilyana , Itrust User Review on</p>
+                    <p class="font-fellixLight text-lg text-teal">Trustpilot.com</p>
+                </div>
+            </div>
+            <div class="card bg-honeyDew max-w-[377px] p-5 rounded-[12px]">
+                <div class="stars pb-5">
+                    <img src="./assets/stars.svg" alt="stars">
+                </div>
+                <p class="font-fellixMedium text-2xl pb-8">“The best way for me to maximize every one of my hard earned dollars.”</p>
+                <div class="identity">
+                    <p class="font-fellixLight text-lg">– Lilyana , Itrust User Review on</p>
+                    <p class="font-fellixLight text-lg text-teal">Trustpilot.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-review md:hidden pt-[60px] flex flex-col mx-4 items-center gap-[30px]">
+        <h2 class="font-fellixBold text-2xl text-darkCharcoal">What people are saying</h2>
+        <div class="carousel flex gap-5 overflow-x-auto scrollbar-hide">
+            <div class="card flex-shrink-0 flex flex-col gap-3 max-w-[282px] px-5 py-4 border border-lightGray rounded-[10px]">
+                <div class="identity flex gap-3 items-center">
+                    <img src="./assets/profile.svg" alt="profile">
+                    <div class="id">
+                        <p class="font-inter font-semibold text-sm text-darkCharcoal">John Doe</p>
+                        <p class="font-inter font-semibold text-xs text-darkGray">CEO Motion Design Agency</p>
+                    </div>
+                </div>
+                <div class="opin">
+                    <p class="font-inter text-sm text-charcoalGray">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                </div>
+            </div>
+            <div class="card flex-shrink-0 flex flex-col gap-3 max-w-[282px] px-5 py-4 border border-lightGray rounded-[10px]">
+                <div class="identity flex gap-3 items-center">
+                    <img src="./assets/profile.svg" alt="profile">
+                    <div class="id">
+                        <p class="font-inter font-semibold text-sm text-darkCharcoal">John Doe</p>
+                        <p class="font-inter font-semibold text-xs text-darkGray">CEO Motion Design Agency</p>
+                    </div>
+                </div>
+                <div class="opin">
+                    <p class="font-inter text-sm text-charcoalGray">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                </div>
+            </div>
+            <div class="card flex-shrink-0 flex flex-col gap-3 max-w-[282px] px-5 py-4 border border-lightGray rounded-[10px]">
+                <div class="identity flex gap-3 items-center">
+                    <img src="./assets/profile.svg" alt="profile">
+                    <div class="id">
+                        <p class="font-inter font-semibold text-sm text-darkCharcoal">John Doe</p>
+                        <p class="font-inter font-semibold text-xs text-darkGray">CEO Motion Design Agency</p>
+                    </div>
+                </div>
+                <div class="opin">
+                    <p class="font-inter text-sm text-charcoalGray">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </section>
+
+    <section class="advice  mt-[65px] md:mt-[166px] flex md:flex-row flex-col mx-4 md:mx-0 justify-center gap-[57px] items-center">
+        <div class="image-container">
+            <img src="./assets/advice.svg" alt="Advice" class="hidden md:block">
+            <img src="./assets/mobile-advice.svg" alt="Advice" class=" md:hidden">
+        </div>
+        <div class="text-container flex flex-col gap-6 max-w-[550px]">
+            <h2 class="font-fellixBold text-xl md:text-[32px] text-raisin">Looking for more? Put a team of advisors in your corner with Premium.</h2>
+            <p class="font-fellix text-sm md:text-lg text-raisin">Get on-demand support and a tailored plan from our team of financial advisors. No matter your goals or situation, they’ll offer guidance so you can take every step with confidence.</p>
+            <p class="font-fellixLightItalic text-davysGray text-sm">Minimum balance required.</p>
+            <div class="button">
+                <button class="bg-periwinkle py-[18px] px-10 text-white md:text-base text-sm rounded-[5px]">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero mt-[90px] mb-6">
+        <div class="wrapper md:mx-[90px] mx-4 rounded-[20px] bg-[url('./assets/hero-gradient.svg')] bg-no-repeat items-center justify-around p-5 md:py-10 bg-center bg-contain bg-[#262858] flex md:flex-row flex-col">
+            <div class="text-container max-w-[530px]">
+                <h2 class="font-fellixBold text-[26px] md:text-[40px] text-white pb-8">Join a new generation of investors</h2>
+                <button class="bg-white md:font-inter font-fellixSemibold font-semibold text-darkCharcoal md:text-base text-sm px-10 py-3 rounded-[5px]">Get Started</button>
+            </div>
+            <div class="image-container hidden md:block">
+                <img src="./assets/hero-ill.svg" alt="hero image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix md:flex hidden">&copy; 2021 Itrust Investment. All rights reserved. Itrust means Itrust Investment and web experiences with its family of wholly owned subsidiaries which includes Itrust investment, Itrust Securities, and Itrust Crypto. All investments involve risk and loss of capital. Securities trading is offered to self-directed customers by Itrust Investment. Itrust Investment operates as a subsidiary of Itrust Asset Management a member of the Financial Industry Regulatory Authority (FINRA). With FINRA number is 164193, and the SEC number is 801-115048.</p>
+        <p class="text-desaturatedBlue text-sm font-fellix md:hidden">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>
