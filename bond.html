@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/logo.svg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/logo.svg" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust | Bond Investing</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center pt-[17px]">
+        <div class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </div>
+        <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
+            <div class="list-container">
+                <ul class="md:flex hidden items-center gap-10">
+                    <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./crypto.html">Crypto Investing</a></p>
+                        </div>
+                    </li>
+                    <li><a href="#" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex items-center relative drop gap-2 cursor-pointer" > <p class="font-fellixMedium">Learn</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        
+                    </li>
+                    <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        
+                    </li>
+                    <li><a href="#" class="font-fellixMedium">F.A.Q</a></li>
+                </ul>
+                <img src="./assets/ham.svg" class="md:hidden" alt="Ham menu">
+            </div>
+            <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="mt-[49px] flex justify-center pb-[42px] mx-4 md:mx-0">
+        <div class="wallpaper hidden md:flex">
+            <img src="./assets/circle-tl.svg" alt="wallpaper">
+            <img src="./assets/circle-bl.svg" alt="wallpaper" class="top-[391px] left-4">
+            <img src="./assets/circle-tr.svg" alt="wallpaper" class=" right-0">
+            <img src="./assets/circle-br.svg" alt="wallpaper" class="right-0 top-[573px]">
+        </div>
+        <div class="wrapper max-w-[646px] hero flex text-center flex-col gap-[15px] md:gap-[45px] items-center">
+            <h2 class="font-fellixBold text-[28px] md:text-[52px] text-darkCharcoal">What should you do with your money?</h2>
+            <p class="font-fellixMedium text-slateGray text-lg">We have the accounts that make it easy to decide. From growing your savings to building long-term wealth, you can be invested with your preferred balance of risk and return.</p>
+            <div class="button mt-[15px] md:mt-0">
+                <button class="bg-periwinkle py-[18px] px-10 rounded-[5px] font-inter font-semibold text-white">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="earn flex md:flex-row mx-4 md:mx-0 flex-col-reverse gap-[38px] md:gap-[98px] pt-[60px] md:pt-0 justify-center items-center md:bg-ghostWhite">
+        <div class="text-container flex flex-col gap-4 max-w-[502px]">
+            <h2 class="font-fellixBold text-2xl md:text-[32px] text-raisinBlack">Earn more on your extra cash with <span class="font-fellixBoldItalic"> zero state taxes.</span></h2>
+            <p class="font-fellix text-sm md:text-lg text-charcoalGray">A ladder of US Treasuries can help you earn more — and keep more — than most savings accounts and some CDs. Since Treasuries are exempt from state and local income taxes, you can take home more interest on money you may be saving for future expenses. Just choose how long you want to invest, when you want your funds back — and we’ll handle the rest.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="./assets/earn.svg" alt="illustration" class="hidden md:block">
+            <img src="./assets/mobile-earn.svg" alt="illustration" class="md:hidden">
+        </div>
+    </section>
+
+    <section class="stocks z-30 flex md:flex-row flex-col px-4 md:px-0 gap-[30px] md:gap-[69px] mt-[40px] md:mt-[18px] justify-center items-center">
+        <div class="illustration">
+            <img src="./assets/treasuries.svg" alt="illustration">
+        </div>
+        <div class="stocks max-w-[502px] flex flex-col gap-4">
+            <h2 class="text-raisinBlack font-fellixBold text-[24px] md:text-[32px]">Using a ladder of Treasuries, maintain a high yield. <br> (And avoid paying state income taxes.)</h2>
+            <p class="text-charcoalGray font-fellix text-sm md:text-lg">Safety, security and compliance. Adapting to legal verification and complying with federal regulations guarantees the lifetime safety of your assets and funds.</p>
+        </div>
+    </section>
+
+    <section class="services md:mt-[125px] mt-[66px] pb-[45px] flex md:flex-row flex-col mx-4 md:mx-0 gap-[65px] md:gap-[47px] justify-center">
+        <div class="row flex flex-col gap-[15px] md:gap-[45px] max-w-[577px]">
+            <div class="header text-raisinBlack">
+                <h2 class="font-fellixBold text-2xl md:text-[32px]">Keep your savings up.</h2>
+                <h3 class="font-fellixItalic text-2xl md:text-[32px]">Even if interest rates drop.</h3>
+            </div>
+            <p class="font-fellix text-sm md:text-lg text-charcoalGray">Although the federal funds rate is expected to decline* regularly
+                over the next two years, you can still lock in current rates by
+                investing in a ladder of Treasuries today. By holding multiple
+                Treasuries of different maturities, you’ll earn a steady yield for
+                your chosen duration.</p>
+        </div>
+        <div class="row flex flex-col gap-[15px] md:gap-[45px] max-w-[577px]">
+            <div class="header text-raisinBlack">
+                <h2 class="font-fellixBold text-2xl md:text-[32px]">To build your own bond ladder, you’ll need patience and plenty of research.</h2>
+                <h3 class="font-fellixItalic text-2xl md:text-[32px]">Or just use our service.</h3>
+            </div>
+            <p class="font-fellix text-sm md:text-lg text-charcoalGray">Choose how long you want to invest (from three months to six years and we’ll show you your estimated average yield. We’ll compare hundreds of Treasuries to prioritize high coupon payments and liquidity, and keep your ladder balanced as your rungs mature.</p>
+        </div>
+    </section>
+
+    <section class="investment pt-[104px] flex md:flex-row items-center flex-col gap-[33px] justify-center bg-[url('./assets/questions.svg')]">
+        <div class="text max-w-[385px]">
+            <p class="text-white font-fellixBold text-2xl md:text-[40px]">A good investment
+                starts with asking
+                good questions.</p>
+        </div>
+        <div class="questions flex flex-col gap-[47px]">
+            <div class="list flex flex-col gap-[11px]">
+                <div class="q md:w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">How do I contact customer support?</p>
+                        <img src="./assets/x.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">Can I have more than one Itrust account?</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">When will I hear back about my application</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">Do I own the shares I buy through Itrust?</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">Why isn’t my referral link working?</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">Why am I having trouble linking my bank account or making a withdrawal?</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">How long does it take for my transfer to go through?</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+                <div class="q w-[850px] bg-white px-4 py-4 flex flex-col gap-[10px] rounded-[8px]">
+                    <div class="visible flex justify-between">
+                        <p class="font-fellixMedium text-[#636D79]">How can I cancel my application/close my account?</p>
+                        <img src="./assets/plus.svg" alt="cancel" class="cursor-pointer">
+                    </div>
+                    <div class="hide hidden">
+                        <p class="font-fellix text-[#A2A9B0]">To get started, submit an application online. Read more about the requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-right font-inter font-semibold py-[18px] px-10 underline text-white">Learn More</a>
+        </div>
+    </section>
+
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>

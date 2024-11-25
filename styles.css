@@ -12,11 +12,27 @@
 }
 
 @font-face {
+    font-family: 'Fellix-Italic';
+    src: url("./assets/fonts/Fellix-RegularItalic.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-RegularItalic.woff") format("woff"),
+            url("./assets/fonts/Fellix-RegularItalic.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-RegularItalic.eot") format("embedded-opentype");
+}
+
+@font-face {
     font-family: "Fellix-Bold";
     src: url("./assets/fonts/Fellix-Bold.ttf") format("truetype"),
             url("./assets/fonts/Fellix-Bold.woff") format("woff"),
             url("./assets/fonts/Fellix-Bold.woff2") format("woff2"),
             url("./assets/fonts/Fellix-Bold.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: 'Fellix-Bold-Italic';
+    src: url("./assets/fonts/Fellix-BoldItalic.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-BoldItalic.woff") format("woff"),
+            url("./assets/fonts/Fellix-BoldItalic.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-BoldItalic.eot") format("embedded-opentype");
 }
 
 @font-face {
@@ -81,4 +97,8 @@
 .drop:hover .dropdown{
     display: flex;
     transition: all 700ms ease;
+}
+
+.card{
+    border: 1px solid #E3E3E3;
 }

@@ -11,6 +11,8 @@ module.exports = {
         fellixSemiBold: ['Fellix-SemiBold', 'sans-serif'],
         fellixMediumItalic: ['Fellix-Medium-Italic', 'sans-serif'],
         fellixLightItalic: ['Fellix-Light-Italic', 'sans-serif'],
+        fellixBoldItalic: ['Fellix-Bold-Italic', 'sans-serif'],
+        fellixItalic: ['Fellix-Italic', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
