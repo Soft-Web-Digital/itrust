@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/logo.svg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/logo.svg" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center relative pt-[17px]">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </a>
+        <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
+            <div class="list-container md:static">
+                <ul class="md:flex  drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
+                    <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./crypto.html">Crypto Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./bond.html">Bond Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./stock.html">Stock Investing</a></p>
+                        </div>
+                    </li>
+                    <li><a href="#" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex items-center gap-2" > <a href="./howto.html" class="font-fellixMedium">Learn</a> <div class="img"><img src="./assets/caret.svg" alt="caret"></div></li>
+                    <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        
+                    </li>
+                    <li><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
+                </ul>
+                <img src="./assets/ham.svg" class="md:hidden ham" alt="Ham menu">
+            </div>
+            <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="mt-[49px] flex justify-center pb-[42px] mx-4 md:mx-0">
+        <div class="wallpaper hidden md:flex">
+            <img src="./assets/circle-tl.svg" alt="wallpaper">
+            <img src="./assets/circle-bl.svg" alt="wallpaper" class="top-[391px] left-4">
+            <img src="./assets/circle-tr.svg" alt="wallpaper" class=" right-0">
+            <img src="./assets/circle-br.svg" alt="wallpaper" class="right-0 top-[573px]">
+        </div>
+        <div class="wrapper max-w-[646px] hero flex text-center flex-col gap-[15px] items-center">
+            <h2 class="font-fellixBold text-[28px] md:text-[46px] text-darkCharcoal">About Us</h2>
+            <div class="t">
+                <p class="font-fellixMedium text-slateGray text-sm md:text-lg">We’re on a mission to democratize finance for all.</p>
+                <p class="font-fellixMedium text-slateGray text-sm md:text-base">At Itrust Markets, our values are in service of our customers. We
+                    strive to uphold our values every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about flex flex-col gap-[85px] px-4 md:px-0 py-[30px] md:py-[153px] bg-no-repeat bg-center bg-cover bg-[url('./assets/about-bg.svg')] text-white">
+        <div class="safe flex md:flex-row justify-center flex-col-reverse md:gap-[65px] gap-[50px]">
+            <div class="image">
+                <img src="./assets/about-safe.svg" alt="Safe">
+            </div>
+            <div class="text flex max-w-[680px] flex-col gap-7">
+                <div class="head flex flex-col gap-4">
+                    <p class="flex gap-[13px] items-center font-fellixBold uppercase text-sm"><img src="./assets/random-barII.svg" alt="Bar">Safety first</p>
+                    <h2 class="font-fellixBold text-2xl md:text-[32px]">Itrust is a safety-first company</h2>
+                </div>
+                <p class="font-fellixMedium md:text-base text-sm">The reliability of our platform takes precedence over all else, so that we can
+                    be there for our customers when they need us the most. We relentlessly
+                    protect our customers’ security and privacy, and we only share with our
+                    counter parties what they need to fulfil our customers’</p>
+                <p class="font-fellixMedium md:text-base text-sm">financial needs, nothing more. We build safeguards and provide education so
+                    that our customers are in the best position to succeed. We have high quality
+                    timely customer support, and when things aren’t right, wefix them. We work
+                    closely with regulators and lawmakers to protect our customers and the
+                    broader financial system.</p>
+                <p class="font-fellixMedium md:text-base text-sm">We speak simply, plainly, and truthfully, even if it’s not what others want to
+                    hear. We hold ourselves and our colleagues to the highest ethical standards.</p>
+            </div>
+        </div>
+        <div class="safe flex md:flex-row justify-center flex-col-reverse md:gap-[65px] gap-[50px]">
+            <div class="image">
+                <img src="./assets/about-rich.svg" alt="Safe">
+            </div>
+            <div class="text flex max-w-[680px] flex-col gap-7">
+                <div class="head flex flex-col gap-4">
+                    <p class="flex gap-[13px] items-center font-fellixBold uppercase text-sm"><img src="./assets/random-barII.svg" alt="Bar">Participation is Power</p>
+                    <h2 class="font-fellixBold text-2xl md:text-[32px]">At Itrust, the rich don’t get a better
+                        deal</h2>
+                </div>
+                <p class="font-fellixMedium md:text-base text-sm">We founded Itrust in the wake of the financial crisis because we identified a
+                    gap - the more you had, the better deal you got.</p>
+                <p class="font-fellixMedium md:text-base text-sm">We aim to give everyone access to the financial system, regardless of their
+                    background or bank account balance. That’s why we have uniform interest
+                    rates, no account minimums, and a product that was designed from the
+                    ground up for small accounts.</p>
+                <p class="font-fellixMedium md:text-base text-sm">We would rather serve many small customers over a few large ones. We
+                    reflect the world around us, and we elevate and embrace all voices so
+                    everyone feels at home at Itrust.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer flex md:flex-row flex-col-reverse mt-[73px] mx-4 md:mx-0 gap-[85px] justify-center md:mt-[142px]">
+        <div class="image">
+            <img src="./assets/about-customer.svg" alt="Customer experience">
+        </div>
+        <div class="text flex flex-col max-w-[680px] gap-10">
+            <div class="head flex flex-col gap-4">
+                <p class="font-fellixBold text-sm text-[#747ED1] hidden md:flex gap-[13px] items-center uppercase"><img src="./assets/random-bar.svg" alt="Bar">Radical Customer Focus</p>
+                <p class="font-fellixBold text-sm text-[#747ED1] flex md:hidden gap-[13px] items-center uppercase"><img src="./assets/random-bar.svg" alt="Bar">safety first</p>
+                <h2 class="text-gunMetal text-2xl md:text-[32px] font-fellixBold">We exist to make our customers
+                    happy</h2>
+            </div>
+            <div class="body flex flex-col gap-7">
+                <p class="font-fellixMedium md:text-base text-sm text-slateGray">From the early days of Itrust, we have prioritized getting direct customer
+                    feedback on what we were building. Talking to our customers forms the
+                    kernel of the product development process we have today. We listen with
+                    empathy, ask questions, and critically evaluate our work by how valuable our
+                    customers find it.</p>
+                <p class="font-fellixMedium md:text-base text-sm text-slateGray">We never stop asking how we can make our product better, and we never
+                    settle for ‘good enough’. We listen to our colleagues, and we start from a
+                    place of believing they are capable and well-intentioned.</p>
+                <p class="font-fellixMedium md:text-base text-sm text-slateGray">We delight our customers and take pride in our work. Otherwise, why even be</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer flex md:flex-row-reverse flex-col-reverse mt-[73px] mx-4 md:mx-0 gap-11 md:gap-[51px] justify-center md:mt-[142px]">
+        <div class="image">
+            <img src="./assets/about-bold.svg" alt="Customer experience">
+        </div>
+        <div class="text flex flex-col max-w-[680px] md:gap-10 gap-4">
+            <div class="head flex flex-col gap-4">
+                <p class="font-fellixBold text-sm text-[#747ED1] flex gap-[13px] items-center uppercase"><img src="./assets/random-bar.svg" alt="Bar">First-Principles Thinking</p>
+                <h2 class="text-gunMetal text-2xl md:text-[32px] font-fellixBold">We make bold bets and challenge the
+                    status quo</h2>
+            </div>
+            <div class="body flex flex-col gap-7">
+                <p class="font-fellixMedium md:text-base max-w-[600px] text-sm text-slateGray">Our foundation is in art, science, and pure mathematics, and we have a deep
+                    appreciation for the scientific process. We develop hypotheses and design
+                    experiments to test them. We reduce complex problems to their constituent
+                    bits.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="system mt-[70px] md:mt-[144px] flex mx-4 md:mx-0 flex-col gap-[38px] md:gap-[56px] items-center">
+        <h2 class="max-w-[628px] font-fellixBold text-xl md:text-[28px] text-slateGray text-center">We believe the financial system should be
+            built to work for everyone. That’s why we
+            create products that let you start investing at
+            your own pace, on your own terms.</h2>
+        <div class="list pt-10 gap-10 justify-center md:gap-0 flex flex-wrap">
+            <div class="acard max-w-[330px] flex px-5 pb-5 flex-col text-center gap-[14px]">
+                <h3 class="font-fellixBold text-[19px] text-slateGray">A more human way to learn</h3>
+                <p class="font-fellixMedium text-slateGray">We’re redefining what it means to
+                    learn about finance—and that
+                    means education resources that are
+                    built for today.</p>
+            </div>
+            <div class="acard max-w-[330px] flex px-5 pb-5 flex-col text-center gap-[14px]">
+                <h3 class="font-fellixBold text-[19px] text-slateGray">Truly digestible financial news</h3>
+                <p class="font-fellixMedium text-slateGray">Investing news—made for today.
+                    Robinhood Snacks is revolutionizing
+                    how we talk about the markets.</p>
+            </div>
+            <div class="acard max-w-[330px] flex px-5 pb-5 flex-col text-center gap-[14px]">
+                <h3 class="font-fellixBold text-[19px] text-slateGray">See how it all works</h3>
+                <p class="font-fellixMedium text-slateGray">We believe everyone has the right to
+                    know the cost of a trade—so we’re
+                    showing you how our business
+                    works.</p>
+            </div>
+            <div class="acard max-w-[330px] flex px-5 pb-5 flex-col text-center gap-[14px]">
+                <h3 class="font-fellixBold text-[19px] text-slateGray">Quality execution on every
+                    trade</h3>
+                <p class="font-fellixMedium text-slateGray">See the stats and standards behind
+                    how we seek a quality execution on
+                    each order.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] md:mt-[144px] mt-[70px]">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix md:flex hidden">&copy; 2021 Itrust Investment. All rights reserved. Itrust means Itrust Investment and web experiences with its family of wholly owned subsidiaries which includes Itrust investment, Itrust Securities, and Itrust Crypto. All investments involve risk and loss of capital. Securities trading is offered to self-directed customers by Itrust Investment. Itrust Investment operates as a subsidiary of Itrust Asset Management a member of the Financial Industry Regulatory Authority (FINRA). With FINRA number is 164193, and the SEC number is 801-115048.</p>
+        <p class="text-desaturatedBlue text-sm font-fellix md:hidden">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>
