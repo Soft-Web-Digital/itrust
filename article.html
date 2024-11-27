@@ -31,7 +31,7 @@
         </a>
         <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
             <div class="list-container md:static">
-                <ul class="md:flex drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
+                <ul class="md:flex  drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
                     <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
                         <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
                             <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
@@ -40,11 +40,12 @@
                             <p class="font-fellixMedium text-xs"><a href="./stock.html">Stock Investing</a></p>
                         </div>
                     </li>
-                    <li><a href="#" class="font-fellixMedium">Cash</a></li>
+                    <li><a href="./cash.html" class="font-fellixMedium">Cash</a></li>
                     <li class="flex items-center gap-2" > <a href="./howto.html" class="font-fellixMedium">Learn</a> <div class="img"><img src="./assets/caret.svg" alt="caret"></div></li>
                     <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
                         <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
                             <p class="font-fellixMedium text-xs"><a href="./about.html">About Us</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./article.html">Article</a></p>
                         </div>
                     </li>
                     <li><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
@@ -282,7 +283,7 @@
         </div>
     </section>
 
-    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] mt-[60px] md:mt-[167px]">
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
         <div class="logo">
             <img src="./assets/footer-logo.svg" alt="Logo">
         </div>
@@ -297,20 +298,20 @@
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
                     <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
                     <ul class="flex flex-col gap-[7px]">
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">How to Invest</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">F.A.Q</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Terms of Use</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Privacy Policy</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
                     <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
                     <ul class="flex flex-col gap-[7px]">
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Login</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">About Us</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./login.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Blog</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
@@ -321,8 +322,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-desaturatedBlue text-sm font-fellix md:flex hidden">&copy; 2021 Itrust Investment. All rights reserved. Itrust means Itrust Investment and web experiences with its family of wholly owned subsidiaries which includes Itrust investment, Itrust Securities, and Itrust Crypto. All investments involve risk and loss of capital. Securities trading is offered to self-directed customers by Itrust Investment. Itrust Investment operates as a subsidiary of Itrust Asset Management a member of the Financial Industry Regulatory Authority (FINRA). With FINRA number is 164193, and the SEC number is 801-115048.</p>
-        <p class="text-desaturatedBlue text-sm font-fellix md:hidden">&copy; 2021 Itrust Investment.</p>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
     </footer>
 </body>
 </html>

@@ -15,6 +15,7 @@ module.exports = {
         fellixItalic: ['Fellix-Italic', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         periwinkle: "#5156BE",

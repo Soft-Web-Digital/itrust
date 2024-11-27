@@ -24,30 +24,32 @@
     <title>Itrust | Stock Investments</title>
 </head>
 <body>
-    <nav class="flex justify-around items-center pt-[17px]">
-        <div class="logo-container">
+    <nav class="flex justify-around items-center relative pt-[17px]">
+        <a href="./index.html" class="logo-container">
             <img src="./assets/logo.svg" alt="Itrust logo">
-        </div>
+        </a>
         <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
-            <div class="list-container">
-                <ul class="md:flex hidden items-center gap-10">
+            <div class="list-container md:static">
+                <ul class="md:flex  drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
                     <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
                         <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
                             <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
                             <p class="font-fellixMedium text-xs"><a href="./crypto.html">Crypto Investing</a></p>
                             <p class="font-fellixMedium text-xs"><a href="./bond.html">Bond Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./stock.html">Stock Investing</a></p>
                         </div>
                     </li>
-                    <li><a href="#" class="font-fellixMedium">Cash</a></li>
-                    <li class="flex items-center relative drop gap-2 cursor-pointer" > <p class="font-fellixMedium">Learn</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
-                        
-                    </li>
+                    <li><a href="./cash.html" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex items-center gap-2" > <a href="./howto.html" class="font-fellixMedium">Learn</a> <div class="img"><img src="./assets/caret.svg" alt="caret"></div></li>
                     <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
-                        
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./about.html">About Us</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./article.html">Article</a></p>
+                        </div>
                     </li>
-                    <li><a href="#" class="font-fellixMedium">F.A.Q</a></li>
+                    <li><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
                 </ul>
-                <img src="./assets/ham.svg" class="md:hidden" alt="Ham menu">
+                <img src="./assets/ham.svg" class="md:hidden ham" alt="Ham menu">
             </div>
             <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
         </div>
@@ -322,7 +324,7 @@
         </div>
     </section>
 
-    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-[6px]">
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
         <div class="logo">
             <img src="./assets/footer-logo.svg" alt="Logo">
         </div>
@@ -337,20 +339,20 @@
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
                     <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
                     <ul class="flex flex-col gap-[7px]">
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">How to Invest</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">F.A.Q</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Terms of Use</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Privacy Policy</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
                     <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
                     <ul class="flex flex-col gap-[7px]">
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Login</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">About Us</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./login.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Blog</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
