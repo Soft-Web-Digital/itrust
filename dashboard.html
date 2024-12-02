@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./dashboard.js" defer></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/image.png">
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/image.png" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust | Dashboard</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center relative py-[17px]">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </a>
+        <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
+            <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
+                <li><a href="#" class="md:text-base text-xs">Market</a></li>
+                <li><a href="#" class="md:text-base text-xs">Watchlist</a></li>
+                <li><a href="#" class="md:text-base text-xs">Portfolio</a></li>
+            </ul>
+            <div class="seco hidden md:flex gap-3">
+                <ul class="flex gap-2 items-center">
+                    <li>
+                        <select name="english" id="english" class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
+                            <option value="engusd">English | USD</option>
+                            <option value="engusd">French | EUR</option>
+                            <option value="engusd">German | EUR</option>
+                        </select>
+                    </li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet">Wallet</li>
+                </ul>
+                <div class="pro flex items-center gap-[10px]">
+                    <div class="img">
+                        <img src="./assets/notifications.svg" alt="notif">
+                    </div>
+                    <div class="p flex items-center gap-3">
+                        <img src="./assets/person.svg" alt="person">
+                        <select name="name" id="name" class="font-lufga text-[#505050]">
+                            <option value="Alexim">Alexim</option>
+                            <option value="Donald">Donald</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/ham.svg" class="md:hidden" alt="">
+        </div>
+        <!-- </div> -->
+    </nav>
+
+    <div class="wrapper bg-[#F5F5FC] md:pt-11 gap-9 md:pb-[132px] flex justify-center">
+        <section class="bar bg-white rounded-[10px] flex flex-col h-min w-[394px] gap-6 px-6 pt-[50px] pb-9">
+            <div class="header flex flex-col gap-6 items-center">
+                <div class="img"><img src="./assets/big-person.svg" alt="person"></div>
+                <div class="text text-center">
+                    <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Allie Grater</h2>
+                    <p class="font-fellixMedium text-[#505050CC]">AllieGrater1234131@</p>
+                </div>
+            </div>
+            <div class="lis flex flex-col gap-[28px] md:gap-[318px]">
+                <ul class="flex dash-listt flex-col gap-4">
+                    <li class="cursor-pointer flex pl-4 py-3 gap-2 active-prof rounded-[10px]"><img src="./assets/ac-icon.svg" alt="prfoile">My Profile</li>
+                    <li class="cursor-pointer flex pl-4 py-3 gap-2 in-active rounded-[10px]"><img src="./assets/in-lock.svg" alt="lock">Security</li>
+                    <li class="cursor-pointer flex pl-4 py-3 gap-2 in-active rounded-[10px]"><img src="./assets/in-bell.svg" alt="bell">Notification Preferences</li>
+                    <li class="cursor-pointer flex pl-4 py-3 gap-2 in-active rounded-[10px]"><img src="./assets/in-curr.svg" alt="currency">Currency Preferences</li>
+                    <li class="cursor-pointer flex pl-4 py-3 gap-2 in-active rounded-[10px]"><img src="./assets/in-kyc.svg" alt="kyc">KYC Verification</li>
+                </ul>
+                <button class="flex gap-2 items-center justify-center font-fellixMedium text-sm text-[#122A44] py-[10px] border border-[#DDE2EB] rounded-[#DDE2EB]"><img src="./assets/outlog.svg" alt="wallet">Log Out</button>
+            </div>
+        </section>
+
+        <section class="profile hidden absolute md:static flex-col gap-9 rounded-[10px] w-screen md:w-[724px] py-8 px-4 md:px-10 bg-white">
+            <div class="head flex justify-between">
+                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">My Profile</h2>
+                <div class="edit-button relative top-[13px]">
+                    <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="section flex flex-col gap-4">
+                    <div class="cursor-pointer flex flex-col gap-[18px]">
+                        <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
+                        <h2 class="font-fellixBold text-base md:text-2xl text-[#14233ACC]">Security</h2>
+                    </div>
+                    <div class="input flex flex-wrap gap-[38px] font-fellix text-sm text-[#979797]">
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="email">Email</label>
+                            <input type="email" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="uname">Username</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                    </div>
+
+                    <h3 class="font-fellixMedium pt-3 text-[#505050]">Contact Information</h3>
+                    <div class="input flex flex-wrap gap-[38px] font-fellix text-sm text-[#979797]">
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="addy">Resident Address</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="country">Country</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="state">State</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="city">City</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="zip">Zipcode</label>
+                            <input type="number" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                    </div>
+
+                    <h3 class="font-fellixMedium pt-3 text-[#505050]">Verification</h3>
+                    <div class="input flex flex-wrap gap-[38px] font-fellix text-sm text-[#979797]">
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="secNumber">Social security Number/Identity number</label>
+                            <input type="tel" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                        <div class="in flex flex-col gap-1 w-full md:w-[303px]">
+                            <label for="currency">Currency</label>
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                        </div>
+                    </div>
+                    <div class="end-buttons pt-[25px] flex justify-end gap-6">
+                        <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
+                        <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security w-screen hidden absolute left-0 md:static md:w-[724px] flex-col rounded-[10px] md:px-10 px-4 md:py-8 md:mt-0 pt-[14px] mt-[10px] bg-white">
+            <div class="head flex justify-between">
+                <div class="cursor-pointer flex flex-col gap-[18px]">
+                    <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
+                    <h2 class="font-fellixBold text-base md:text-2xl text-[#14233ACC]">Security</h2>
+                </div>
+                <div class="edit-buttonn relative top-[13px]">
+                    <button class="flex gap-2 md:text-base text-xs items-center font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
+                </div>
+            </div>
+            <div class="auth md:pt-11 pt-[19px] flex flex-col gap-6">
+                <div class="a flex items-center justify-between border-b border-b-[#E5EFFF] pb-5">
+                    <div class="text flex flex-col md:gap-[7px]">
+                        <p class="font-fellixMedium md:text-base text-sm text-[#505050]">Email Authentication</p>
+                        <p class="font-fellixMedium text-xs md:text-sm text-[#505050CC]">Lorem Ipsum is simply dumy text of the printing.</p>
+                    </div>
+                    <div class="button">
+                        <button class="py-3 px-8 bg-[#E5EFFF] rounded-[5px] text-periwinkle font-poppins font-medium">Disable</button>
+                    </div>
+                </div>
+                <div class="a flex items-center justify-between border-b border-b-[#E5EFFF] pb-5">
+                    <div class="text flex flex-col md:gap-[7px]">
+                        <p class="font-fellixMedium md:text-base text-sm text-[#505050]">Google Authentication</p>
+                        <p class="font-fellixMedium text-xs md:text-sm text-[#505050CC]">Lorem Ipsum is simply dumy text of the printing.</p>
+                    </div>
+                    <div class="button">
+                        <button class="py-3 px-8 bg-[#E5EFFF] rounded-[5px] text-periwinkle font-poppins font-medium">Disable</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pass pt-[37px]">
+                <p class="text-[#505050] md:text-base text-sm font-fellixMedium pb-2">Password</p>
+                <p class="font-fellixMedium text-xs md:text-sm text-[#505050CC] pb-5 md:pb-6">Set a unique password to protect your personal account</p>
+                <div class="flex gap-[38px] pb-[27px] pt-[33px] flex-wrap">
+                    <div class="in flex font-fellix w-full md:w-[303px] md:min-w-[645px] text-sm text-[#979797] flex-col gap-1">
+                        <label for="oldp">Old Password</label>
+                        <input type="password" class="border border-[#DDE2EB] pl-4 py-4 outline-none rounded-[5px]">
+                    </div>
+                    <div class="in w-full md:w-[303px] flex font-fellix text-sm text-[#979797] flex-col gap-1">
+                        <label for="oldp">New Password</label>
+                        <input type="password" class="border border-[#DDE2EB] pl-4 py-4 outline-none rounded-[5px]">
+                    </div>
+                    <div class="in w-full md:w-[303px] flex font-fellix text-sm text-[#979797] flex-col gap-1">
+                        <label for="oldp">Re-enter Password</label>
+                        <input type="password" class="border border-[#DDE2EB] pl-4 py-4 outline-none rounded-[5px]">
+                    </div>
+                </div>
+                <p class="font-fellixMedium text-sm text-[#505050CC] pb-[29px]">To ensure your account is well protected, please use 8 or more characters with a mix of letters, numbers & symbols.</p>
+            </div>
+            <div class="buttso pt-[25px] flex justify-end gap-6">
+                <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
+                <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
+            </div>
+        </section>
+
+        <section class="notification md:w-[724px] md:static h-screen gap-[52px] absolute w-screen flex-col hidden rounded-[10px] px-10 py-8 bg-white">
+            <div class="head flex justify-between">
+                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">Security</h2>
+                <div class="edit-buttonn relative top-[13px]">
+                    <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
+                </div>
+            </div>
+            <div class="notis flex flex-col gap-6">
+                <div class="not flex justify-between items-center border-b border-b-[#D7DCE4] pb-[21px]">
+                    <div class="text flex flex-col gap-[7px]">
+                        <p class="font-fellixMedium text-[#505050]">Price Alert</p>
+                        <p class="font-fellixMedium text-sm text-[#505050CC]">Lorem Ipsum is simply dumy text of the printing.</p>
+                    </div>
+                    <div class="radio cursor-pointer">
+                        <img src="./assets/radio-off.svg" alt="radio">
+                    </div>
+                </div>
+                <div class="not flex justify-between items-center border-b border-b-[#D7DCE4] pb-[21px]">
+                    <div class="text flex flex-col gap-[7px]">
+                        <p class="font-fellixMedium text-[#505050]">Device Log In Alert</p>
+                        <p class="font-fellixMedium text-sm text-[#505050CC]">Lorem Ipsum is simply dumy text of the printing.</p>
+                    </div>
+                    <div class="radio cursor-pointer">
+                        <img src="./assets/radio-off.svg" alt="radio">
+                    </div>
+                </div>
+                <div class="not flex justify-between items-center border-b border-b-[#D7DCE4] pb-[21px]">
+                    <div class="text flex flex-col gap-[7px]">
+                        <p class="font-fellixMedium text-[#505050]">Email Notification</p>
+                        <p class="font-fellixMedium text-sm text-[#505050CC]">Lorem Ipsum is simply dumy text of the printing.</p>
+                    </div>
+                    <div class="radio cursor-pointer">
+                        <img src="./assets/radio-off.svg" alt="radio">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="currency w-[724px] gap-[52px] flex-col h-min hidden rounded-[10px] px-10 py-8 bg-white">
+            <div class="head flex justify-between">
+                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">Currency Preferences</h2>
+                <div class="edit-buttonn relative top-[13px]">
+                    <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
+                </div>
+            </div>
+            <div class="prefer flex flex-col gap-[6px]">
+                <p class="font-fellix text-sm text-[#979797]">Select Currency Preference</p>
+                <div class="flex justify-between items-center py-3 px-5 border border-[#DDE2EB] rounded-[5px] cursor-pointer">
+                    <div class="etxt flex gap-[10px] items-center">
+                        <img src="./assets/usd.svg" alt="">
+                        <p class="font-fellixMedium text-sm text-[#212325]">US Dollars</p>
+                    </div>
+                    <img src="./assets/blurcaret.svg" alt="">
+                </div>
+            </div>
+            <div class="buttso pt-[25px] flex justify-end gap-6">
+                <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
+                <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
+            </div>
+        </section>
+
+        <section class="kyc w-[724px] flex-col h-min hidden rounded-[10px] px-10 py-8 bg-white">
+            <div class="head flex justify-between">
+                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">Currency Preferences</h2>
+                <div class="edit-buttonn relative top-[13px]">
+                    <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
+                </div>
+            </div>
+            <select name="document" id="document" class="w-[220px] py-2 px-3 bg-[#F9FAFA] outline-none rounded-[5px] text-[#8B98B1] font-fellix cursor-pointer">
+                <option value="default">Choose Document Type</option>
+            </select>
+            <div class="in flex w-full gap-9 mt-8 pb-[49px] border-b border-b-[#D7DCE4] justify-between">
+                <div class="input flex flex-col w-[303px] gap-[5px]">
+                    <label class="font-fellix text-sm text-[#979797]" for="number">Enter ID number</label>
+                    <input type="text" class="border border-[#979797] font-fellixMedium text-sm text-[#212325] pl-4 py-3 outline-none rounded-[5px]" placeholder="CR 12653637">
+                </div>
+                <div class="input flex flex-col w-[303px] gap-[5px]">
+                    <label class="font-fellix text-sm text-[#979797]" for="number">Full Name on Card</label>
+                    <input type="text" class="border border-[#979797] font-fellixMedium text-sm text-[#212325] pl-4 py-3 outline-none rounded-[5px]" placeholder="Name">
+                </div>
+            </div>
+            <div class="upload pt-[42px]">
+                <h2 class="font-fellixMedium text-[#505050]">Upload ID Card</h2>
+                <div class="up flex justify-between pt-[14px]">
+                    <div class="load flex flex-col gap-[14px]">
+                        <label for="front" class="font-fellixMedium text-[#979797]">Identify Document Front Side</label>
+                        <div class="file-upload-container relative flex flex-col items-center justify-center w-full max-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
+                            <label for="file-upload" class="text-center">
+                              <p class="font-fellixMedium text-[#212325B2]">Drop your File upload or Browse</p>
+                              <small class="block font-fellixMedium text-xs text-[#50505080] mt-2">Maximum size of image 1MB</small>
+                            </label>
+                            <input id="file-upload" type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+                        </div>                          
+                    </div>
+                    <div class="load flex flex-col gap-[14px]">
+                        <label for="front" class="font-fellixMedium text-[#979797]">Identify Document Back Side</label>
+                        <div class="file-upload-container relative flex flex-col items-center justify-center w-full max-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
+                            <label for="file-upload" class="text-center">
+                              <p class="font-fellixMedium text-[#212325B2]">Drop your File upload or Browse</p>
+                              <small class="block font-fellixMedium text-xs text-[#50505080] mt-2">Maximum size of image 1MB</small>
+                            </label>
+                            <input id="file-upload" type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+            <div class="buttso pt-[25px] flex justify-end gap-6">
+                <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
+                <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="hidden md:flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./login.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>

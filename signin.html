@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/image.png">
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/image.png" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust | Sign In</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center relative py-[17px]">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </a>
+        <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
+            <div class="list-container hidden md:static">
+                <ul class="md:flex  drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
+                    <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./crypto.html">Crypto Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./bond.html">Bond Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./stock.html">Stock Investing</a></p>
+                        </div>
+                    </li>
+                    <li><a href="./cash.html" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex items-center gap-2" > <a href="./howto.html" class="font-fellixMedium">Learn</a> <div class="img"><img src="./assets/caret.svg" alt="caret"></div></li>
+                    <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./about.html">About Us</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./article.html">Article</a></p>
+                        </div>
+                    </li>
+                    <li><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
+                </ul>
+                <img src="./assets/ham.svg" class="md:hidden ham" alt="Ham menu">
+            </div>
+            <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="form bg-[#F5F5FC] flex justify-center">
+        <form class="flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center gap-[35px] bg-white w-fit">
+            <div class="header flex flex-col items-center border-b w-full border-b-[#F0F0F0] pb-[28px]">
+                <h2 class="font-fellixExtraBold text-[28px] text-[#14233A]">Sign in</h2>
+                <p class="font-fellix text-sm text-desaturatedBlue">Sign in to access your account</p>
+            </div>
+            <div class="inputs flex flex-col gap-5">
+                <div class="input flex flex-col gap-3">
+                    <label class="font-fellix text-sm text-desaturatedBlue" for="email">Email Address</label>
+                    <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[375px] py-4 rounded-[5px]" type="text" placeholder="Enter email address">
+                </div>
+                <div class="input flex flex-col gap-3">
+                    <label class="font-fellix text-sm text-desaturatedBlue" for="password">Password</label>
+                    <div class="password relative">
+                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[375px] py-4 rounded-[5px]" type="password" placeholder="*********">
+                        <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
+                    </div>
+                </div>
+                <a href="./signup.html" class="text-periwinkle underline font-fellixMedium text-sm text-right">Forgot password?</a>
+                <button type="submit" class="text-[#DDDDE1] font-fellixSemiBold py-3 bg-periwinkle opacity-50 rounded-[5px]">Sign in</button>
+            </div>
+            <div class="p flex gap-[19px] items-center w-full">
+                <div class="border bg-[#DDE2EB] w-full h-px"></div>
+                <p class="before:h-1 before:w-full font-fellix text-sm text-[#81809E] flex-shrink-0">Or Sign in with</p>
+                <div class="border bg-[#DDE2EB] w-full h-px"></div>
+            </div>
+            <div class="links flex gap-3">
+                <div class="link">
+                    <a href="https://www.facebook.com"><img src="./assets/s-facebook.svg" class="border border-[#DDE2EB] rounded-[5px] py-3 px-3" alt=""></a>
+                </div>
+                <div class="link">
+                    <a href="https://www.google.com"><img src="./assets/s-google.svg" class="border border-[#DDE2EB] rounded-[5px] py-3 px-3" alt=""></a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./login.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>

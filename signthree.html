@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/image.png">
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/image.png" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust | Other Information</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center relative py-[17px]">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </a>
+        <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
+            <div class="list-container hidden md:static">
+                <ul class="md:flex  drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
+                    <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./crypto.html">Crypto Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./bond.html">Bond Investing</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./stock.html">Stock Investing</a></p>
+                        </div>
+                    </li>
+                    <li><a href="./cash.html" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex items-center gap-2" > <a href="./howto.html" class="font-fellixMedium">Learn</a> <div class="img"><img src="./assets/caret.svg" alt="caret"></div></li>
+                    <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./about.html">About Us</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./article.html">Article</a></p>
+                        </div>
+                    </li>
+                    <li><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
+                </ul>
+                <img src="./assets/ham.svg" class="md:hidden ham" alt="Ham menu">
+            </div>
+            <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="form bg-[#F5F5FC] flex justify-center">
+        <form class="flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center md:w-[826px] gap-[35px] bg-white w-fit">
+            <div class="header flex flex-col items-center border-b w-full border-b-[#F0F0F0] pb-[28px]">
+                <h2 class="font-fellixExtraBold text-[28px] text-[#14233A]">Other Information</h2>
+                <p class="font-fellix text-sm text-desaturatedBlue">Please enter other info and help us understand your trading experience</p>
+            </div>
+            <div class="inputs flex flex-col gap-5">
+                <div class="inp flex md:flex-row flex-col items-center justify-center flex-wrap gap-[30px]">
+                    <div class="input flex flex-col gap-3 w-full md:mx-5">
+                        <label class="font-fellix text-sm text-desaturatedBlue" for="email">Date of Birth</label>
+                        <input class="border outline-none border-[#DDE2EB] px-4 font-fellix text-sm text-[#14233A] w-full py-4 rounded-[10px]" type="date">
+                    </div>
+                    <div class="input flex flex-col gap-3">
+                        <label class="font-fellix text-sm text-desaturatedBlue" for="nationality">Nationality</label>
+                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[10px]" type="text" placeholder="American">
+                    </div>
+                    <div class="input flex flex-col gap-3">
+                        <label class="font-fellix text-sm text-desaturatedBlue" for="currency">Currency</label>
+                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="USD">
+                    </div>
+                </div>
+                <h3 class="text-[#526179] font-fellix text-sm uppercase border-b md:mx-5 border-b-[#F0F0F0] pb-5">further questions</h3>
+                <div class="inp flex md:flex-row flex-col items-center justify-center flex-wrap gap-[30px]">
+                    <div class="input flex flex-col gap-3">
+                        <label class="font-fellix text-sm text-desaturatedBlue" for="experience">How much investment experience do you have?</label>
+                        <select class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="Johndoe">
+                            <option value="none">None</option>
+                            <option value="less">Less than 1 year</option>
+                            <option value="more">More than 1 year</option>
+                        </select>
+                    </div>
+                    <div class="input flex flex-col gap-3">
+                        <label class="font-fellix text-sm text-desaturatedBlue" for="employment">Are you employed?</label>
+                        <select class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="Johndoe">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="self">Self-employed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input flex flex-col md:mx-5 items-start gap-4">
+                    <label for="another" class="font-fellix text-sm text-[#526179]">Do you or a family member work for another brokerage?</label>
+                    <div class="flex gap-[30px]">
+                        <div class="in">
+                            <input type="radio" id="yes" name="brokerage" value="yes">
+                            <label for="yes" class="font-fellix text-sm text-desaturatedBlue">Yes</label>
+                        </div>
+                        <div class="in">
+                            <input type="radio" id="no" name="brokerage" value="no">
+                            <label for="no" class="font-fellix text-sm text-desaturatedBlue">No</label>
+                        </div>
+                    </div>
+                    <div class="input flex flex-col gap-3 w-full">
+                        <label class="font-fellix text-sm text-desaturatedBlue" for="code">Referral Code (Optional)</label>
+                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-full py-4 rounded-[5px]" type="text">
+                    </div>
+                </div>
+                <p class="font-fellix text-sm md:mx-5 gap-1 flex items-center"> <input class="mr-2" type="checkbox" name="" id=""> I agree to itrust <a href="./privacy.html" class="text-[#13B799]"> Privacy Policy</a> and <a href="./terms.html" class="text-[#13B799]"> Terms of Use</a></p>
+                <div class="button flex gap-[30px] justify-center md:px-5">
+                    <a href="./signtwo.html" type="submit" class="w-full font-fellix py-3 bg-[#F5F5F5] border border-[#F5F5F5] rounded-[5px] text-[#526179] flex justify-center gap-[9px] items-center"><img src="./assets/back.svg" alt=""> Go back</a>
+                    <a href="./index.html" type="submit" class="text-[#DDDDE1] w-full text-center font-fellixSemiBold py-3 bg-periwinkle rounded-[5px]">Next</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./login.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>
