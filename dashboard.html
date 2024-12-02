@@ -48,13 +48,12 @@
                     <div class="img">
                         <img src="./assets/notifications.svg" alt="notif">
                     </div>
-                    <div class="p flex items-center gap-3">
+                    <a href="./dashboard.html" class="p flex items-center gap-3">
                         <img src="./assets/person.svg" alt="person">
                         <select name="name" id="name" class="font-lufga text-[#505050]">
                             <option value="Alexim">Alexim</option>
-                            <option value="Donald">Donald</option>
                         </select>
-                    </div>
+                    </a>
                 </div>
             </div>
             <img src="./assets/ham.svg" class="md:hidden" alt="">
@@ -227,7 +226,10 @@
 
         <section class="notification md:w-[724px] md:static h-screen gap-[52px] absolute w-screen flex-col hidden rounded-[10px] px-10 py-8 bg-white">
             <div class="head flex justify-between">
-                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">Security</h2>
+                <div class="cursor-pointer flex flex-col gap-[18px]">
+                    <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
+                    <h2 class="font-fellixBold text-base md:text-2xl text-[#14233ACC]">Notification Preferences</h2>
+                </div>
                 <div class="edit-buttonn relative top-[13px]">
                     <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
                 </div>
@@ -263,9 +265,12 @@
             </div>
         </section>
 
-        <section class="currency w-[724px] gap-[52px] flex-col h-min hidden rounded-[10px] px-10 py-8 bg-white">
+        <section class="currency w-screen md:static absolute h-screen md:w-[724px] gap-[52px] flex-col md:h-min hidden rounded-[10px] px-10 py-8 bg-white">
             <div class="head flex justify-between">
-                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">Currency Preferences</h2>
+                <div class="cursor-pointer flex flex-col gap-[18px]">
+                    <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
+                    <h2 class="font-fellixBold text-base md:text-2xl text-[#14233ACC]">Currency Preferences</h2>
+                </div>
                 <div class="edit-buttonn relative top-[13px]">
                     <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
                 </div>
@@ -286,29 +291,32 @@
             </div>
         </section>
 
-        <section class="kyc w-[724px] flex-col h-min hidden rounded-[10px] px-10 py-8 bg-white">
+        <section class="kyc md:w-[724px] flex-col md:h-min hidden md:static absolute h-screen w-screen rounded-[10px] px-10 py-8 bg-white">
             <div class="head flex justify-between">
-                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">Currency Preferences</h2>
+                <div class="cursor-pointer flex flex-col gap-[18px]">
+                    <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
+                    <h2 class="font-fellixBold text-base md:text-2xl text-[#14233ACC]">KYC Verification</h2>
+                </div>
                 <div class="edit-buttonn relative top-[13px]">
                     <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
                 </div>
             </div>
-            <select name="document" id="document" class="w-[220px] py-2 px-3 bg-[#F9FAFA] outline-none rounded-[5px] text-[#8B98B1] font-fellix cursor-pointer">
+            <select name="document" id="document" class="w-[220px] py-2 mt-3 md:mt-0 px-3 bg-[#F9FAFA] outline-none rounded-[5px] text-[#8B98B1] font-fellix cursor-pointer">
                 <option value="default">Choose Document Type</option>
             </select>
-            <div class="in flex w-full gap-9 mt-8 pb-[49px] border-b border-b-[#D7DCE4] justify-between">
-                <div class="input flex flex-col w-[303px] gap-[5px]">
+            <div class="in flex w-full gap-9 flex-wrap mt-8 pb-[49px] border-b border-b-[#D7DCE4] justify-between">
+                <div class="input flex flex-col w-full md:w-[303px] gap-[5px]">
                     <label class="font-fellix text-sm text-[#979797]" for="number">Enter ID number</label>
                     <input type="text" class="border border-[#979797] font-fellixMedium text-sm text-[#212325] pl-4 py-3 outline-none rounded-[5px]" placeholder="CR 12653637">
                 </div>
-                <div class="input flex flex-col w-[303px] gap-[5px]">
+                <div class="input flex flex-col w-full md:w-[303px] gap-[5px]">
                     <label class="font-fellix text-sm text-[#979797]" for="number">Full Name on Card</label>
                     <input type="text" class="border border-[#979797] font-fellixMedium text-sm text-[#212325] pl-4 py-3 outline-none rounded-[5px]" placeholder="Name">
                 </div>
             </div>
             <div class="upload pt-[42px]">
                 <h2 class="font-fellixMedium text-[#505050]">Upload ID Card</h2>
-                <div class="up flex justify-between pt-[14px]">
+                <div class="up flex justify-center gap-[19px] md:gap-0 md:justify-between pt-[14px] flex-wrap">
                     <div class="load flex flex-col gap-[14px]">
                         <label for="front" class="font-fellixMedium text-[#979797]">Identify Document Front Side</label>
                         <div class="file-upload-container relative flex flex-col items-center justify-center w-full max-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
@@ -331,7 +339,7 @@
                     </div>
                 </div>
             </div>
-            <div class="buttso pt-[25px] flex justify-end gap-6">
+            <div class="buttso pt-[25px] flex justify-start md:justify-end gap-6">
                 <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
                 <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
             </div>
