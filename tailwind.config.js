@@ -15,6 +15,7 @@ module.exports = {
         fellixBoldItalic: ['Fellix-Bold-Italic', 'sans-serif'],
         fellixItalic: ['Fellix-Italic', 'sans-serif'],
         lufga: ['lufga', 'sans-serif'],
+        ibm: ['IBM Plex Sans', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
