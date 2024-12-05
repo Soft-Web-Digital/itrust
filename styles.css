@@ -183,3 +183,50 @@
     color: white;
     background-color: #5156BE;
 }
+
+.active-option{
+    border-bottom: 3px #13B799 solid;
+    color: #14233A;
+    font-family: 'Fellix-Bold';
+}
+
+.inactive-option{
+    border-bottom: 1px solid #D7DCE4;
+}
+
+.inactive-radio{
+    border: 1px solid #DDE2EB;
+}
+
+.active-radio{
+    background-color: #E2F2FF4D;
+    border: 1px solid #13B799;
+}
+
+.active-nav{
+    color: #14233A;
+    font-family: 'Fellix-Bold';
+}
+
+.inactive-nav{
+    color: #14233A;
+    font-family: 'Fellix';
+}
+
+.active-choice{
+    background-color: #5156BE;
+    color: white;
+}
+
+.inactive-choice{
+    background-color: #F3F4F5;
+    color: #5156BE;
+}
+
+.inactive-gain{
+    border-bottom: solid 1px #D7DCE4;
+}
+
+.active-gain{
+    border-bottom: solid 2px #747ED1;
+}
