@@ -244,3 +244,14 @@
     background-color: #5156BE;
     color: white;
 }
+
+.inactive-tab{
+    border: 1px solid #5156BE;
+    color: #5156BE;
+}
+
+.active-tab{
+    background-color: #5156BE;
+    color: white;
+    border: 1px solid #5156BE;
+}
