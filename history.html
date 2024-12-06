@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./history.js" defer></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/image.png">
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/image.png" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust | Dashboard</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center relative py-[17px]">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </a>
+        <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
+            <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
+                <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
+                <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
+                <li><a href="#" class="md:text-base text-xs">Savings</a></li>
+            </ul>
+            <div class="seco hidden md:flex gap-3">
+                <ul class="flex gap-2 items-center">
+                    <li>
+                        <select name="english" id="english" class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
+                            <option value="engusd">English | USD</option>
+                            <option value="engusd">French | EUR</option>
+                            <option value="engusd">German | EUR</option>
+                        </select>
+                    </li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet">Wallet</li>
+                </ul>
+                <div class="pro flex items-center gap-[10px]">
+                    <div class="img">
+                        <img src="./assets/notifications.svg" alt="notif">
+                    </div>
+                    <a href="./dashboard.html" class="p flex items-center gap-3">
+                        <img src="./assets/person.svg" alt="person">
+                        <select name="name" id="name" class="font-lufga text-[#505050]">
+                            <option value="Alexim">Alexim</option>
+                        </select>
+                    </a>
+                </div>
+            </div>
+            <img src="./assets/ham.svg" class="md:hidden" alt="">
+        </div>
+        <!-- </div> -->
+    </nav>
+
+    <div class="wrapper bg-[#F5F5FC] md:px-[120px] md:pb-20 md:pt-[60px]">
+        <div class="trade-history bg-white px-5 py-6 rounded-[10px]">
+            <div class="head flex justify-between items-center">
+                <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">History</h2>
+                <div class="input relative">
+                    <img src="./assets/o-magnifier.svg" alt="" class="absolute left-3 top-[37%]">
+                    <input type="text" class="md:w-[303px] pl-[42px] border border-[#D7DCE4] rounded-[5px] font-fellix text-sm text-[#8B98B1] py-4" placeholder="Search by date">
+                </div>
+            </div>
+            <div class="pt-9 flex items-center justify-between">
+                <div class="lis switch flex gap-[34px] border-b border-b-[#D7DCE4]">
+                    <p class="font-poppins text-xs cursor-pointer text-[#14233AB2] active-history pb-3">Trade History</p>
+                    <p class="font-poppins text-xs cursor-pointer text-[#14233AB2] pb-3">Transaction History</p>
+                    <p class="font-poppins text-xs cursor-pointer text-[#14233AB2] pb-3">Savings History</p>
+                </div>
+                <div class="select hidden md:flex relative">
+                    <img src="./assets/a-month.svg" class="absolute md:flex hidden top-[20%] left-3" alt="">
+                    <select name="month" id="month" class="border font-poppins font-medium text-[#8B98B1] border-[#D7DCE4] pl-[45px] py-2 rounded-[5px]">
+                        <option value="default">Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex md:hidden mt-3 md:mt-0 items-center gap-2 md:gap-0">
+                <div class="input md:hidden relative">
+                    <img src="./assets/o-magnifier.svg" alt="" class="absolute top-1/3 left-6">
+                    <input type="text" placeholder="Search by date" class="md:w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
+                </div>
+                <div class="select relative">
+                    <img src="./assets/a-month.svg" class="absolute md:flex hidden top-[20%] left-3" alt="">
+                    <select name="month" id="month" class="border font-poppins font-medium text-[#8B98B1] border-[#D7DCE4] pl-[45px] py-2 rounded-[5px]">
+                        <option value="default">Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+            </div>
+            <div class="trades-history flex-col">
+                <div class="top-row pt-8 flex justify-between">
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Type</p>
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Assets/Pairs</p>
+                    <p class="flex-row-reverse flex md:hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Invested & P/L</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Amount Invested</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Leverage</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Entry</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> S/L</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> T/P</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> P/L</p>
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Status</p>
+                </div>
+                <div class="rows pt-6 flex justify-between">
+                    <div class="stonls md:flex hidden flex-col gap-4">
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stoup.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Stocks <span class="text-xs">18 Feb, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stouwn.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Crypto <span class="text-xs">20 Feb, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stoup.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Crypto <span class="text-xs">18 Feb, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stouwn.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Stocks <span class="text-xs">20 Feb, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stouwn.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Crypto <span class="text-xs">20 Feb, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stouwn.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Crypto <span class="text-xs">20 Feb, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[11px] items-start">
+                            <img src="./assets/stouwn.svg" alt="">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">Stocks <span class="text-xs">20 Feb, 2024</span></p>
+                        </div>
+                    </div>
+                    <div class="coinss hidden md:flex flex-col gap-5 md:gap-[45px]">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class ="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden gap-6 flex-col">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class ="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px] text-[#A1A1A1]">ETh</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px] text-[#A1A1A1]">BTC</span></p>
+                                <p class="md:hidden font-fellix text-xs text-[#979797]">Leverage: 10x</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invested md:flex hidden flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">$45,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$4,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$45.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$4,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$5.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$10.65</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                        <p class="font-fellixMedium text-[#979797]">10x</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">0.8292</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">0.8292</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">0.8292</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-[17px]">
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#13B799CC]">+24%</span></p>
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#13B799CC]">+24%</span></p>
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#13B799CC]">+24%</span></p>
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#F04444CC]">-12%</span></p>
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#13B799CC]">+24%</span></p>
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#13B799CC]">+24%</span></p>
+                        <p class="font-fellixMedium text-[#979797] flex flex-col">$4,545.65 <span class="text-xs text-[#13B799CC]">+24%</span></p>
+                    </div>
+                    <div class="flex md:hidden flex-col gap-[21px]">
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden flex-col gap-5">
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-history hidden flex-col">
+                <div class="top-row pt-8 flex justify-between">
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt="">Method</p>
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Type</p>
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Amount</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Date / Time</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Status</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Action</p>
+                </div>
+                <div class="rows pt-6 flex justify-between">
+                    <div class="hidden md:flex gap-5 md:gap-[30px] flex-col">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bank</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/wallet-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cash</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/wallet-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cash</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bank</p>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden gap-5 md:gap-[30px] flex-col">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/wallet-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cash</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <div class="">
+                                <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                                <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-7 md:gap-[30px] flex-col">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="hidden md:flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Payout</p>
+                        </div>
+                        <div class="md:hidden flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="md:hidden flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="md:flex hidden gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Payout</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/transfer.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Transfer</p>
+                        </div>
+                        <div class="md:hidden flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="md:hidden flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="md:hidden flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Deposit</p>
+                        </div>
+                        <div class="md:flex hidden gap-[10px] items-center">
+                            <img src="./assets/transfer.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Transfer</p>
+                        </div>
+                        <div class="md:flex hidden gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Payout</p>
+                        </div>
+                    </div>
+                    <div class="invested md:flex hidden flex-col gap-5 md:gap-[30px]">
+                        <p class="font-fellixMedium text-[#979797]">$45,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$4,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$45.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$4,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$5.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$10.65</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-5 md:gap-[30px]">
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                    </div>
+                    <div class="invested hidden flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">0.8292</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                    </div>
+                    <div class="invested hidden flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">0.8292</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                    </div>
+                    <div class="invested flex flex-col gap-4 md:gap-[30px]">
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-5 md:gap-[29px]">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                    </div>
+                    <div class="hidden md:hidden flex-col gap-[21px]">
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                    </div>
+                    <div class="hidden flex-col gap-5">
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="savings-history hidden flex-col">
+                <div class="top-row pt-8 flex justify-between">
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Type</p>
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt="">Account</p>
+                    <p class="flex-row-reverse flex items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Amount</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Date / Time</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Status</p>
+                    <p class="flex-row-reverse md:flex hidden items-center gap-[3px] font-poppins text-sm text-[#14233A99]"><img src="./assets/car-assets.svg" alt=""> Action</p>
+                </div>
+                <div class="rows pt-6 flex justify-between">
+                    <div class="hidden gap-5 md:gap-[30px] flex-col">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/btc-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bank</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Ethereum</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/wallet-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cash</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/wallet-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cash</p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/eth-two.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Bank</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 md:gap-[30px] flex-col">
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Cashout<span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex md:hidden gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex md:hidden gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex md:hidden gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex md:hidden gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="flex md:hidden gap-[10px] items-center">
+                            <img src="./assets/deposit.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797] flex-col">Contribution <span class="font-fellix md:hidden text-left text-xs text-[#979797]">Feb 02, 2024</span></p>
+                        </div>
+                        <div class="hidden md:flex gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cashout</p>
+                        </div>
+                        <div class="hidden md:flex gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cashout</p>
+                        </div>
+                        <div class="hidden md:flex gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cashout</p>
+                        </div>
+                        <div class="hidden md:flex gap-[10px] items-center">
+                            <img src="./assets/payout.svg" alt="">
+                            <p class="flex items-center gap-1 font-fellixMedium text-[#979797]">Cashout</p>
+                        </div>
+                    </div>
+                    <div class="invested flex flex-col gap-[38px] md:gap-[30px]">
+                        <p class="font-fellixMedium text-[#979797]">SEP IRA</p>
+                        <p class="font-fellixMedium md:hidden text-[#979797]">SEP IRA</p>
+                        <p class="font-fellixMedium md:hidden text-[#979797]">SEP IRA</p>
+                        <p class="font-fellixMedium md:hidden text-[#979797]">SEP IRA</p>
+                        <p class="font-fellixMedium md:hidden text-[#979797]">SEP IRA</p>
+                        <p class="font-fellixMedium md:hidden text-[#979797]">SEP IRA</p>
+                        <p class="font-fellixMedium md:hidden text-[#979797]">SEP IRA</p>
+                        <p class="hidden md:flex font-fellixMedium text-[#979797]">HSA</p>
+                        <p class="hidden md:flex font-fellixMedium text-[#979797]">Traditional IRA</p>
+                        <p class="hidden md:flex font-fellixMedium text-[#979797]">ROTH IRA</p>
+                        <p class="hidden md:flex font-fellixMedium text-[#979797]">HSA</p>
+                        <p class="hidden md:flex font-fellixMedium text-[#979797]">HSA</p>
+                        <p class="hidden md:flex font-fellixMedium text-[#979797]">ROTH IRA</p>
+                    </div>
+                    <div class="invested md:hidden flex flex-col gap-4 md:gap-[30px]">
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                        <div class="flex items-center flex-col-reverse">
+                            <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                            <span class="md:hidden font-fellixMedium text-sm text-[#979797]">$45,545.65</span>
+                        </div>
+                    </div>
+                    <div class="invested md:flex hidden flex-col gap-5 md:gap-[30px]">
+                        <p class="font-fellixMedium text-[#979797]">$45,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$4,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$45.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$4,545.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$5.65</p>
+                        <p class="font-fellixMedium text-[#979797]">$10.65</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-5 md:gap-[30px]">
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                        <p class="font-fellixMedium text-[#979797]">Feb 20, 2024 at 04:20pm</p>
+                    </div>
+                    <div class="invested hidden flex-col gap-[33px]">
+                        <p class="font-fellixMedium text-[#979797]">0.8292</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">105.92</p>
+                        <p class="font-fellixMedium text-[#979797]">61929.92</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-5 md:gap-[30px]">
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                        <p class="font-poppins text-xs py-1 px-3 bg-[#E2F2FF] text-[#13B799] rounded-[5px]">Completed</p>
+                    </div>
+                    <div class="invested hidden md:flex flex-col gap-5 md:gap-[29px]">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                        <img src="./assets/dot-menu.svg" alt="">
+                    </div>
+                    <div class="    hidden flex-col gap-[21px]">
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-fellixMedium text-sm text-[#979797]">$45,545.65</p>
+                            <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
+                        </div>
+                    </div>
+                    <div class="hidden flex-col gap-5">
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] items-center">
+                            <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
+                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot pt-8 flex-col md:flex-row gap-[18px] flex justify-between">
+                <p class="font-fellixMedium text-[#979797]">57 assets</p>
+                <div class="sec flex gap-6 items-center">
+                    <div class="flex items-center">
+                        <img src="./assets/asset-back.svg" class="cursor-pointer" alt="">
+                        <div class="t flex items-center gap-3 font-poppins font-semibold text-sm text-[#979797]">
+                            <p class="border border-[#E5E7EB] rounded-[6px] px-[18px] py-2 text-[#505050]">1</p>
+                            <p>of</p>
+                            <p>3</p>
+                        </div>
+                        <img src="./assets/asset-front.svg" class="cursor-pointer" alt="">
+                    </div>
+                    <p class="py-2 cursor-pointer px-[10px] border border-[#E5E7EB] rounded-[6px] font-poppins font-medium text-sm text-[#979797]">10 / page</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="hidden md:flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+        <div class="logo">
+            <img src="./assets/footer-logo.svg" alt="Logo">
+        </div>
+        <div class="list flex md:flex-row flex-col gap-[50px] md:gap-[144px] border-b border-b-isabelline pb-[30px]">
+            <div class="flex flex-col gap-[10px] max-w-[306px]">
+                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                <ul class="flex flex-col gap-[7px]">
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                </ul>
+            </div>
+            <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./login.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] max-w-[306px]">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
+    </footer>
+</body>
+</html>

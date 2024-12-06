@@ -255,3 +255,7 @@
     color: white;
     border: 1px solid #5156BE;
 }
+
+.active-history{
+    border-bottom: 2px solid #13B799;
+}
