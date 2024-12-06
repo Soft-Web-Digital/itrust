@@ -38,4 +38,4 @@ ham.addEventListener(('click'), () => {
         dropMenu.classList.add('hidden');
         dropMenu.classList.remove('flex');
     }
-})
+})  

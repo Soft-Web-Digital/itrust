@@ -68,7 +68,7 @@ navItems.forEach((item) => {
         const sections = [overview, assets, trade, pending];
         sections.forEach(section => {
             section.classList.remove('flex');
-            section.classList.add('hidden')
+            section.classList.add('hidden');
         });
         if(item.textContent === 'Overview'){
             overview.classList.add('flex');

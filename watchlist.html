@@ -1,0 +1,516 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="by theactualdev!">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./watchlist.js" defer></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theactualdev">
+    <meta name="twitter:site" content="@theactualdev">
+    <meta name="twitter:title" content="itrust">
+    <meta name="twitter:description" content="by theactualdev!">
+    <meta name="twitter:image" content="./assets/image.png">
+    <meta property="og:title" content="itrust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itrust-six.vercel.app/" />
+    <meta property="og:image" content="./assets/image.png" />
+    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:site_name" content="itrust" />
+    <title>Itrust | Dashboard</title>
+</head>
+<body>
+    <nav class="flex justify-around items-center relative py-[17px]">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/logo.svg" alt="Itrust logo">
+        </a>
+        <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
+            <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
+                <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
+                <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
+                <li><a href="#" class="md:text-base text-xs">Savings</a></li>
+            </ul>
+            <div class="seco hidden md:flex gap-3">
+                <ul class="flex gap-2 items-center">
+                    <li>
+                        <select name="english" id="english" class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
+                            <option value="engusd">English | USD</option>
+                            <option value="engusd">French | EUR</option>
+                            <option value="engusd">German | EUR</option>
+                        </select>
+                    </li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet">Wallet</li>
+                </ul>
+                <div class="pro flex items-center gap-[10px]">
+                    <div class="img">
+                        <img src="./assets/notifications.svg" alt="notif">
+                    </div>
+                    <a href="./dashboard.html" class="p flex items-center gap-3">
+                        <img src="./assets/person.svg" alt="person">
+                        <select name="name" id="name" class="font-lufga text-[#505050]">
+                            <option value="Alexim">Alexim</option>
+                        </select>
+                    </a>
+                </div>
+            </div>
+            <img src="./assets/ham.svg" class="md:hidden" alt="">
+        </div>
+        <!-- </div> -->
+    </nav>
+
+    <div class="wrapper bg-[#F5F5FC] md:pb-[109px] md:px-[80px] md:pt-10">
+        <div class="navigation md:hidden flex p-4">
+            <div class="flex gap-6">
+                <p class="cursor-pointer active-nav">Watchlist</p>
+                <p class="inactive-nav cursor-pointer">Trade</p>
+            </div>
+        </div>
+        <div class="crypto flex gap-[22px] md:flex-row flex-col">
+            <div class="mark flex-col p-6 bg-white md:w-[847px] rounded-[10px]">
+                <div class="head flex justify-between">
+                    <div class="text flex flex-col gap-2">
+                        <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Watchlist</h2>
+                        <p class="font-fellix text-sm text-[#14233AB2]">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <p class="md:flex gap-2 items-center hidden font-fellixMedium text-[#8B98B1] px-3 py-2 rounded-[5px] border border-[#D7DCE4]">Add Coin <img src="./assets/non-plus.svg" alt=""></p>
+                </div>
+                <div class="wl pt-9 flex flex-col md:flex-row justify-between md:border-b border-b-[#D7DCE4] pb-7">
+                    <div class="l flex gap-3 items-center md:border-none border-b md:pb-0 border-[#D7DCE4] pb-4">
+                        <a href="./market.html">
+                            <select id="select" class="bg-[#F3F4F4] py-2 px-3 rounded-[5px] text-[#8B98B1] font-fellixMedium outline-none">
+                                <option value="crypto" class="bg-white text-[#505050] font-fellixBold text-sm">Crypto</option>
+                                <option value="stocks" class="bg-white text-[#505050] font-fellixBold text-sm">Stocks</option>
+                            </select>
+                        </a>
+                        <a class="px-3 py-2 font-fellixMedium text-white rounded-[5px] bg-periwinkle" href="#">Watchlist</a>
+                        <p class="border border-[#D7DCE4] py-2 px-4 rounded-[5px] text-[#8B98B1] font-fellixMedium">+</p>
+                    </div>
+                    <div class="w flex gap-1 items-center md:pt-0 pt-4 justify-between">
+                        <div class="inp relative">
+                            <img src="./assets/o-magnifier.svg" class="absolute left-[15px] top-1/3" alt="">
+                            <input type="text" name="" id="" class="md:w-[303px] w-[259px] border border-[#D7DCE4] pl-[42px] py-3 font-fellix text-sm text-[#8B98B1] rounded-[5px]" placeholder="Search & Trade">
+                        </div>
+                    </div>
+                </div>
+                <div class=" md:flex flex-col bg-white md:pt-5">
+                    <div class="flex justify-between">
+                        <p class="flex items-center gap-[3px] font-poppins text-xs text-[#14233A99]"># <img src="./assets/car-assets.svg" alt=""></p>
+                        <p class="md:flex hidden items-center gap-[3px] font-poppins text-xs text-[#14233A99]">Coin Name <img src="./assets/car-assets.svg" alt=""></p>
+                        <p class="flex items-center gap-[3px] font-poppins text-xs text-[#14233A99]">Coin Price<img src="./assets/car-assets.svg" alt=""></p>
+                        <p class="md:flex hidden items-center gap-[3px] font-poppins text-xs text-[#14233A99]">24%<img src="./assets/car-assets.svg" alt=""></p>
+                        <p class="md:flex hidden items-center gap-[3px] font-poppins text-xs text-[#14233A99]">24h High <img src="./assets/car-assets.svg" alt=""></p>
+                        <p class="flex items-center gap-[3px] font-poppins text-xs text-[#14233A99]">24h Low<img src="./assets/car-assets.svg" alt=""></p>
+                        <p class="flex items-center gap-[3px] font-poppins text-xs text-[#14233A99]">Chart<img src="./assets/car-assets.svg" alt=""></p>
+                    </div>
+                    <div class="border-b border-b-[#D7DCE4] pt-[18px]"></div>
+                    <div class="pt-4 flex justify-between">
+                        <div class="first flex flex-col gap-[27px]">
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                        </div>
+                        <div class="second hidden md:flex flex-col gap-[19px]">
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-btc.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px]">BTC</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            <div class="flex items-center gap-[10px]"><img src="./assets/asset-eth.svg" alt=""><p class="flex items-center gap-2 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                        </div>
+                        <div class="third flex flex-col gap-[19px]">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$45,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$45,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                        </div>
+                        <div class="fourth hidden md:flex flex-col gap-[19px]">
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                        </div>
+                        <div class="fifth hidden md:flex flex-col gap-[19px]">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$45,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                        </div>
+                        <div class="sixth flex flex-col gap-[19px]">
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$45,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                            <p class="font-fellixMedium flex flex-col text-[#979797]">$4,545.65</p>
+                        </div>
+                        <div class="seventh flex flex-col gap-[23px]">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                            <img src="./assets/graph.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="foot pt-8 flex-col md:flex-row gap-[18px] flex items-center justify-between">
+                        <p class="font-fellixMedium text-[#979797]">57 assets</p>
+                        <div class="sec flex gap-6 items-center">
+                            <div class="flex items-center">
+                                <img src="./assets/asset-back.svg" class="cursor-pointer" alt="">
+                                <div class="t flex items-center gap-3 font-poppins font-semibold text-sm text-[#979797]">
+                                    <p class="border border-[#E5E7EB] rounded-[6px] px-[18px] py-2 text-[#505050]">1</p>
+                                    <p>of</p>
+                                    <p>3</p>
+                                </div>
+                                <img src="./assets/asset-front.svg" class="cursor-pointer" alt="">
+                            </div>
+                            <p class="py-2 cursor-pointer px-[10px] border border-[#E5E7EB] rounded-[6px] font-poppins font-medium text-sm text-[#979797]">10 / page</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gain h-fit rounded-[10px]">
+                <div class="first">
+                    <div class="trade hidden top-32 md:static absolute rounded-[10px] bg-white px-5 pt-9 pb-9 h-fit w-full md:flex flex-col md:items-center">
+                        <div class="h flex text-[#14233AB2] w-full font-fellixMedium text-sm">
+                            <p class="pb-[19px] cursor-pointer w-full px-12 active-option text-center">Buy <span class="md:hidden">Tesla</span></p>
+                            <p class="pb-[19px] cursor-pointer w-full px-12 text-center">Sell <span class="md:hidden">Tesla</span></p>
+                        </div>
+                        <div class="t pt-6 flex flex-col gap-[19px]">
+                            <div class="radio-options">
+                                <form class="md:flex hidden items-center gap-4">
+                                    <div class="in flex gap-2 items-center active-radio w-full px-[14px] cursor-pointer py-[14px] rounded-[5px]">
+                                        <input type="radio" id="buy" name="trade" class="cursor-pointer" value="buy">
+                                        <img src="./assets/trade-flag.svg" alt="">
+                                        <label for="buy" class="text-[#14233A99] font-fellix text-sm">Stocks</label><br>
+                                    </div>
+                                    <div class="in flex gap-2 items-center inactive-radio w-full cursor-pointer px-[14px] py-[14px] rounded-[5px]">
+                                        <input type="radio" id="buy" name="trade" value="buy" class="cursor-pointer">
+                                        <img src="./assets/trade-flag.svg" alt="">
+                                        <label for="buy" class="text-[#14233A99] font-fellix text-sm">Crypto</label><br>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pairs hidden md:flex flex-col gap-[5px]">
+                                <label class="font-fellix text-sm text-[#979797]" for="pairs">Asset / Pairs</label>
+                                <div class="sele relative">
+                                    <img src="./assets/usdt.svg" alt="" class="absolute hidden md:flex left-[15px] top-[25%]">
+                                    <select name="btc" id="btc" class="border-[#DDE2EB] border rounded-[5px] w-full pl-4 md:pl-[49px] py-3 font-fellixMedium text-sm text-[#505050]">
+                                        <option value="btc">USDT/BTC</option>
+                                        <option value="sol">USDT/SOL</option>
+                                        <option value="eth">USDT/ETH</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="flex gap-[10px] items-center font-fellixMedium text-sm text-[#505050]"><img src="./assets/port-wallet.svg" alt="">$46,650.27</p>
+                            <div class="inpu flex flex-col gap-[5px]">
+                                <label for="amount" class="font-fellix text-sm text-[#979797]">Amount</label>
+                                <input type="text" class="border border-[#DDE2EB] rounded-[5px] pl-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
+                            </div>
+                            <div class="inpu flex flex-col gap-[5px]">
+                                <label for="amount" class="font-fellix text-sm text-[#979797]">Leverage</label>
+                                <select type="text" class="border border-[#DDE2EB] rounded-[5px] px-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
+                                    <option value="10x">10x</option>
+                                    <option value="10x">5x</option>
+                                    <option value="10x">20x</option>
+                                    <option value="10x">50x</option>
+                                    <option value="10x">100x</option>
+                                </select>
+                            </div>
+                            <div class="inpu flex flex-col gap-[5px]">
+                                <label for="entry" class="font-fellix text-sm text-[#979797]">Entry Point</label>
+                                <input type="text" class="border border-[#DDE2EB] rounded-[5px] pl-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
+                            </div>
+                            <div class="inpu flex flex-col gap-[5px]">
+                                <label for="take" class="font-fellix text-sm text-[#979797]">Take Profit</label>
+                                <input type="text" class="border border-[#DDE2EB] rounded-[5px] pl-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
+                            </div>
+                            <div class="inpu flex flex-col gap-[5px]">
+                                <label for="amount" class="font-fellix text-sm text-[#979797]">Stop Loss</label>
+                                <input type="text" class="border border-[#DDE2EB] rounded-[5px] pl-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
+                            </div>
+                        </div>
+                        <div class="buy flex flex-col pt-[50px] gap-[18px] justify-start w-full">
+                            <p class="font-fellix text-xs text-[#717579]">Total: (+Fee 0.2) 0.00</p>
+                            <button class="text-white font-fellixMedium py-3 rounded-[5px] bg-[#13B799] w-full">Buy</button>
+                        </div>
+                    </div>
+                    <div class="pending flex flex-col bg-white px-5 mt-[30px] py-8 rounded-[10px]">
+                        <div class="gainer-head flex">
+                            <p class="text-[#14233AB2] cursor-pointer pb-3 pr-10 md:pr-[30px] font-poppins font-semibold text-xs active-gain">Top Gainers</p>
+                            <p class="text-[#14233AB2] cursor-pointer pb-3 pr-10 md:pr-[30px] font-poppins font-semibold text-xs inactive-gain">Top Loser</p>
+                            <p class="text-[#14233AB2] cursor-pointer pb-3 font-poppins font-semibold text-xs inactive-gain">New In Market</p>
+                        </div>
+                        <h2 class="font-jakarta font-semibold pt-4 pb-[18px] text-sm text-[#4F4F4F]">Watchlist</h2>
+                        <div class="row flex justify-between">
+                            <p class="flex gap-[3px] items-center font-poppins text-xs text-[#14233A99]">Coin Name <img src="./assets/car-assets.svg" alt=""></p>
+                            <p class="flex gap-[3px] items-center font-poppins text-xs text-[#14233A99]">Coin Price <img src="./assets/car-assets.svg" alt=""></p>
+                            <p class="flex gap-[3px] items-center font-poppins text-xs text-[#14233A99]">24% <img src="./assets/car-assets.svg" alt=""></p>
+                        </div>
+                        <div class="row flex pt-5 justify-between">
+                            <div class="first flex flex-col gap-[17px]">
+                                <div class="flex items-center gap-2"><img src="./assets/asset-btc.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Bitcoin <span class="text-[10px]">BTC</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                                <div class="flex items-center gap-2"><img src="./assets/asset-eth.svg" alt=""><p class="flex text-sm items-center gap-1 font-fellixMedium text-[#979797]">Ethereum <span class="text-[10px]">ETh</span></p></div>
+                            </div>
+                            <div class="second flex flex-col gap-[21px]">
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$45,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                                <p class="font-fellixMedium text-sm flex flex-col text-[#979797]">$4,545.65</p>
+                            </div>
+                            <div class="third  flex flex-col gap-[17px]">
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                                <p class="font-fellixMedium text-[#2DC24E] flex items-center gap-1"><img src="./assets/green-caret.svg" alt="">1.12%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

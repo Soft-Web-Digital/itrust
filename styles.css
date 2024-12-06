@@ -230,3 +230,17 @@
 .active-gain{
     border-bottom: solid 2px #747ED1;
 }
+
+.active-gains{
+    border-bottom: solid 2px #13B799;
+}
+
+.pre-inactive-button{
+    background-color: #F3F4F4;
+    color: #8B98B1;
+}
+
+.pre-active-button{
+    background-color: #5156BE;
+    color: white;
+}
