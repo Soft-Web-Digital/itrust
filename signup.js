@@ -6,3 +6,16 @@ firstForm.addEventListener('submit', (e) => {
 })
 
 const passwords = document.querySelectorAll('.password');
+
+passwords.forEach((item) => {
+    const img = item.querySelector('img');
+    const input = item.querySelector('input');
+
+    img.addEventListener('click', () => {
+        if(input.type === 'password'){
+            input.type = 'text';
+        }else{
+            input.type = 'password';
+        }
+    })
+})
