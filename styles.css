@@ -69,10 +69,10 @@
 
 @font-face {
     font-family: "Fellix-Semibold";
-    src: url("./assets/fonts/Fellix-Semibold.ttf") format("truetype"),
-            url("./assets/fonts/Fellix-Semibold.woff") format("woff"),
-            url("./assets/fonts/Fellix-Semibold.woff2") format("woff2"),
-            url("./assets/fonts/Fellix-Semibold.eot") format("embedded-opentype");
+    src: url("./assets/fonts/Fellix-SemiBold.ttf") format("truetype"),
+            url("./assets/fonts/Fellix-SemiBold.woff") format("woff"),
+            url("./assets/fonts/Fellix-SemiBold.woff2") format("woff2"),
+            url("./assets/fonts/Fellix-SemiBold.eot") format("embedded-opentype");
 }
 
 @font-face {
