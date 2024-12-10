@@ -4,3 +4,5 @@ firstForm.addEventListener('submit', (e) => {
     e.preventDefault(); 
     window.location.href = 'signtwo.html';
 })
+
+const passwords = document.querySelectorAll('.password');
