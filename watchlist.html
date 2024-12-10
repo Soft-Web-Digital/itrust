@@ -24,16 +24,19 @@
 <body>
     <nav class="flex justify-around items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
-            <img src="./assets/logo.svg" alt="Itrust logo">
+            <img src="./assets/mobile-logo.svg" alt="Itrust logo" class="md:hidden">
+            <img src="./assets/logo.svg" class="hidden md:flex" alt="">
         </a>
         <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
-                <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
-                <li><a href="#" class="md:text-base text-xs">Savings</a></li>
+                <li><a href="./market.html" class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Market</a></li>
+                <li><a href="./savings.html" class="md:text-base text-xs">Savings</a></li>
             </ul>
             <div class="seco hidden md:flex gap-3">
                 <ul class="flex gap-2 items-center">
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a></li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
                     <li>
                         <select name="english" id="english" class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
                             <option value="engusd">English | USD</option>
@@ -41,8 +44,6 @@
                             <option value="engusd">German | EUR</option>
                         </select>
                     </li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet">Wallet</li>
                 </ul>
                 <div class="pro flex items-center gap-[10px]">
                     <div class="img">
@@ -75,15 +76,16 @@
                         <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Watchlist</h2>
                         <p class="font-fellix text-sm text-[#14233AB2]">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
-                    <p class="md:flex gap-2 items-center hidden font-fellixMedium text-[#8B98B1] px-3 py-2 rounded-[5px] border border-[#D7DCE4]">Add Coin <img src="./assets/non-plus.svg" alt=""></p>
+                    <p class="md:flex gap-2 items-center hidden font-fellixMedium text-[#8B98B1] px-3 py-2 max-h-[40px] rounded-[5px] border border-[#D7DCE4]">Add Coin <img src="./assets/non-plus.svg" alt=""></p>
                 </div>
                 <div class="wl pt-9 flex flex-col md:flex-row justify-between md:border-b border-b-[#D7DCE4] pb-7">
                     <div class="l flex gap-3 items-center md:border-none border-b md:pb-0 border-[#D7DCE4] pb-4">
-                        <a href="./market.html">
-                            <select id="select" class="bg-[#F3F4F4] py-2 px-3 rounded-[5px] text-[#8B98B1] font-fellixMedium outline-none">
+                        <a href="./market.html" class="relative">
+                            <select id="select" class="bg-[#F3F4F4] appearance-none py-2 pr-[35px] px-3 rounded-[5px] text-[#8B98B1] font-fellixMedium outline-none">
                                 <option value="crypto" class="bg-white text-[#505050] font-fellixBold text-sm">Crypto</option>
                                 <option value="stocks" class="bg-white text-[#505050] font-fellixBold text-sm">Stocks</option>
                             </select>
+                            <img src="./assets/gray-select.svg" class="absolute right-3 top-1/3" alt="">
                         </a>
                         <a class="px-3 py-2 font-fellixMedium text-white rounded-[5px] bg-periwinkle" href="#">Watchlist</a>
                         <p class="border border-[#D7DCE4] py-2 px-4 rounded-[5px] text-[#8B98B1] font-fellixMedium">+</p>
@@ -108,18 +110,18 @@
                     <div class="border-b border-b-[#D7DCE4] pt-[18px]"></div>
                     <div class="pt-4 flex justify-between">
                         <div class="first flex flex-col gap-[27px]">
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
                             <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
                             <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
                             <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
-                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
+                            <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/star.svg" alt=""><span class="text-xs">1</span></p></div>
                             <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
                             <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
                             <div class="flex items-center gap-[10px]"><p class="flex items-center gap-2 font-fellixMedium text-[#979797]"><img class="star cursor-pointer" src="./assets/unstar.svg" alt=""><span class="text-xs">1</span></p></div>
@@ -380,12 +382,12 @@
                         <div class="t pt-6 flex flex-col gap-[19px]">
                             <div class="radio-options">
                                 <form class="md:flex hidden items-center gap-4">
-                                    <div class="in flex gap-2 items-center active-radio w-full px-[14px] cursor-pointer py-[14px] rounded-[5px]">
+                                    <div class="in flex gap-2 items-center max-h-[46px] active-radio w-full px-[14px] cursor-pointer py-[14px] rounded-[5px]">
                                         <input type="radio" id="buy" name="trade" class="cursor-pointer" value="buy">
                                         <img src="./assets/trade-flag.svg" alt="">
                                         <label for="buy" class="text-[#14233A99] font-fellix text-sm">Stocks</label><br>
                                     </div>
-                                    <div class="in flex gap-2 items-center inactive-radio w-full cursor-pointer px-[14px] py-[14px] rounded-[5px]">
+                                    <div class="in flex gap-2 items-center inactive-radio max-h-[46px] w-full cursor-pointer px-[14px] py-[14px] rounded-[5px]">
                                         <input type="radio" id="buy" name="trade" value="buy" class="cursor-pointer">
                                         <img src="./assets/trade-flag.svg" alt="">
                                         <label for="buy" class="text-[#14233A99] font-fellix text-sm">Crypto</label><br>
@@ -396,11 +398,14 @@
                                 <label class="font-fellix text-sm text-[#979797]" for="pairs">Asset / Pairs</label>
                                 <div class="sele relative">
                                     <img src="./assets/usdt.svg" alt="" class="absolute hidden md:flex left-[15px] top-[25%]">
-                                    <select name="btc" id="btc" class="border-[#DDE2EB] border rounded-[5px] w-full pl-4 md:pl-[49px] py-3 font-fellixMedium text-sm text-[#505050]">
-                                        <option value="btc">USDT/BTC</option>
-                                        <option value="sol">USDT/SOL</option>
-                                        <option value="eth">USDT/ETH</option>
-                                    </select>
+                                    <div class="relative">
+                                        <select name="btc" id="btc" class="border-[#DDE2EB] appearance-none border rounded-[5px] w-full pl-4 md:pl-[49px] py-3 font-fellixMedium text-sm text-[#505050]">
+                                            <option value="btc">USDT/BTC</option>
+                                            <option value="sol">USDT/SOL</option>
+                                            <option value="eth">USDT/ETH</option>
+                                        </select>
+                                        <img src="./assets/gray-select.svg" class="absolute right-5 top-1/3" alt="">
+                                    </div>
                                 </div>
                             </div>
                             <p class="flex gap-[10px] items-center font-fellixMedium text-sm text-[#505050]"><img src="./assets/port-wallet.svg" alt="">$46,650.27</p>
@@ -410,13 +415,16 @@
                             </div>
                             <div class="inpu flex flex-col gap-[5px]">
                                 <label for="amount" class="font-fellix text-sm text-[#979797]">Leverage</label>
-                                <select type="text" class="border border-[#DDE2EB] rounded-[5px] px-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
-                                    <option value="10x">10x</option>
-                                    <option value="10x">5x</option>
-                                    <option value="10x">20x</option>
-                                    <option value="10x">50x</option>
-                                    <option value="10x">100x</option>
-                                </select>
+                                <div class="relative">
+                                    <select type="text" class="border appearance-none w-full border-[#DDE2EB] rounded-[5px] px-4 py-3 outline-none font-fellixMedium text-sm text-[#212325]">
+                                        <option value="10x">10x</option>
+                                        <option value="10x">5x</option>
+                                        <option value="10x">20x</option>
+                                        <option value="10x">50x</option>
+                                        <option value="10x">100x</option>
+                                    </select>
+                                    <img src="./assets/gray-select.svg" class="absolute right-4 top-1/3" alt="">
+                                </div>
                             </div>
                             <div class="inpu flex flex-col gap-[5px]">
                                 <label for="entry" class="font-fellix text-sm text-[#979797]">Entry Point</label>

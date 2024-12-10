@@ -28,9 +28,9 @@
         </a>
         <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
-                <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
-                <li><a href="./watchlist.html" class="md:text-base text-xs">Watchlist</a></li>
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
+                <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
+                <li><a href="./savings.html" class="md:text-base text-xs">Savings</a></li>
             </ul>
             <div class="seco hidden md:flex gap-3">
                 <ul class="flex gap-2 items-center">
@@ -41,8 +41,8 @@
                             <option value="engusd">German | EUR</option>
                         </select>
                     </li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet">Wallet</li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a></li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Wallet</a></li>
                 </ul>
                 <div class="pro flex items-center gap-[10px]">
                     <div class="img">
@@ -61,13 +61,13 @@
         <!-- </div> -->
     </nav>
 
-    <div class="wrapper bg-[#F5F5FC] md:pt-11 gap-9 md:pb-[132px] flex justify-center">
+    <div class="wrapper bg-[#F5F5FC] md:pt-11 pt-[10px] gap-9 md:pb-[132px] flex justify-center">
         <section class="bar bg-white rounded-[10px] flex flex-col h-min w-[394px] gap-6 px-6 pt-[50px] pb-9">
-            <div class="header flex flex-col gap-6 items-center">
-                <div class="img"><img src="./assets/big-person.svg" alt="person"></div>
+            <div class="header flex flex-col gap-4 md:gap-6 items-center md:border-0 md:pb-0 border-b border-b-[#F0F0F0] pb-[18px]">
+                <div class="img"><img src="./assets/big-person.svg" class="w-[68px] md:w-full" alt="person"></div>
                 <div class="text text-center">
-                    <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Allie Grater</h2>
-                    <p class="font-fellixMedium text-[#505050CC]">AllieGrater1234131@</p>
+                    <h2 class="font-fellixSemiBold md:text-2xl text-xl text-[#14233ACC]">Allie Grater</h2>
+                    <p class="font-fellixMedium md:text-base text-sm text-[#505050CC]">AllieGrater1234131@</p>
                 </div>
             </div>
             <div class="lis flex flex-col gap-[28px] md:gap-[318px]">
@@ -82,35 +82,35 @@
             </div>
         </section>
 
-        <section class="profile hidden absolute md:static flex-col gap-9 rounded-[10px] w-screen md:w-[724px] py-8 px-4 md:px-10 bg-white">
+        <section class="profile absolute md:static flex-col md:gap-9 rounded-[10px] w-screen md:w-[724px] py-8 px-4 md:px-10 bg-white">
             <div class="head flex justify-between">
-                <h2 class="font-fellixBold text-2xl text-[#14233ACC]">My Profile</h2>
+                <div class="flex flex-col gap-4">
+                    <div class="flex md:hidden go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
+                    <h2 class="md:font-fellixBold font-fellixSemiBold text-base md:text-2xl text-[#14233ACC]">My Profile</h2>
+                </div>
                 <div class="edit-button relative top-[13px]">
                     <button class="flex gap-2 font-fellixMedium text-[#8B98B1] border border-[#D7DCE4] py-2 px-3 rounded-[5px]">Edit <img src="./assets/edit-s.svg" alt="edit"></button>
                 </div>
             </div>
             <div class="inputs">
                 <div class="section flex flex-col gap-4">
-                    <div class="cursor-pointer flex flex-col gap-[18px]">
-                        <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
-                        <h2 class="font-fellixBold text-base md:text-2xl text-[#14233ACC]">Security</h2>
-                    </div>
+                    <h2 class="font-fellixMedium text-sm pt-6 md:text-base text-[#14233ACC]">Personal Information</h2>
                     <div class="input flex flex-wrap gap-[38px] font-fellix text-sm text-[#979797]">
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="fname">First Name</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="lname">Last Name</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="email">Email</label>
-                            <input type="email" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="email" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="uname">Username</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                     </div>
 
@@ -118,27 +118,27 @@
                     <div class="input flex flex-wrap gap-[38px] font-fellix text-sm text-[#979797]">
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="tel">Phone Number</label>
-                            <input type="tel" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="tel" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="addy">Resident Address</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="country">Country</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="state">State</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="city">City</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="zip">Zipcode</label>
-                            <input type="number" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="number" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                     </div>
 
@@ -146,22 +146,22 @@
                     <div class="input flex flex-wrap gap-[38px] font-fellix text-sm text-[#979797]">
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="secNumber">Social security Number/Identity number</label>
-                            <input type="tel" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="tel" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="dob">Date of Birth</label>
-                            <input type="date" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="date" class="border border-[#DDE2EB] w-[380px] md:w-full md:h-auto h-12 outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="nationality">Nationality</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                         <div class="in flex flex-col gap-1 w-full md:w-[303px]">
                             <label for="currency">Currency</label>
-                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-4 rounded-[5px] text-[#505050]">
+                            <input type="text" class="border border-[#DDE2EB] outline-none pl-4 py-3 rounded-[5px] text-[#505050]">
                         </div>
                     </div>
-                    <div class="end-buttons pt-[25px] flex justify-end gap-6">
+                    <div class="end-buttons pt-[25px] flex justify-start md:justify-end gap-6">
                         <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
                         <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
                     </div>
@@ -207,26 +207,26 @@
                 <div class="flex gap-[38px] pb-[27px] pt-[33px] flex-wrap">
                     <div class="in flex font-fellix w-full md:w-[303px] md:min-w-[645px] text-sm text-[#979797] flex-col gap-1">
                         <label for="oldp">Old Password</label>
-                        <input type="password" class="border border-[#DDE2EB] pl-4 py-4 outline-none rounded-[5px]">
+                        <input type="password" class="border border-[#DDE2EB] pl-4 py-3 outline-none rounded-[5px]">
                     </div>
                     <div class="in w-full md:w-[303px] flex font-fellix text-sm text-[#979797] flex-col gap-1">
                         <label for="oldp">New Password</label>
-                        <input type="password" class="border border-[#DDE2EB] pl-4 py-4 outline-none rounded-[5px]">
+                        <input type="password" class="border border-[#DDE2EB] pl-4 py-3 outline-none rounded-[5px]">
                     </div>
                     <div class="in w-full md:w-[303px] flex font-fellix text-sm text-[#979797] flex-col gap-1">
                         <label for="oldp">Re-enter Password</label>
-                        <input type="password" class="border border-[#DDE2EB] pl-4 py-4 outline-none rounded-[5px]">
+                        <input type="password" class="border border-[#DDE2EB] pl-4 py-3 outline-none rounded-[5px]">
                     </div>
                 </div>
                 <p class="font-fellixMedium text-sm text-[#505050CC] pb-[29px]">To ensure your account is well protected, please use 8 or more characters with a mix of letters, numbers & symbols.</p>
             </div>
-            <div class="buttso pt-[25px] flex justify-end gap-6">
+            <div class="buttso pt-[25px] flex justify-start md:justify-end gap-6">
                 <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
                 <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
             </div>
         </section>
 
-        <section class="notification md:w-[724px] md:static h-screen gap-[52px] absolute w-screen flex-col hidden rounded-[10px] px-10 py-8 bg-white">
+        <section class="notification md:w-[724px] md:static h-screen gap-5 md:gap-[52px] absolute w-screen flex-col hidden rounded-[10px] md:px-10 px-4 py-4 md:py-8 bg-white">
             <div class="head flex justify-between">
                 <div class="cursor-pointer flex flex-col gap-[18px]">
                     <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
@@ -267,7 +267,7 @@
             </div>
         </section>
 
-        <section class="currency w-screen md:static absolute h-screen md:w-[724px] gap-[52px] flex-col md:h-min hidden rounded-[10px] px-10 py-8 bg-white">
+        <section class="currency w-screen md:static absolute h-screen md:w-[724px] gap-5 md:gap-[52px] flex-col md:h-min hidden rounded-[10px] md:px-10 p-4 md:py-8 bg-white">
             <div class="head flex justify-between">
                 <div class="cursor-pointer flex flex-col gap-[18px]">
                     <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
@@ -287,13 +287,13 @@
                     <img src="./assets/blurcaret.svg" alt="">
                 </div>
             </div>
-            <div class="buttso pt-[25px] flex justify-end gap-6">
+            <div class="buttso pt-5 md:pt-[25px] flex justify-start md:justify-end gap-6">
                 <button class="px-8 py-[14px] border border-periwinkle text-periwinkle font-fellixMedium rounded-[5px]">Cancel</button>
                 <button class="save font-fellixMedium text-white px-8 py-[14px] bg-periwinkle rounded-[5px]">Save Changes</button>
             </div>
         </section>
 
-        <section class="kyc md:w-[724px] flex-col md:h-min hidden md:static absolute h-screen w-screen rounded-[10px] px-10 py-8 bg-white">
+        <section class="kyc md:w-[724px] flex-col md:h-min hidden md:static absolute h-screen w-screen rounded-[10px] md:px-10 p-4 md:py-8 bg-white">
             <div class="head flex justify-between">
                 <div class="cursor-pointer flex flex-col gap-[18px]">
                     <div class="flex go-back items-center gap-[9px] font-fellix text-xs text-[#526179]"><img src="./assets/back.svg" alt="">Go Back</div>
@@ -321,7 +321,7 @@
                 <div class="up flex justify-center gap-[19px] md:gap-0 md:justify-between pt-[14px] flex-wrap">
                     <div class="load flex flex-col gap-[14px]">
                         <label for="front" class="font-fellixMedium text-[#979797]">Identify Document Front Side</label>
-                        <div class="file-upload-container relative flex flex-col items-center justify-center w-full max-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
+                        <div class="file-upload-container relative flex flex-col items-center justify-center min-w-[38  0px] md:max-w-[317px] md:min-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
                             <label for="file-upload" class="text-center">
                               <p class="font-fellixMedium text-[#212325B2]">Drop your File upload or Browse</p>
                               <small class="block font-fellixMedium text-xs text-[#50505080] mt-2">Maximum size of image 1MB</small>
@@ -331,7 +331,7 @@
                     </div>
                     <div class="load flex flex-col gap-[14px]">
                         <label for="front" class="font-fellixMedium text-[#979797]">Identify Document Back Side</label>
-                        <div class="file-upload-container relative flex flex-col items-center justify-center w-full max-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
+                        <div class="file-upload-container relative flex flex-col items-center justify-center min-w-[38  0px] md:max-w-[317px] md:min-w-[316px] border-2 border-dashed border-[#DDE2EB] rounded-[10px] bg-[#E6E9F24D] py-10 cursor-pointer hover:border-gray-500 transition">
                             <label for="file-upload" class="text-center">
                               <p class="font-fellixMedium text-[#212325B2]">Drop your File upload or Browse</p>
                               <small class="block font-fellixMedium text-xs text-[#50505080] mt-2">Maximum size of image 1MB</small>

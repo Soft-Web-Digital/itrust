@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="by theactualdev!">
     <link rel="stylesheet" href="./output.css">
-    <script src="./script.js" defer></script>
+    <script src="./signup.js" defer></script>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@theactualdev">
     <meta name="twitter:site" content="@theactualdev">
@@ -22,7 +22,7 @@
     <title>Itrust | Sign In</title>
 </head>
 <body>
-    <nav class="flex justify-around items-center relative py-[17px]">
+    <nav class="flex justify-between md:px-[100px] px-4 items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
             <img src="./assets/logo.svg" alt="Itrust logo">
         </a>
@@ -49,12 +49,12 @@
                 </ul>
                 <img src="./assets/ham.svg" class="md:hidden ham" alt="Ham menu">
             </div>
-            <button class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</button>
+            <a href="./signin.html" class="font-inter text-white font-bold py-[10px] px-4 bg-periwinkle rounded-[5px]">Sign In</a>
         </div>
     </nav>
 
     <section class="form bg-[#F5F5FC] flex justify-center">
-        <form class="flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center md:w-[826px] gap-[35px] bg-white w-fit">
+        <form id="f-form" class="f-form flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center md:w-[826px] gap-[35px] bg-white w-fit">
             <div class="header flex flex-col items-center border-b w-full border-b-[#F0F0F0] pb-[28px]">
                 <h2 class="font-fellixExtraBold text-[28px] text-[#14233A]">Create an Account</h2>
                 <p class="font-fellix text-sm text-desaturatedBlue">Provide your information to create an itrust account</p>
@@ -63,36 +63,39 @@
                 <div class="inp flex md:flex-row flex-col items-center justify-center flex-wrap gap-[30px]">
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">First Name</label>
-                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="Enter first name">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Enter first name">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">Last Name</label>
-                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="Enter last name">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Enter last name">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">Email Address</label>
-                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="Enter email address">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Enter email address">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">Username</label>
-                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="text" placeholder="Johndoe">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Johndoe">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="password">Password</label>
                         <div class="password relative">
-                            <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="password" placeholder="*********">
+                            <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="password" placeholder="*********">
                             <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="password">Confirm Password</label>
                         <div class="password relative">
-                            <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-4 rounded-[5px]" type="password" placeholder="*********">
+                            <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="password" placeholder="*********">
                             <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
                         </div>
                     </div>
                 </div>
-                <a href="./signtwo.html" type="submit" class="text-[#DDDDE1] text-center font-fellixSemiBold py-3 bg-periwinkle opacity-50 rounded-[5px]">Next</a>
+                <div class="flex flex-col gap-[15px] items-center">
+                    <button type="submit" class="w-full text-[#DDDDE1] text-center font-fellixSemiBold py-3 hover:opacity-100 bg-periwinkle opacity-50 rounded-[5px]">Next</button>
+                    <p class="md:flex hidden text-center font-fellixMedium text-sm text-[#526179]">Already have an account? <a class="text-periwinkle underline" href="./signin.html">Sign in</a></p>
+                </div>
             </div>
             <div class="p flex gap-[19px] items-center w-full">
                 <div class="border bg-[#DDE2EB] w-full h-px"></div>
@@ -110,7 +113,7 @@
         </form>
     </section>
 
-    <footer class="flex flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
+    <footer class="md:flex hidden flex-col gap-[30px] mx-4 md:mx-[100px] pt-11">
         <div class="logo">
             <img src="./assets/footer-logo.svg" alt="Logo">
         </div>

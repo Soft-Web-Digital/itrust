@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="by theactualdev!">
     <link rel="stylesheet" href="./output.css">
-    <script src="./script.js" defer></script>
+    <script src="./signin.js" defer></script>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@theactualdev">
     <meta name="twitter:site" content="@theactualdev">
@@ -54,7 +54,7 @@
     </nav>
 
     <section class="form bg-[#F5F5FC] flex justify-center">
-        <form class="flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center gap-[35px] bg-white w-fit">
+        <form id="s-form" class="s-form flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center gap-[35px] bg-white w-fit">
             <div class="header flex flex-col items-center border-b w-full border-b-[#F0F0F0] pb-[28px]">
                 <h2 class="font-fellixExtraBold text-[28px] text-[#14233A]">Sign in</h2>
                 <p class="font-fellix text-sm text-desaturatedBlue">Sign in to access your account</p>
@@ -62,17 +62,17 @@
             <div class="inputs flex flex-col gap-5">
                 <div class="input flex flex-col gap-3">
                     <label class="font-fellix text-sm text-desaturatedBlue" for="email">Email Address</label>
-                    <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[375px] py-4 rounded-[5px]" type="text" placeholder="Enter email address">
+                    <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[375px] py-4 rounded-[5px]" type="text" placeholder="Enter email address">
                 </div>
                 <div class="input flex flex-col gap-3">
                     <label class="font-fellix text-sm text-desaturatedBlue" for="password">Password</label>
                     <div class="password relative">
-                        <input class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[375px] py-4 rounded-[5px]" type="password" placeholder="*********">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[375px] py-4 rounded-[5px]" type="password" placeholder="*********">
                         <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
                     </div>
                 </div>
                 <a href="./signup.html" class="text-periwinkle underline font-fellixMedium text-sm text-right">Forgot password?</a>
-                <button type="submit" class="text-[#DDDDE1] font-fellixSemiBold py-3 bg-periwinkle opacity-50 rounded-[5px]">Sign in</button>
+                <button type="submit" class="text-[#DDDDE1] font-fellixSemiBold hover:opacity-100 py-3 bg-periwinkle opacity-50 rounded-[5px]">Sign in</button>
             </div>
             <div class="p flex gap-[19px] items-center w-full">
                 <div class="border bg-[#DDE2EB] w-full h-px"></div>

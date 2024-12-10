@@ -107,18 +107,54 @@ options.forEach(item => {
     })
 })
 
-const radioOptions = document.querySelector('.radio-options form');
-const radios = radioOptions.querySelectorAll('.in');
+// const radioOptions = document.querySelector('.radio-options form');
+// const radios = radioOptions.querySelectorAll('.in');
 
-radios.forEach(item => {
-    // item.classList.remove('active-radio');
+// radios.forEach(item => {
+//     // item.classList.remove('active-radio');
+//     item.addEventListener(('click'), () => {
+//         radios.forEach(t => {
+//             t.classList.remove('active-radio');
+//             t.classList.add('inactive-radio');
+//         });
+//         item.classList.add('active-radio');
+//         item.classList.remove('inactive-radio');
+//     })
+// })
+
+const tradeList = document.getElementById('act-trades');
+const tradeItems = tradeList.querySelectorAll('p');
+const chart = document.getElementById('on-chart');
+const stocksSec =  document.getElementById('stock');
+const tradeSec = document.getElementById('tradeSec');
+
+tradeItems.forEach((item) => {
     item.addEventListener(('click'), () => {
-        radios.forEach(t => {
-            t.classList.remove('active-radio');
-            t.classList.add('inactive-radio');
-        });
-        item.classList.add('active-radio');
-        item.classList.remove('inactive-radio');
+        tradeItems.forEach((item) => {
+            item.classList.remove('active-trade')
+            item.classList.add('inactive-trade')
+        })
+        item.classList.add('active-trade')
+        item.classList.remove('inactive-trade')
     })
 })
 
+tradeItems.forEach((item) => {
+    item.addEventListener(('click'), () => {
+        const sections = [stocksSec, chart, tradeSec];
+        sections.forEach((section) => {
+            section.classList.add('hidden');
+            section.classList.remove('flex');
+        })
+        if(item.textContent === 'Market Stats'){
+            stocksSec.classList.remove('hidden');
+            stocksSec.classList.add('flex');
+        }else if(item.textContent === 'Charts'){
+            chart.classList.remove('hidden');
+            chart.classList.add('flex');
+        }else if(item.textContent === 'Trade'){
+            tradeSec.classList.remove('hidden');
+            tradeSec.classList.add('flex');
+        }
+    })
+})

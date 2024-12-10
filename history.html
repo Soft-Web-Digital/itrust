@@ -29,11 +29,13 @@
         <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
-                <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
+                <li><a href="./market.html" class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Market</a></li>
                 <li><a href="./savings.html" class="md:text-base text-xs">Savings</a></li>
             </ul>
             <div class="seco hidden md:flex gap-3">
                 <ul class="flex gap-2 items-center">
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a></li>
+                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a></li>
                     <li>
                         <select name="english" id="english" class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
                             <option value="engusd">English | USD</option>
@@ -41,8 +43,6 @@
                             <option value="engusd">German | EUR</option>
                         </select>
                     </li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock">Trade history</li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet">Wallet</li>
                 </ul>
                 <div class="pro flex items-center gap-[10px]">
                     <div class="img">
@@ -65,16 +65,16 @@
         <div class="trade-history bg-white px-5 py-6 rounded-[10px]">
             <div class="head flex justify-between items-center">
                 <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">History</h2>
-                <div class="input relative">
+                <div class="input hidden md:flex flex-col relative">
                     <img src="./assets/o-magnifier.svg" alt="" class="absolute left-3 top-[37%]">
                     <input type="text" class="md:w-[303px] pl-[42px] border border-[#D7DCE4] rounded-[5px] font-fellix text-sm text-[#8B98B1] py-4" placeholder="Search by date">
                 </div>
             </div>
             <div class="pt-9 flex items-center justify-between">
                 <div class="lis switch flex gap-[34px] border-b border-b-[#D7DCE4]">
-                    <p class="font-poppins text-xs cursor-pointer text-[#14233AB2] active-history pb-3">Trade History</p>
-                    <p class="font-poppins text-xs cursor-pointer text-[#14233AB2] pb-3">Transaction History</p>
-                    <p class="font-poppins text-xs cursor-pointer text-[#14233AB2] pb-3">Savings History</p>
+                    <p class="font-poppins font-semibold text-xs cursor-pointer text-[#14233AB2] active-history pb-3">Trade History</p>
+                    <p class="font-poppins font-semibold text-xs cursor-pointer text-[#14233AB2] pb-3">Transaction History</p>
+                    <p class="font-poppins font-semibold text-xs cursor-pointer text-[#14233AB2] pb-3">Savings History</p>
                 </div>
                 <div class="select hidden md:flex relative">
                     <img src="./assets/a-month.svg" class="absolute md:flex hidden top-[20%] left-3" alt="">
@@ -101,7 +101,7 @@
                     <input type="text" placeholder="Search by date" class="md:w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
                 </div>
                 <div class="select relative">
-                    <img src="./assets/a-month.svg" class="absolute md:flex hidden top-[20%] left-3" alt="">
+                    <img src="./assets/a-month.svg" class="absolute top-[20%] left-3" alt="">
                     <select name="month" id="month" class="border font-poppins font-medium text-[#8B98B1] border-[#D7DCE4] pl-[45px] py-2 rounded-[5px]">
                         <option value="default">Month</option>
                         <option value="january">January</option>
@@ -368,42 +368,42 @@
                             <p class="font-fellix text-xs text-[#979797]">$4,515 <span class="text-[#2DC24E]">(+24%)</span></p>
                         </div>
                     </div>
-                    <div class="flex md:hidden flex-col gap-5">
+                    <div class="flex flex-col gap-5">
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#FD5353] bg-[#F7D5D5] px-3 py-1 rounded-[5px]"> Cancelled</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden  text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                         <div class="flex flex-col gap-[5px] items-center">
                             <p class="font-poppins text-[10px] text-[#3AB67A] bg-[#E2F2FF] px-3 py-1 rounded-[5px]">Completed</p>
-                            <p class="font-fellix text-xs text-[#979797]">Feb 02, 2024</p>
+                            <p class="font-fellix md:hidden text-xs text-[#979797]">Feb 02, 2024</p>
                         </div>
                     </div>
                 </div>

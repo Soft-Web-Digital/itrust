@@ -2,7 +2,7 @@ const timeframe = document.querySelector('.timeframe');
 const time = timeframe.querySelectorAll('p');
 
 time.forEach(item => {
-    item.classList.remove('active-time');
+    // item.classList.remove('active-time');
     item.addEventListener('click', () => {
         time.forEach(t => {
             t.classList.remove('active-time');
@@ -79,7 +79,7 @@ navItems.forEach((item) => {
         } else if(item.textContent === 'Trade'){
             trade.classList.add('flex');
             trade.classList.remove('hidden');
-        } else if(item.textContent === 'Pending Trades'){
+        } else if(item.textContent === 'Holdings'){
             pending.classList.add('flex');
             pending.classList.remove('hidden');
         }
