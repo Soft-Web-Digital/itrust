@@ -283,3 +283,7 @@ select, input[type="date"]{
     font-family: 'Fellix';
     color: #526179CC;
 }
+
+.fellixSemiBold{
+    font-family: 'Fellix-Semibold' !important;
+}
