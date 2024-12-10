@@ -9,3 +9,15 @@ form.addEventListener('submit', (e) => {
         window.location.href = 'dashboard.html';
     }
 })
+
+const pass = document.getElementById('password');
+const passImg = pass.querySelector('img')
+const passInput = pass.querySelector('input');
+
+passImg.addEventListener('click', () => {
+    if(passInput.type === 'password'){
+        passInput.type = 'text';
+    }else{
+        passInput.type = 'password';
+    }
+})

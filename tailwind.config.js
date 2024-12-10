@@ -8,7 +8,7 @@ module.exports = {
         fellixBold: ['Fellix-Bold', 'sans-serif'],
         fellixMedium: ['Fellix-Medium', 'sans-serif'],
         fellixLight: ['Fellix-Light', 'sans-serif'],
-        fellixSemiBold: ['Fellix-SemiBold', 'sans-serif'],
+        fellixSemiBold: ['Fellix-Semibold', 'sans-serif'],
         fellixExtraBold: ['Fellix-ExtraBold', 'sans-serif'],
         fellixMediumItalic: ['Fellix-Medium-Italic', 'sans-serif'],
         fellixLightItalic: ['Fellix-Light-Italic', 'sans-serif'],
