@@ -24,16 +24,17 @@
 <body>
     <nav class="flex justify-around items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
-            <img src="./assets/logo.svg" alt="Itrust logo">
+            <img src="./assets/logo.svg" alt="Itrust logo" class="md:flex hidden">
+            <img src="./assets/mobile-logo.svg" class="md:hidden" alt="">
         </a>
         <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
-                <li><a href="./market.html" class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Market</a></li>
+                <li><a href="./market.html" class="md:text-base md:text-[#122A44] text-periwinkle after:w-[20px] after:h-1 md:after:bg-[#122A44] after:bg-periwinkle after:absolute relative after:left-1/3 after:-bottom-4 after:rounded-[8px]  text-xs">Market</a></li>
                 <li><a href="./savings.html" class="md:text-base text-xs">Savings</a></li>
             </ul>
-            <div class="seco hidden md:flex gap-3">
-                <ul class="flex gap-2 items-center">
+            <div class="secoss hidden absolute md:static top-10 left-10 md:pt-0 md:pl-0 pt-10 pl-10 md:flex md:flex-row flex-col md:bg-transparent bg-white md:w-auto md:h-auto w-screen h-screen md:gap-3">
+                <ul class="flex md:flex-row flex-col items-start gap-10 md:gap-2 md:items-center">
                     <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a></li>
                     <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a></li>
                     <li>
@@ -44,7 +45,7 @@
                         </select>
                     </li>
                 </ul>
-                <div class="pro flex items-center gap-[10px]">
+                <div class="pro flex md:pt-0 md:flex-row flex-col gap-10 items-start pt-10 md:items-center md:gap-[10px]">
                     <div class="img">
                         <img src="./assets/notifications.svg" alt="notif">
                     </div>
@@ -56,7 +57,7 @@
                     </a>
                 </div>
             </div>
-            <img src="./assets/ham.svg" class="md:hidden" alt="">
+            <img src="./assets/ham.svg" id="ham-menu" class="md:hidden" alt="">
         </div>
         <!-- </div> -->
     </nav>

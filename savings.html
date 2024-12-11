@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="by theactualdev!">
     <link rel="stylesheet" href="./output.css">
-    <script src="./history.js" defer></script>
+    <script src="./savings.js" defer></script>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@theactualdev">
     <meta name="twitter:site" content="@theactualdev">
@@ -21,7 +21,7 @@
     <meta property="og:site_name" content="itrust" />
     <title>Itrust | Dashboard</title>
 </head>
-<body>
+<body class="relative">
     <nav class="flex justify-around items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
             <img src="./assets/logo.svg" alt="Itrust logo" class="md:flex hidden">
@@ -31,10 +31,10 @@
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
                 <li><a href="./market.html" class="md:text-base text-xs">Market</a></li>
-                <li><a href="./savings.html" class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Savings</a></li>
+                <li><a href="./savings.html" class="md:text-base md:text-[#122A44] text-periwinkle after:w-[20px] after:h-1 md:after:bg-[#122A44] after:bg-periwinkle after:absolute relative after:left-1/3 after:-bottom-4 after:rounded-[8px]  text-xs">Savings</a></li>
             </ul>
-            <div class="secos hidden md:flex md:flex-row flex-col gap-3">
-                <ul class="flex gap-2 items-center">
+            <div class="secoss hidden absolute md:static top-10 left-10 md:pt-0 md:pl-0 pt-10 pl-10 md:flex md:flex-row flex-col md:bg-transparent bg-white md:w-auto md:h-auto w-screen h-screen md:gap-3">
+                <ul class="flex md:flex-row flex-col items-start gap-10 md:gap-2 md:items-center">
                     <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a></li>
                     <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a></li>
                     <li>
@@ -45,7 +45,7 @@
                         </select>
                     </li>
                 </ul>
-                <div class="pro flex items-center gap-[10px]">
+                <div class="pro flex md:pt-0 md:flex-row flex-col gap-10 items-start pt-10 md:items-center md:gap-[10px]">
                     <div class="img">
                         <img src="./assets/notifications.svg" alt="notif">
                     </div>
@@ -72,7 +72,7 @@
                     </div>
                     <a href="./open.html" class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Open an Account</a>
                 </div>
-                <div class="balances md:flex-row flex-col flex pt-[78px] justify-between">
+                <div class="balances md:flex-row flex-col flex pt-7 md:pt-[78px] justify-between">
                     <div class="text flex flex-col gap-3">
                         <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Savings Balance</p>
                         <p class="font-fellixSemiBold text-[32px] text-[#505050]">$45,545.65</p>
@@ -103,20 +103,24 @@
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Traditional IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
                 <div class="balances md:flex-row flex-col flex justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Traditional IRA</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Traditional IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
                     <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
@@ -144,20 +148,24 @@
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">HSA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
-                <div class="balances md:flex-row flex-col flex  justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">HSA</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                <div class="balances md:flex-row flex-col flex justify-between">
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">HSA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
                     <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
@@ -167,8 +175,8 @@
                                 <!-- <p class="gap-1 flex text-[#1F973A] items-center font-fellixMedium"><img src="./assets/green-caret.svg" alt="">1.12%</p> -->
                             </div>
                         </div> 
-                        <div class="l flex-shrink-0 bg-[#E2F2FF4D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
-                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">interests</p>
+                        <div class="l flex-shrink-0 bg-[#FEE2E14D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
+                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Return</p>
                             <div class="flex gap-[6px] flex-col">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$4,2823</p>
                                 <!-- <p class="gap-1 flex text-[#F92C2C] items-center font-fellixMedium"><img src="./assets/red-caret.svg" alt="">-28%</p> -->
@@ -185,20 +193,24 @@
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">SEP IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
-                <div class="balances md:flex-row flex-col flex  justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">SEP IRA</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                <div class="balances md:flex-row flex-col flex justify-between">
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">SEP IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
                     <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
@@ -209,7 +221,7 @@
                             </div>
                         </div> 
                         <div class="l flex-shrink-0 bg-[#E2F2FF4D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
-                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">interests</p>
+                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Return</p>
                             <div class="flex gap-[6px] flex-col">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$4,2823</p>
                                 <!-- <p class="gap-1 flex text-[#F92C2C] items-center font-fellixMedium"><img src="./assets/red-caret.svg" alt="">-28%</p> -->
@@ -219,27 +231,31 @@
                             <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/mclock.svg" alt="">24hr Change</p>
                             <div class="flex gap-[35px] ">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$5,2823</p>
-                                <p class="gap-1 flex text-[#13B799] items-center font-fellixMedium"><img src="./assets/green-caret.svg" alt="">-28%</p>
+                                <p class="gap-1 flex text-[#13B799] items-center font-fellixMedium"><img src="./assets/green-caret.svg" alt="">+28%</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Self Employed 401(k)</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
-                <div class="balances md:flex-row flex-col flex  justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Self Employed 401 (K)</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                <div class="balances md:flex-row flex-col flex justify-between">
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">SEP IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
                     <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
@@ -250,7 +266,7 @@
                             </div>
                         </div> 
                         <div class="l flex-shrink-0 bg-[#E2F2FF4D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
-                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">interests</p>
+                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Return</p>
                             <div class="flex gap-[6px] flex-col">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$4,2823</p>
                                 <!-- <p class="gap-1 flex text-[#F92C2C] items-center font-fellixMedium"><img src="./assets/red-caret.svg" alt="">-28%</p> -->
@@ -267,20 +283,24 @@
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Custodian Account</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
-                <div class="balances md:flex-row flex-col flex  justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Custodian Account</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                <div class="balances md:flex-row flex-col flex justify-between">
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Custodian Account</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
                     <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
@@ -291,7 +311,7 @@
                             </div>
                         </div> 
                         <div class="l flex-shrink-0 bg-[#E2F2FF4D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
-                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">interests</p>
+                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Return</p>
                             <div class="flex gap-[6px] flex-col">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$4,2823</p>
                                 <!-- <p class="gap-1 flex text-[#F92C2C] items-center font-fellixMedium"><img src="./assets/red-caret.svg" alt="">-28%</p> -->
@@ -301,27 +321,31 @@
                             <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/mclock.svg" alt="">24hr Change</p>
                             <div class="flex gap-[35px] ">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$5,2823</p>
-                                <p class="gap-1 flex text-[#13B799] items-center font-fellixMedium"><img src="./assets/green-caret.svg" alt="">-28%</p>
+                                <p class="gap-1 flex text-[#13B799] items-center font-fellixMedium"><img src="./assets/green-caret.svg" alt="">+28%</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">ROTH IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
-                <div class="balances md:flex-row flex-col flex  justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">ROTH IRA</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                <div class="balances md:flex-row flex-col flex justify-between">
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">ROTH IRA</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
                     <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
@@ -332,7 +356,7 @@
                             </div>
                         </div> 
                         <div class="l flex-shrink-0 bg-[#E2F2FF4D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
-                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">interests</p>
+                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Return</p>
                             <div class="flex gap-[6px] flex-col">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$4,2823</p>
                                 <!-- <p class="gap-1 flex text-[#F92C2C] items-center font-fellixMedium"><img src="./assets/red-caret.svg" alt="">-28%</p> -->
@@ -349,22 +373,26 @@
                 </div>
             </div>
             <div class="first bg-white md:w-[837px] p-6 mt-[34px] rounded-[10px]">
-                <div class="head flex justify-between">
-                    <div class="text">
+                <div class="head flex items-center justify-between">
+                    <div class="text hidden md:flex">
                         <!-- <h2 class="font-fellixSemiBold text-2xl text-[#14233ACC]">Savings</h2>
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p> -->
                     </div>
+                    <div class="text md:hidden flex flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Cash Management</p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
+                    </div>
                     <div class="button flex gap-[22px]">
-                        <button class="py-4 px-5 bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
-                        <button class="py-4 px-5 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-sm">Cash Out</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12  bg-periwinkle rounded-[5px] text-white font-fellixSemiBold text-sm">Contribute</button>
+                        <button class="md:w-auto md:px-8 md:py-3 px-4 py-[10px] h-12 bg-white border border-periwinkle rounded-[5px] text-periwinkle font-fellixSemiBold text-xs md:text-sm">Cash Out</button>
                     </div>
                 </div>
-                <div class="balances flex-col md:flex-row flex  justify-between">
-                    <div class="text flex flex-col gap-7">
-                        <p class="flex gap-[10px] items-center font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Cash Management Account</p>
-                        <p class="font-fellixSemiBold text-[32px] text-[#505050]">$5,545.65</p>
+                <div class="balances md:flex-row flex-col flex justify-between">
+                    <div class="text md:flex hidden flex-col gap-2 md:gap-7">
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Cash Management Account </p>
+                        <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$5,545.65</p>
                     </div>
-                    <div class="list overflow-x-auto md:flex-wrap flex gap-5 md:gap-[11px] md:justify-between pt-6">
+                    <div class="list md:flex-wrap overflow-x-auto flex gap-5 md:gap-[11px] md:justify-between pt-6">
                         <div class="l flex-shrink-0 bg-[#B9DDFF4D] p-3 justify-between pb-6 rounded-[10px] flex flex-col gap-7">
                             <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Contribution</p>
                             <div class="flex gap-[6px] flex-col">
@@ -373,7 +401,7 @@
                             </div>
                         </div> 
                         <div class="l flex-shrink-0 bg-[#E2F2FF4D] p-3 justify-between w-[141px] pb-6 rounded-[10px] flex flex-col gap-7">
-                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">interests</p>
+                            <p class="flex gap-2 font-fellixMedium text-sm text-[#212325CC]"><img src="./assets/inv-wallet.svg" alt="">Total Return</p>
                             <div class="flex gap-[6px] flex-col">
                                 <p class="font-fellixMedium text-sm text-[#212325]">$4,2823</p>
                                 <!-- <p class="gap-1 flex text-[#F92C2C] items-center font-fellixMedium"><img src="./assets/red-caret.svg" alt="">-28%</p> -->
@@ -389,6 +417,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <div class="holdings md:flex flex-col hidden bg-white md:h-fit w-full py-10 px-5">
             <h2 class="font-fellixSemiBold text-[21px] text-[#495057]">Account Holdings</h2>
@@ -429,7 +458,7 @@
                     <img src="./assets/blue.svg" alt="" class="p-3 border-b border-b-[#E9E9EF]">
                 </li>
             </ul>
-        </div>
+    </div>
     </div>
 </body>
 </html>

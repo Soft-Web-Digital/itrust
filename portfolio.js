@@ -34,13 +34,16 @@ const radios = radioOptions.querySelectorAll('.in');
 
 radios.forEach(item => {
     // item.classList.remove('active-radio');
+    const rad = item.querySelector('input');
     item.addEventListener(('click'), () => {
         radios.forEach(t => {
             t.classList.remove('active-radio');
             t.classList.add('inactive-radio');
+            rad.checked = false;
         });
         item.classList.add('active-radio');
         item.classList.remove('inactive-radio');
+        rad.checked = true;
     })
 })
 
@@ -98,4 +101,62 @@ choices.forEach((item) => {
         item.classList.add('active-choice');
         item.classList.remove('inactive-choice');
     })
+})
+
+const portfolioHide = document.getElementById('port-hide');
+const portfolioValue = document.getElementById('port-value');
+
+portfolioHide.addEventListener('click', () => {
+    if(portfolioValue.textContent == "$45,545.65"){
+        portfolioValue.textContent = "$*******";
+    }else{
+        portfolioValue.textContent = "$45,545.65";
+    }
+})
+
+const hideMobile = document.getElementById('hide-mobile');
+const mobileValue = document.getElementById('mobile-value');
+
+hideMobile.addEventListener('click', () => {
+    if(mobileValue.textContent == "$45,545.65"){
+        mobileValue.textContent = "$*******";
+    }else{
+        mobileValue.textContent = "$45,545.65";
+    }
+})
+
+const invHide = document.getElementById('inv-hide');
+const mobileInv = document.getElementById('mobile-inv');
+
+invHide.addEventListener('click', () => {
+    if(mobileInv.textContent == "$0.00"){
+        mobileInv.textContent = "$***";
+    }else{
+        mobileInv.textContent = "$0.00";
+    }
+})
+
+document.querySelectorAll('.showInput').forEach((toggleButton) => {
+    toggleButton.addEventListener('click', () => {
+        // Find the parent input-collapse container
+        const collapseContainer = toggleButton.closest('.input-collapse');
+        const collapseContent = collapseContainer.querySelector('.collapse-content');
+
+        // Toggle visibility of collapse content
+        collapseContent.classList.toggle('hidden');
+
+        // Change the icon based on the state
+        const isCollapsed = collapseContent.classList.contains('hidden');
+        toggleButton.setAttribute(
+            'src',
+            isCollapsed ? './assets/show.svg' : './assets/collapse.svg'
+        );
+    });
+});
+
+const hamMenu = document.getElementById('ham-menu');
+const dropdown = document.querySelector('.secoss')
+
+hamMenu.addEventListener(('click'), () => {
+    dropdown.classList.toggle('hidden')
 })

@@ -66,6 +66,15 @@ saveButton.addEventListener(('click'), () => {
     console.log('clicked')
 })
 
+const cancelButton = change.querySelector('.cancel');
+
+cancelButton.addEventListener(('click'), () => {
+    inputs.forEach(input => {
+        input.value = '';
+        input.setAttribute('disabled', '');
+    })
+})
+
 pass.forEach((p) => {
     p.setAttribute('disabled', ''); 
 })
@@ -74,6 +83,15 @@ const saveStuff = changeII.querySelector('.save');
 
 saveStuff.addEventListener(('click'), () => {
     pass.forEach((p) => {
+        p.setAttribute('disabled', '');
+    })
+})
+
+const cancelStuff = changeII.querySelector('.cancels');
+
+cancelStuff.addEventListener(('click'), () => {
+    pass.forEach((p) => {
+        p.value = '';
         p.setAttribute('disabled', '');
     })
 })
@@ -153,3 +171,77 @@ goBack.forEach((back) => {
 })
 
 const timeframe = document.querySelector('.timeframe');
+
+const auth = document.querySelector('.auth');
+const authButtons = auth.querySelectorAll('button');
+
+authButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        authButtons.forEach((b) => {
+            b.classList.remove('active-auth');
+            b.textContent = 'Disable';
+        });
+        button.classList.add('active-auth');
+        button.textContent = 'Enable';
+    });
+})
+
+const changeIII = document.querySelector('.buttson')
+const editIII = document.querySelector('.edit-buttonnn')
+const inputsII = document.querySelector('.selectIn');
+
+editIII.addEventListener(('click'), () => {
+    console.log(inputsII)
+    inputsII.removeAttribute('disabled');
+})
+
+const saveButtonII = changeIII.querySelector('.save');
+
+saveButtonII.addEventListener(('click'), () => {
+    inputsII.setAttribute('disabled', '');
+})
+
+const cancelButtonII = changeIII.querySelector('.cancel');
+
+cancelButtonII.addEventListener(('click'), () => {
+    inputsII.setAttribute('disabled', '');
+})
+
+const lastEdit = document.querySelector('.edit-button-last');
+const kycSec = document.querySelector('.kyc');
+const kycInputs = kycSec.querySelectorAll('input');
+
+kycInputs.forEach((input) => {
+    input.setAttribute('disabled', '');
+})
+
+lastEdit.addEventListener(('click'), () => {
+    kycInputs.forEach((input) => {
+        input.removeAttribute('disabled');
+    })
+})
+
+const lastList = document.querySelector('.butt-last');
+const cancelLast = lastList.querySelector('.cancel');
+
+cancelLast.addEventListener(('click'), () => {
+    kycInputs.forEach((input) => {
+        input.setAttribute('disabled', '');
+        input.value = '';
+    })
+})
+
+const saveLast = lastList.querySelector('.save');
+
+saveLast.addEventListener(('click'), () => {
+    kycInputs.forEach((input) => {
+        input.setAttribute('disabled', '');
+    })
+})
+
+const hamMenu = document.getElementById('ham-menu');
+const dropdown = document.querySelector('.secoss')
+
+hamMenu.addEventListener(('click'), () => {
+    dropdown.classList.toggle('hidden')
+})

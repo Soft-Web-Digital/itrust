@@ -158,3 +158,28 @@ tradeItems.forEach((item) => {
         }
     })
 })
+
+document.querySelectorAll('.showInput').forEach((toggleButton) => {
+    toggleButton.addEventListener('click', () => {
+        // Find the parent input-collapse container
+        const collapseContainer = toggleButton.closest('.input-collapse');
+        const collapseContent = collapseContainer.querySelector('.collapse-content');
+
+        // Toggle visibility of collapse content
+        collapseContent.classList.toggle('hidden');
+
+        // Change the icon based on the state
+        const isCollapsed = collapseContent.classList.contains('hidden');
+        toggleButton.setAttribute(
+            'src',
+            isCollapsed ? './assets/show.svg' : './assets/collapse.svg'
+        );
+    });
+});
+
+const hamMenu = document.getElementById('ham-menu');
+const dropdown = document.querySelector('.secoss')
+
+hamMenu.addEventListener(('click'), () => {
+    dropdown.classList.toggle('hidden')
+})

@@ -22,9 +22,9 @@
     <title>Itrust | Sign In</title>
 </head>
 <body>
-    <nav class="flex justify-around items-center relative py-[17px]">
+    <nav class="flex justify-between md:mx-[100px] mx-5 items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
-            <img src="./assets/logo.svg" alt="Itrust logo">
+            <img src="./assets/logo.svg" alt="Itrust logo" class="hidden md:flex">
         </a>
         <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
             <div class="list-container hidden md:static">
@@ -71,8 +71,9 @@
                         <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
                     </div>
                 </div>
-                <a href="./signup.html" class="text-periwinkle underline font-fellixMedium text-sm text-right">Forgot password?</a>
+                <a href="./2fa.html" class="text-periwinkle underline font-fellixMedium text-sm text-right">Forgot password?</a>
                 <button type="submit" class="text-[#DDDDE1] font-fellixSemiBold hover:opacity-100 py-3 bg-periwinkle opacity-50 rounded-[5px]">Sign in</button>
+                <p class="text-[#526179] text-center font-fellixMedium text-sm">Don’t have an account? <a href="./signup.html" class="text-periwinkle underline">Sign up</a></p>
             </div>
             <div class="p flex gap-[19px] items-center w-full">
                 <div class="border bg-[#DDE2EB] w-full h-px"></div>

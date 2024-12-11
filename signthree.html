@@ -56,8 +56,8 @@
     <section id="form" class="form bg-[#F5F5FC] flex justify-center">
         <form class="flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center md:w-[826px] gap-[35px] bg-white w-fit">
             <div class="header flex flex-col items-center border-b w-full border-b-[#F0F0F0] pb-[28px]">
-                <h2 class="font-fellixExtraBold text-[28px] text-[#14233A]">Other Information</h2>
-                <p class="font-fellix text-sm text-desaturatedBlue">Please enter other info and help us understand your trading experience</p>
+                <h2 class="bold-font-one text-[28px]">Other Information</h2>
+                <p class="font-fellix text-sm text-center text-desaturatedBlue">Please enter other info and help us understand your trading experience</p>
             </div>
             <div class="inputs flex flex-col gap-5">
                 <div class="inp flex md:flex-row flex-col items-center justify-center flex-wrap gap-[30px]">
@@ -70,11 +70,11 @@
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="nationality">Nationality</label>
-                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[10px]" type="text" placeholder="American">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[10px]" type="text" placeholder="Nigerian">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="currency">Currency</label>
-                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[10px]" type="text" placeholder="USD">
+                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[10px]" type="text" placeholder="Naira">
                     </div>
                 </div>
                 <h3 class="text-[#526179] font-fellix text-sm uppercase border-b md:mx-5 border-b-[#F0F0F0] pb-5">further questions</h3>
@@ -105,14 +105,16 @@
                 <div class="input flex flex-col md:mx-5 items-start gap-4">
                     <label for="another" class="font-fellix text-sm text-[#526179]">Do you or a family member work for another brokerage?</label>
                     <div class="flex gap-[30px]">
-                        <div class="in">
-                            <input required type="radio" id="yes" name="brokerage" value="yes">
-                            <label for="yes" class="font-fellix text-sm text-desaturatedBlue">Yes</label>
-                        </div>
-                        <div class="in">
-                            <input required type="radio" id="no" name="brokerage" value="no">
-                            <label for="no" class="font-fellix text-sm text-desaturatedBlue">No</label>
-                        </div>
+                        <label class="inline-flex items-center">
+                            <input type="radio" class="hidden" name="brokerage" value="yes" />
+                            <span class="w-4 h-4 inline-block border border-[#979797] rounded-full"></span>
+                            <label for="yes" class="font-fellix text-sm text-[#14233A] pl-3">Yes</label>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" class="hidden" name="brokerage" value="no" />
+                            <span class="w-4 h-4 inline-block border border-[#979797] rounded-full"></span>
+                            <label for="no" class="font-fellix text-sm text-[#14233A] pl-3">No</label>
+                        </label>
                     </div>
                     <div class="input flex flex-col gap-3 w-full">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="code">Referral Code (Optional)</label>

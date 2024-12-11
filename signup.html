@@ -56,45 +56,45 @@
     <section class="form bg-[#F5F5FC] flex justify-center">
         <form id="f-form" class="f-form flex px-[30px] mt-[10px] flex-col py-[38px] rounded-[10px] md:mb-[236px] md:mt-[141px] items-center md:w-[826px] gap-[35px] bg-white w-fit">
             <div class="header flex flex-col items-center border-b w-full border-b-[#F0F0F0] pb-[28px]">
-                <h2 class="font-fellixExtraBold text-[28px] text-[#14233A]">Create an Account</h2>
+                <h2 class="bold-font-one text-[28px]">Create an Account</h2>
                 <p class="font-fellix text-sm text-desaturatedBlue">Provide your information to create an itrust account</p>
             </div>
             <div class="inputs flex flex-col gap-5">
                 <div class="inp flex md:flex-row flex-col items-center justify-center flex-wrap gap-[30px]">
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">First Name</label>
-                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Enter first name">
+                        <input required class="font-fellix text-sm w-[345px] input-one" type="text" placeholder="Enter first name">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">Last Name</label>
-                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Enter last name">
+                        <input required class="font-fellix text-sm w-[345px] input-one" type="text" placeholder="Enter last name">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">Email Address</label>
-                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Enter email address">
+                        <input required class="font-fellix text-sm w-[345px] input-one" type="text" placeholder="Enter email address">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="email">Username</label>
-                        <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="text" placeholder="Johndoe">
+                        <input required class="font-fellix text-sm w-[345px] input-one" type="text" placeholder="Johndoe">
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="password">Password</label>
                         <div class="password relative">
-                            <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="password" placeholder="*********">
-                            <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
+                            <input id="pass" required class="font-fellix text-sm w-[345px] input-one" type="password" placeholder="*********">
+                            <img class="absolute cursor-pointer right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-3">
                         <label class="font-fellix text-sm text-desaturatedBlue" for="password">Confirm Password</label>
                         <div class="password relative">
-                            <input required class="border outline-none border-[#DDE2EB] pl-4 font-fellix text-sm text-[#14233A] w-[345px] py-3 rounded-[5px]" type="password" placeholder="*********">
-                            <img class="absolute right-4 top-[33%]" src="/assets/hide.svg" alt="hide password">
+                            <input id="passconf" required class="font-fellix text-sm w-[345px] input-one" type="password" placeholder="*********">
+                            <img class="absolute right-4 cursor-pointer top-[33%]" src="/assets/hide.svg" alt="hide password">
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-[15px] items-center">
                     <button type="submit" class="w-full text-[#DDDDE1] text-center font-fellixSemiBold py-3 hover:opacity-100 bg-periwinkle opacity-50 rounded-[5px]">Next</button>
-                    <p class="md:flex hidden text-center font-fellixMedium text-sm text-[#526179]">Already have an account? <a class="text-periwinkle underline" href="./signin.html">Sign in</a></p>
+                    <p class="md:flex hidden text-center font-fellixMedium text-sm text-[#526179]">Already have an account? <a class="text-periwinkle underline" href="./signin.html"> Sign in</a></p>
                 </div>
             </div>
             <div class="p flex gap-[19px] items-center w-full">
@@ -129,7 +129,7 @@
                     <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
                     <ul class="flex flex-col gap-[7px]">
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li> 
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
                     </ul>

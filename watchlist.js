@@ -112,13 +112,16 @@ const radios = radioOptions.querySelectorAll('.in');
 
 radios.forEach(item => {
     // item.classList.remove('active-radio');
+    const rad = item.querySelector('input');
     item.addEventListener(('click'), () => {
         radios.forEach(t => {
             t.classList.remove('active-radio');
             t.classList.add('inactive-radio');
+            rad.checked = false;
         });
         item.classList.add('active-radio');
         item.classList.remove('inactive-radio');
+        rad.checked = true;
     })
 })
 
@@ -157,4 +160,11 @@ navItems.forEach((item) => {
             tradeSection.classList.remove("hidden");
         }
     })
+})
+
+const hamMenu = document.getElementById('ham-menu');
+const dropdown = document.querySelector('.secoss')
+
+hamMenu.addEventListener(('click'), () => {
+    dropdown.classList.toggle('hidden')
 })

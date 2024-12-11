@@ -21,3 +21,17 @@ passImg.addEventListener('click', () => {
         passInput.type = 'password';
     }
 })
+
+const inputs = form.querySelectorAll('input');
+
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+        const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+        const button = form.querySelector('button');
+        if (allFilled) {
+            button.classList.add('all-filled');
+        } else {
+            button.classList.remove('all-filled');
+        }
+    });
+})

@@ -287,3 +287,50 @@ select, input[type="date"]{
 .fellixSemiBold{
     font-family: 'Fellix-Semibold' !important;
 }
+
+.all-filled{
+    opacity: 100%;
+}
+
+.input-one{
+    border: 1px solid #DDE2EB;
+    color: #14233A;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    outline: none;
+    height: 48px;
+    padding-left: 16px;
+}
+
+.bold-font-one{
+    font-family: 'Fellix-ExtraBold';
+    color: #14233A;
+}
+
+input[type="radio"]:checked + span {
+    background-color: #3AB67A;
+    border-color: #3AB67A;
+}
+
+input[type="radio"]:checked + span .radio-in{
+    background-color: #979797;
+}
+
+.button-one{
+    padding: 12px 32px;
+    border-radius: 5px;
+    height: 48px;
+}
+
+.active-auth{
+    color: white;
+    background-color: #5156BE;
+}
+
+
+@media(max-width: 768px){
+    .list{
+        max-width: 380px;
+    }
+}
