@@ -107,10 +107,10 @@
     display: none; 
 }
 
-.drop:hover .dropdown{
-    display: flex;
-    transition: all 700ms ease;
-}
+    /* .drop:hover .dropdown{
+        display: flex;
+        transition: all 700ms ease;
+    } */
 
 .card{
     border: 1px solid #E3E3E3;

@@ -630,6 +630,10 @@ video {
   left: 0px;
 }
 
+.left-10{
+  left: 2.5rem;
+}
+
 .left-3{
   left: 0.75rem;
 }
@@ -706,6 +710,10 @@ video {
   top: 1.75rem;
 }
 
+.top-8{
+  top: 2rem;
+}
+
 .top-\[10\%\]{
   top: 10%;
 }
@@ -770,28 +778,16 @@ video {
   top: 72px;
 }
 
-.top-0{
-  top: 0px;
-}
-
-.left-1\/2{
-  left: 50%;
-}
-
-.left-10{
-  left: 2.5rem;
-}
-
-.top-20{
-  top: 5rem;
-}
-
 .z-10{
   z-index: 10;
 }
 
 .z-30{
   z-index: 30;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .mx-4{
@@ -1052,6 +1048,10 @@ video {
   width: 1rem;
 }
 
+.w-56{
+  width: 14rem;
+}
+
 .w-\[114px\]{
   width: 114px;
 }
@@ -1151,6 +1151,10 @@ video {
 
 .w-screen{
   width: 100vw;
+}
+
+.w-\[100\%\]{
+  width: 100%;
 }
 
 .max-w-\[178px\]{
@@ -1623,10 +1627,6 @@ video {
   gap: 9px;
 }
 
-.gap-20{
-  gap: 5rem;
-}
-
 .overflow-x-auto{
   overflow-x: auto;
 }
@@ -1706,6 +1706,10 @@ video {
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-r-0{
+  border-right-width: 0px;
 }
 
 .border-dashed{
@@ -1846,10 +1850,6 @@ video {
 .border-b-raisinBlack{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(17 24 39 / var(--tw-border-opacity, 1));
-}
-
-.border-l-\[\#E9E9EF80\]{
-  border-left-color: #E9E9EF80;
 }
 
 .border-l-lightGray{
@@ -2134,6 +2134,11 @@ video {
   padding-right: 190px;
 }
 
+.px-\[25px\]{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .px-\[30px\]{
   padding-left: 30px;
   padding-right: 30px;
@@ -2371,6 +2376,10 @@ video {
   padding-bottom: 80px;
 }
 
+.pl-10{
+  padding-left: 2.5rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -2589,10 +2598,6 @@ video {
 
 .pt-\[76px\]{
   padding-top: 76px;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
 }
 
 .text-left{
@@ -2973,6 +2978,11 @@ video {
   color: rgb(253 83 83 / var(--tw-text-opacity, 1));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-charcoalGray{
   --tw-text-opacity: 1;
   color: rgb(98 98 98 / var(--tw-text-opacity, 1));
@@ -3036,10 +3046,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#AAEFE34D\]{
-  color: #AAEFE34D;
 }
 
 .underline{
@@ -3187,10 +3193,10 @@ video {
   display: none;
 }
 
-.drop:hover .dropdown{
-  display: flex;
-  transition: all 700ms ease;
-}
+/* .drop:hover .dropdown{
+        display: flex;
+        transition: all 700ms ease;
+    } */
 
 .card{
   border: 1px solid #E3E3E3;
@@ -3703,6 +3709,14 @@ input[type="radio"]:checked + span .radio-in{
     width: 100%;
   }
 
+  .md\:w-\[200\]{
+    width: 200;
+  }
+
+  .md\:w-\[200\%\]{
+    width: 200%;
+  }
+
   .md\:min-w-\[316px\]{
     min-width: 316px;
   }
@@ -3779,6 +3793,10 @@ input[type="radio"]:checked + span .radio-in{
     gap: 2.5rem;
   }
 
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
   .md\:gap-28{
     gap: 7rem;
   }
@@ -3805,6 +3823,10 @@ input[type="radio"]:checked + span .radio-in{
 
   .md\:gap-9{
     gap: 2.25rem;
+  }
+
+  .md\:gap-\[10px\]{
+    gap: 10px;
   }
 
   .md\:gap-\[110px\]{
@@ -3895,14 +3917,6 @@ input[type="radio"]:checked + span .radio-in{
     gap: 98px;
   }
 
-  .md\:gap-2{
-    gap: 0.5rem;
-  }
-
-  .md\:gap-\[10px\]{
-    gap: 10px;
-  }
-
   .md\:rounded-\[10px\]{
     border-radius: 10px;
   }
@@ -3936,11 +3950,6 @@ input[type="radio"]:checked + span .radio-in{
   .md\:bg-ghostWhite{
     --tw-bg-opacity: 1;
     background-color: rgb(248 248 252 / var(--tw-bg-opacity, 1));
-  }
-
-  .md\:bg-white{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   }
 
   .md\:bg-transparent{
@@ -3985,6 +3994,11 @@ input[type="radio"]:checked + span .radio-in{
   .md\:px-\[80px\]{
     padding-left: 80px;
     padding-right: 80px;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:py-10{
@@ -4073,6 +4087,10 @@ input[type="radio"]:checked + span .radio-in{
 
   .md\:pb-\[75px\]{
     padding-bottom: 75px;
+  }
+
+  .md\:pl-0{
+    padding-left: 0px;
   }
 
   .md\:pl-10{
@@ -4185,10 +4203,6 @@ input[type="radio"]:checked + span .radio-in{
 
   .md\:pt-\[84px\]{
     padding-top: 84px;
-  }
-
-  .md\:pl-0{
-    padding-left: 0px;
   }
 
   .md\:text-left{

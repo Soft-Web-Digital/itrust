@@ -22,30 +22,31 @@
     <title>Itrust | Terms & Conditions</title>
 </head>
 <body>
-    <nav class="flex justify-around items-center relative pt-[17px]">
+    <nav class="flex justify-around items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
-            <img src="./assets/logo.svg" alt="Itrust logo">
+            <img src="./assets/logo.svg" alt="Itrust logo" class="hidden md:flex">
+            <img src="./assets/mobile-logo.svg" alt="itrust logo" class="md:hidden">
         </a>
         <div class="flex justify-between md:flex-row flex-row-reverse gap-7 items-center md:gap-[290px]">
             <div class="list-container md:static">
-                <ul class="md:flex  drop-menu absolute md:static left-0 px-10 z-10 items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen top-16 justify-around md:gap-10">
-                    <li class="flex items-center drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
-                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
+                <ul class="md:flex drop-menu absolute md:static left-0 w-56 md:w-auto z-10 items-start md:items-center hidden bg-white md:flex-row flex-col md:max-h-[80px] h-screen pt-[40px] md:pt-0 top-16 gap-[10px] md:gap-10">
+                    <li class="flex md:py-0 py-[10px] md:px-0 px-[25px] items-center md:w-auto w-full justify-between drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Investing</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-8 z-10 text-black bg-white p-5 md:w-[200%] w-[100%]  flex-col border-l border-b border-r-0 border-l-lightGray border-b-lightGray border-r-lightGray">
                             <p class="font-fellixMedium text-xs"><a href="./automated.html">Automated Investing</a></p>
                             <p class="font-fellixMedium text-xs"><a href="./crypto.html">Crypto Investing</a></p>
                             <p class="font-fellixMedium text-xs"><a href="./bond.html">Bond Investing</a></p>
-                            <p class="font-fellixMedium text-xs"><a href="./stock.html">Stock Investing</a></p>
                         </div>
                     </li>
-                    <li><a href="./cash.html" class="font-fellixMedium">Cash</a></li>
-                    <li class="flex items-center gap-2" > <a href="./howto.html" class="font-fellixMedium">Learn</a> <div class="img"><img src="./assets/caret.svg" alt="caret"></div></li>
-                    <li class="flex items-center drop relative gap-2 cursor-pointer"> <p class="font-fellixMedium">Products</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
-                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-7 z-10 text-white bg-periwinkle p-5 w-[200%] -left-[50%] flex-col items-start border-l border-b border-r border-l-lightGray border-b-lightGray border-r-lightGray">
-                            <p class="font-fellixMedium text-xs"><a href="./about.html">About Us</a></p>
-                            <p class="font-fellixMedium text-xs"><a href="./article.html">Article</a></p>
+                    <li class="md:py-0 md:px-0 py-[10px] px-[25px]"><a href="./cash.html" class="font-fellixMedium">Cash</a></li>
+                    <li class="flex md:py-0 py-[10px] md:px-0 px-[25px] items-center md:w-auto w-full justify-between drop relative cursor-pointer gap-2"> <p class="font-fellixMedium">Learn</p> <div class="img"><img src="./assets/caret.svg" alt="caret"></div>
+                        <div class="dropdown hidden absolute text-left rounded-[12px] gap-6 top-8 z-10 text-black bg-white p-5 md:w-[200%] w-[100%]  flex-col border-l border-b border-r-0 border-l-lightGray border-b-lightGray border-r-lightGray">
+                            <p class="font-fellixMedium text-xs"><a href="./automated.html">How to Invest</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./crypto.html">About Us</a></p>
+                            <p class="font-fellixMedium text-xs"><a href="./bond.html">Articles</a></p>
                         </div>
                     </li>
-                    <li><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
+                    <li class="md:py-0 md:px-0 py-[10px] px-[25px]"><a href="./stock.html" class="font-fellixMedium">Stock Investing</a></li>
+                    <li class="md:py-0 md:px-0 py-[10px] px-[25px]"><a href="./faq.html" class="font-fellixMedium">F.A.Q</a></li>
                 </ul>
                 <img src="./assets/ham.svg" class="md:hidden ham" alt="Ham menu">
             </div>
@@ -68,7 +69,7 @@
         <p class="font-fellixBold text-lg text-slateGray pb-1">No Recommendations or Investment Advice</p>
         <p class="font-fellixMedium pb-4 text-lg text-slateGray">Itrust Investment provides self-directed investors with discount brokerage services, and does not make recommendations or offer investment advice of any kind. You are solely responsible for evaluating the merits and risks associated with the use of any Content provided through the Service before making any decisions based on such Content. You agree not to hold Itrust or any Third-Party Provider liable for any possible claim for damages arising from any decision you make based on the Content or other information made available to you through the Service or any Third-Party Provider websites. Past performance data should not be construed as indicative of future results.</p>
             <p class="font-fellixBold text-lg text-slateGray pb-1">Content</p>
-            <p class="font-fellixMedium text-lg text-slateGray">Content posted on the Service is published as of its stated date or, if no date is stated, the date of first posting. Neither Itrust nor the Third-Party Providers have undertaken any duty to update any such information. Itrust does not prepare, edit, or endorse Third Party Content. Itrust does not guarantee the accuracy, timeliness, completeness or usefulness of Third Party Content, and is not responsible or liable for any content, advertising, products, or other materials on or available from third party sites. You will not hold Itrust and/or any Third-Party Provider liable in any way for (a) any inaccuracy of, error or delay in, or omission of the Content; or (b) any loss or damage arising from or occasioned by i) any error or delay in the transmission of such Content; ii) interruption in any such Content due either to any negligent act or omission by any party to any “force majeure” (e.g., flood, extraordinary weather conditions, earthquake or other act of God, fire, war, insurrection, riot, labor dispute, accident, action of government, communications or power failure, equipment or software malfunction), or iii) to any other cause beyond the reasonable control of Itrust and/or Third-Party Provider, or iv) non-performance.  Any price quotes may be delayed 20 minutes or longer, according to the rules and regulations applicable to exchanges and Third Party Providers. Neither Itrust nor the Third-Party Providers make any representations, warranties or other guarantees as to the accuracy or timeliness of any price quotes. Neither Itrust nor the Third-Party Providers make any representations, warranties or other guarantees as to the present or future value or suitability of any sale, trade or other transaction involving any particular security or any other investment.</p>
+            <p class="font-fellixMedium text-lg text-slateGray">Content posted on the Service is published as of its stated date or, if no date is stated, the date of first posting. Neither Itrust nor the Third-Party Providers have undertaken any duty to update any such information. Itrust does not prepare, edit, or endorse Third Party Content. Itrust does not guarantee the accuracy, timeliness, completeness or usefulness of Third Party Content, and is not responsible or liable for any content, advertising, products, or other materials on or available from third party sites. You will not hold Itrust and/or any Third-Party Provider liable in any way for (a) any inaccuracy of, error or delay in, or omission of the Content; or (b) any loss or damage arising from or occasioned by i) any error or delay in the transmission of such Content; ii) interruption in any such Content due either to any negligent act or omission by any party to any “force majeure” (e.g., flood, extraordinary weather conditions, earthquake or other act of God, fire, war, insurrection, riot, labor dispute, accident, action of government, communications or power failure, equipment or software malfunction), or iii) to any other cause beyond the reasonable control of Itrust and/or Third-Party Provider, or iv) non-performance. Any price quotes may be delayed 20 minutes or longer, according to the rules and regulations applicable to exchanges and Third Party Providers. Neither Itrust nor the Third-Party Providers make any representations, warranties or other guarantees as to the accuracy or timeliness of any price quotes. Neither Itrust nor the Third-Party Providers make any representations, warranties or other guarantees as to the present or future value or suitability of any sale, trade or other transaction involving any particular security or any other investment.</p>
             <p class="font-fellixMedium text-lg text-slateGray">Content is provided exclusively for personal and non-commercial access and use. No part of the Service or Content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or distributed in any way (including “mirroring”) to any other computer, server, web site or other medium for publication or distribution or for any commercial enterprise, without Itrust’s express prior written consent.</p>
             <p class="font-fellixMedium text-lg text-slateGray pb-7">You acknowledge that Itrust is the sole owner of Itrust Marks and that other Marks are the property of their respective owners. You agree that you will not use any Marks for any purpose without the prior express written consent of the respective owners.</p>
             <p class="font-fellixBold text-lg text-slateGray pb-1">Termination; Modification</p>
@@ -80,21 +81,21 @@
             <ol class="relative left-5 flex flex-col gap-2 list-decimal pb-7 pt-2 text-slateGray text-lg font-fellixMedium">
                 <li>upload, post, transmit or otherwise make available any Content that is unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, vulgar, obscene, libelous, invasive of another's privacy (including, but not limited to, any address, email, phone number, or any other contact information without the written consent of the owner of such information), hateful, or racially, ethnically or otherwise objectionable;</li>
                 <li>harm minors in any way;</li>
-                <li>impersonate any person or entity, including, but not limited to, (i) a Itrust or Third-Party   Provider manager, employee, agent, or representative or (ii) forum leader, guide or host;  </li>
-                <li>falsely state or otherwise misrepresent your affiliation with any person or entity;  </li>
+                <li>impersonate any person or entity, including, but not limited to, (i) a Itrust or Third-Party  Provider manager, employee, agent, or representative or (ii) forum leader, guide or host; </li>
+                <li>falsely state or otherwise misrepresent your affiliation with any person or entity; </li>
                 <li>forge headers or otherwise manipulate identifiers in order to disguise the origin of any material;</li>
-                <li>upload, post or otherwise transmit any material that you do not have a right to transmit under any  law or under contractual or fiduciary relationships (such as inside information, proprietary and  confidential information learned or disclosed as part of employment relationships or under nondisclosure agreements);</li>
-                <li>upload, post or otherwise transmit any material that infringes any patent, trademark, trade secret,  copyright, rights of privacy or publicity, or other proprietary rights of any party;</li>
-                <li>upload, post, or transmit unsolicited commercial email or “SPAM,” including, but not limited to,   unethical marketing, advertising, or any other practice that is in any way connected with SPAM, such as: (1) sending mass email to recipients who haven't requested email from you or with a fake return address; (2) promoting a site with inappropriate links, titles, or descriptions; or (3) promoting any site by posting multiple submissions in forums that are identical;</li>
-                <li>upload, post or otherwise transmit any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment;  </li>
-                <li>interfere with or disrupt the Service or servers or networks connected to the Service, or disobey any requirements, procedures, policies or regulations of networks connected to the Service;  </li>
-                <li>intentionally or unintentionally violate any applicable local, state, national or international law,   including, but not limited to, regulations promulgated by the U.S. Securities and Exchange Commission, any rules of any national or other securities exchange, and any regulations having the force of law;</li>
+                <li>upload, post or otherwise transmit any material that you do not have a right to transmit under any law or under contractual or fiduciary relationships (such as inside information, proprietary and confidential information learned or disclosed as part of employment relationships or under nondisclosure agreements);</li>
+                <li>upload, post or otherwise transmit any material that infringes any patent, trademark, trade secret, copyright, rights of privacy or publicity, or other proprietary rights of any party;</li>
+                <li>upload, post, or transmit unsolicited commercial email or “SPAM,” including, but not limited to,  unethical marketing, advertising, or any other practice that is in any way connected with SPAM, such as: (1) sending mass email to recipients who haven't requested email from you or with a fake return address; (2) promoting a site with inappropriate links, titles, or descriptions; or (3) promoting any site by posting multiple submissions in forums that are identical;</li>
+                <li>upload, post or otherwise transmit any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment; </li>
+                <li>interfere with or disrupt the Service or servers or networks connected to the Service, or disobey any requirements, procedures, policies or regulations of networks connected to the Service; </li>
+                <li>intentionally or unintentionally violate any applicable local, state, national or international law,  including, but not limited to, regulations promulgated by the U.S. Securities and Exchange Commission, any rules of any national or other securities exchange, and any regulations having the force of law;</li>
                 <li>“stalk” or otherwise harass another;</li>
-                <li>collect or store personal data about other users of the Service;  </li>
-                <li>promote or provide instructional information about illegal activities, promote physical harm or   injury against any group or individual, or promote any act of cruelty;  </li>
-                <li>promote, offer for sale or sell any security or item, good or service that i) violates any applicable  federal, state, or local law or regulation, ii) you do not have full power and authority under all relevant laws and regulations to offer and sell, including all necessary licenses and authorizations, or iii) Itrust or the Third-Party Providers determine, in their sole discretion, is inappropriate for sale;</li>
-                <li>use the Forums as a forwarding service to another website; or  </li>
-                <li>access or otherwise use the Forums in any unlawful manner, for any unlawful purpose or in   violation of these Terms and Conditions.</li>
+                <li>collect or store personal data about other users of the Service; </li>
+                <li>promote or provide instructional information about illegal activities, promote physical harm or  injury against any group or individual, or promote any act of cruelty; </li>
+                <li>promote, offer for sale or sell any security or item, good or service that i) violates any applicable federal, state, or local law or regulation, ii) you do not have full power and authority under all relevant laws and regulations to offer and sell, including all necessary licenses and authorizations, or iii) Itrust or the Third-Party Providers determine, in their sole discretion, is inappropriate for sale;</li>
+                <li>use the Forums as a forwarding service to another website; or </li>
+                <li>access or otherwise use the Forums in any unlawful manner, for any unlawful purpose or in  violation of these Terms and Conditions.</li>
             </ol>
             <p class="font-fellixBold text-lg text-slateGray pb-1">External Links</p>
             <p class="font-fellixMedium text-lg text-slateGray pb-8">Itrust and/or the Third-Party Providers may provide links to other websites or resources. Because neither Itrust or the Third-Party Providers have any control over such sites and resources, you acknowledge and agree that neither Itrust nor the Third Party Providers are responsible for the availability of such external sites or resources. Itrust and the Third Party Providers do not endorse and are not liable for any content, advertising, products, or other materials on or available through such sites or resources. You further acknowledge and agree that neither Itrust nor the Third Party Providers shall be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such site or resource.</p>
@@ -152,7 +153,7 @@
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./signin.html">Login</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Commitments</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
                     </ul>
                 </div>
@@ -160,11 +161,12 @@
                     <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
                     <ul class="flex flex-col gap-[7px]">
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="mailto:info@itrustinvestment.com">info@itrustinvestment.com </a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
+        <p class="text-desaturatedBlue text-sm font-fellix">&copy; <span id="footerYear"></span> Itrust Investment.</p>
     </footer>
 </body>
 </html>

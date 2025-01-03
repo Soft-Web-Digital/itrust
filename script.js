@@ -6,7 +6,6 @@ const dropMenu = document.querySelector('.drop-menu')
 faq.forEach((question) => {
     question.addEventListener('click', () => {
         const drop = question.closest('.q').querySelector('.hide');
-        
         if (question.attributes.src.value === './assets/x.svg') {
             question.setAttribute('src', './assets/plus.svg');
             drop.classList.add('hidden');
@@ -23,9 +22,11 @@ drops.forEach((drop) => {
         if(dropdown.classList.contains('hidden')){
             dropdown.classList.remove('hidden');
             dropdown.classList.add('flex');
+            console.log("st")
         }else{
             dropdown.classList.add('hidden');
             dropdown.classList.remove('flex');
+            console.log("ts")
         }
     })
 })
@@ -40,3 +41,5 @@ ham.addEventListener(('click'), () => {
     }
 })  
 
+const footerYear = document.getElementById('footerYear');
+footerYear.innerHTML = new Date().getFullYear();
