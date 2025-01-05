@@ -5,3 +5,4 @@ form.addEventListener('submit', (e) => {
     const password = form.querySelector('input').value;
     window.location.href = 'signthree.html';
 })
+
