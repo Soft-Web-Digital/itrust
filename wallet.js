@@ -2,6 +2,7 @@ const radioWrap = document.querySelector('.rad');
 const radio = radioWrap.querySelectorAll('.flex input');
 const inputsTwo = document.querySelector('.inputs-two')
 const inputs = document.querySelector('.inputs')
+const total = document.getElementById('totalPages')
 
 radio.forEach((rad) => {
     rad.addEventListener('click', () => {
@@ -68,6 +69,18 @@ mobileTab.forEach((t) => {
         t.classList.remove('inactive-tab');
     })
 })
+
+const portfolioHide = document.getElementById('port-hide');
+const portfolioValue = document.getElementById('port-value');
+
+portfolioHide.addEventListener('click', () => {
+    if(portfolioValue.textContent == "$45,545.65"){
+        portfolioValue.textContent = "$*******";
+    }else{
+        portfolioValue.textContent = "$45,545.65";
+    }
+})
+
 const vert = document.querySelector('.vert');
 const depositSection = document.querySelector('.deposit-section');
 const transferSection = document.querySelector('.transfer');
@@ -128,3 +141,7 @@ radioValues.forEach((r) => {
         }
     })
 })
+
+
+
+

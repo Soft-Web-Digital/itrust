@@ -3177,6 +3177,11 @@ video {
   src: url("./assets/fonts/LufgaRegular.ttf") format("truetype");
 }
 
+
+.info-text{
+    width: 300px;
+}
+
 .wallpaper {
   position: absolute;
   height: 100%;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
@@ -17,27 +18,35 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itrust-six.vercel.app/" />
     <meta property="og:image" content="./assets/image.png" />
-    <meta property="og:description" content="by theactualdev!" /> 
+    <meta property="og:description" content="by theactualdev!" />
     <meta property="og:site_name" content="itrust" />
     <title>Itrust | Dashboard</title>
 </head>
+
 <body>
     <nav class="flex justify-around items-center relative py-[17px]">
         <a href="./index.html" class="logo-container">
             <img src="./assets/logo.svg" alt="Itrust logo">
         </a>
-        <div class="list flex md:gap-[186px] items-center pl-5 gap-8">  
+        <div class="list flex md:gap-[186px] items-center pl-5 gap-8">
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
-                <li><a href="./market.html" class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Market</a></li>
+                <li><a href="./market.html"
+                        class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Market</a>
+                </li>
                 <li><a href="./savings.html" class="md:text-base text-xs">Savings</a></li>
             </ul>
             <div class="seco hidden md:flex gap-3">
                 <ul class="flex gap-2 items-center">
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a></li>
-                    <li class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]"><img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a></li>
+                    <li
+                        class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
+                        <img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a></li>
+                    <li
+                        class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
+                        <img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a></li>
                     <li>
-                        <select name="english" id="english" class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
+                        <select name="english" id="english"
+                            class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
                             <option value="engusd">English | USD</option>
                             <option value="engusd">French | EUR</option>
                             <option value="engusd">German | EUR</option>
@@ -70,19 +79,26 @@
                         <p class="font-fellixMedium text-xs text-[#979797]">Update 16/02/2024 at 02:30 PM</p>
                     </div>
                     <div class="buttons md:flex hidden gap-4">
-                        <button class="font-fellixSemiBold text-sm max-h-[48px] py-3 rounded-[5px] w-[143px] active-tab">Deposit</button>
-                        <button class="font-fellixSemiBold text-sm max-h-[48px] py-3 rounded-[5px] inactive-tab w-[173px]">Transfer</button>
-                        <button class="font-fellixSemiBold text-sm max-h-[48px] py-3 rounded-[5px] inactive-tab w-[173px]">Withdraw</button>
+                        <button
+                            class="font-fellixSemiBold text-sm max-h-[48px] py-3 rounded-[5px] w-[143px] active-tab">Deposit</button>
+                        <button
+                            class="font-fellixSemiBold text-sm max-h-[48px] py-3 rounded-[5px] inactive-tab w-[173px]">Transfer</button>
+                        <button
+                            class="font-fellixSemiBold text-sm max-h-[48px] py-3 rounded-[5px] inactive-tab w-[173px]">Withdraw</button>
                     </div>
                 </div>
                 <div class="bod flex md:items-center justify-between mt-4 md:flex-row flex-col md:mt-5">
                     <div class="price flex flex-col gap-2 md:gap-[26px]">
-                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">Cash Balance</p>
+                        <p class="flex gap-[10px] items-center md:text-base text-xs font-fellixMedium text-[#505050]">
+                            <img src="./assets/port-wallet.svg" alt="">Cash Balance</p>
                         <div class="p flex gap-3 md:items-center">
-                            <p class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$45,545.65</p>
-                            <p class="bg-[#E2F2FF] px-3 py-1 hidden md:flex gap-4 rounded-[5px] text-[#14233A99] font-poppins text-sm">Hide Price <img src="./assets/hide-eye.svg" alt=""></p>
+                            <p id="port-value" class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$45,545.65</p>
+                            <p id="port-hide"
+                                class="bg-[#E2F2FF] px-3 py-1 hidden md:flex gap-4 rounded-[5px] text-[#14233A99] font-poppins text-sm">
+                                Hide Price <img src="./assets/hide-eye.svg" alt=""></p>
                             <div class="" class="md:hidden">
-                                <img src="./assets/hide-eye.svg" class="bg-[#E2F2FF] py-1 md:hidden px-3 rounded-[5px]" alt="">
+                                <img src="./assets/hide-eye.svg" class="bg-[#E2F2FF] py-1 md:hidden px-3 rounded-[5px]"
+                                    alt="">
                             </div>
                         </div>
                         <div class="mobile-buttons flex justify-between mt-6 md:hidden">
@@ -91,14 +107,19 @@
                             <button class="w-[114px] inactive-tab px-3 py-2 rounded-[5px]">Withdraw</button>
                         </div>
                     </div>
-                    <div class="deposits bg-[#E6E9F233] rounded-[10px] p-4 mb-9 relative top-10 flex gap-[93px] md:gap-[133px]">
+                    <div
+                        class="deposits bg-[#E6E9F233] rounded-[10px] p-4 mb-9 relative top-10 flex gap-[93px] md:gap-[133px]">
                         <div class="d flex flex-col gap-5">
-                            <p class="font-fellixMedium text-[#212325CC] text-sm flex gap-2 items-center"><img src="./assets/inv-wallet.svg" alt="">Total Deposited</p>
-                            <p class="font-fellixMedium text-[#212325CC] text-sm flex gap-2 items-center"><img src="./assets/inv-wallet.svg" alt="">Total Withdrawals</p>
+                            <p class="font-fellixMedium text-[#212325CC] text-sm flex gap-2 items-center"><img
+                                    src="./assets/inv-wallet.svg" alt="">Total Deposited</p>
+                            <p class="font-fellixMedium text-[#212325CC] text-sm flex gap-2 items-center"><img
+                                    src="./assets/inv-wallet.svg" alt="">Total Withdrawals</p>
                         </div>
                         <div class="flex flex-col gap-5">
-                            <p class="flex gap-[6px] items-center text-[#212325] font-fellixMedium text-sm"><img src="./assets/green-download.svg" alt="">$45,2823.12</p>
-                            <p class="flex gap-[6px] items-center text-[#212325] font-fellixMedium text-sm"><img src="./assets/red-upload.svg" alt="">$32,2823.12</p>
+                            <p class="flex gap-[6px] items-center text-[#212325] font-fellixMedium text-sm"><img
+                                    src="./assets/green-download.svg" alt="">$45,2823.12</p>
+                            <p class="flex gap-[6px] items-center text-[#212325] font-fellixMedium text-sm"><img
+                                    src="./assets/red-upload.svg" alt="">$32,2823.12</p>
                         </div>
                     </div>
                 </div>
@@ -108,19 +129,23 @@
                     <h2 class="font-fellixMedium text-2xl text-[#14233ACC]">Transaction History</h2>
                     <div class="input hidden md:flex relative">
                         <img src="./assets/o-magnifier.svg" alt="" class="absolute top-1/3 left-6">
-                        <input type="text" placeholder="Search by date" class="w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
+                        <input type="text" placeholder="Search by date"
+                            class="w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
                     </div>
                 </div>
                 <div class="inter mt-8 flex md:flex-row flex-col justify-between md:items-center">
-                    <p class="flex flex-col gap-3 items-start font-poppins font-semibold text-[#14233AB2] text-xs">Wallet History <img src="./assets/inter-bar.svg" alt=""></p>
+                    <p class="flex flex-col gap-3 items-start font-poppins font-semibold text-[#14233AB2] text-xs">
+                        Wallet History <img src="./assets/inter-bar.svg" alt=""></p>
                     <div class="flex mt-3 md:mt-0 items-center gap-2 md:gap-0">
                         <div class="input md:hidden relative">
                             <img src="./assets/o-magnifier.svg" alt="" class="absolute top-1/3 left-6">
-                            <input type="text" placeholder="Search by date" class="md:w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
+                            <input type="text" placeholder="Search by date"
+                                class="md:w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
                         </div>
                         <div class="select relative">
                             <img src="./assets/a-month.svg" class="absolute top-[20%] left-3" alt="">
-                            <select name="month" id="month" class="border font-poppins font-medium text-[#8B98B1] border-[#D7DCE4] pl-[45px] py-2 rounded-[5px]">
+                            <select name="month" id="month"
+                                class="border font-poppins font-medium text-[#8B98B1] border-[#D7DCE4] pl-[45px] py-2 rounded-[5px]">
                                 <option value="default">Month</option>
                                 <option value="january">January</option>
                                 <option value="february">February</option>
@@ -138,94 +163,90 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex mt-9 flex-col">
-                    <div class="row flex justify-between">
-                        <p class="flex gap-[3px] font-poppins text-sm text-[#14233A99]">Type <img src="./assets/car-assets.svg" alt=""></p>
-                        <p class="flex gap-[3px] font-poppins text-sm text-[#14233A99]">Amount <img src="./assets/car-assets.svg" alt=""></p>
-                        <p class="md:flex hidden gap-[3px] font-poppins text-sm text-[#14233A99]">Date <img src="./assets/car-assets.svg" alt=""></p>
-                        <p class="flex gap-[3px] font-poppins text-sm text-[#14233A99]">Status <img src="./assets/car-assets.svg" alt=""></p>
-                        <p class="md:flex hidden gap-[3px] font-poppins text-sm text-[#14233A99]">Action <img src="./assets/car-assets.svg" alt=""></p>
-                    </div>
-                    <div class="rows pt-5 flex justify-between">
-                        <div class="type flex flex-col gap-[17px]">
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/deposit.svg" alt="">Deposit</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/deposit.svg" alt="">Deposit</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/payout.svg" alt="">Payout</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/payout.svg" alt="">Payout</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/payout.svg" alt="">Payout</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/payout.svg" alt="">Payout</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/transfer.svg" alt="">Transfer</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/payout.svg" alt="">Payout</p>
-                            <p class="flex gap-[7px] items-center font-fellixMedium text-[#979797]"><img src="./assets/deposit.svg" alt="">Deposit</p>
-                        </div>
-                        <div class="amount flex flex-col gap-[17px] text-[#979797]">
-                            <p class="font-fellixMedium">$45,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                            <p class="font-fellixMedium">$4,545.65</p>
-                        </div>
-                        <div class="date md:flex hidden flex-col gap-[17px] text-[#979797]">
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                            <p class="font-fellixMedium">Feb 02, 2024</p>
-                        </div>
-                        <div class="status flex flex-col gap-[17px]">
-                            <p class="font-poppins text-xs text-[#3AB67A] py-1 px-3 rounded-[5px] bg-[#E2F2FF]">Completed</p>
-                            <p class="font-poppins text-xs text-[#3AB67A] py-1 px-3 rounded-[5px] bg-[#E2F2FF]">Completed</p>
-                            <p class="font-poppins text-xs text-[#3AB67A] py-1 px-3 rounded-[5px] bg-[#E2F2FF]">Completed</p>
-                            <p class="font-poppins text-xs text-[#FD5353] py-1 px-3 rounded-[5px] bg-[#FD535333]">Cancelled</p>
-                            <p class="font-poppins text-xs text-[#3AB67A] py-1 px-3 rounded-[5px] bg-[#E2F2FF]">Completed</p>
-                            <p class="font-poppins text-xs text-[#3AB67A] py-1 px-3 rounded-[5px] bg-[#E2F2FF]">Completed</p>
-                            <p class="font-poppins text-xs text-[#3AB67A] py-1 px-3 rounded-[5px] bg-[#E2F2FF]">Completed</p>
-                            <p class="font-poppins text-xs text-[#FD5353] py-1 px-3 rounded-[5px] bg-[#FD535333]">Cancelled</p>
-                            <p class="font-poppins text-xs text-[#FD5353] py-1 px-3 rounded-[5px] bg-[#FD535333]">Cancelled</p>
-                        </div>
-                        <div class="action md:flex hidden flex-col gap-[17px] items-center">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                            <img src="./assets/dot-menu.svg" alt="">
-                        </div>
-                    </div>
+                <div class=" mt-9 ">
+                    <table class="w-full border-collapse">
+
+                        <thead class=" w-full ">
+                            <tr class="text-left text-sm font-poppins text-[#14233A99]   w-full ">
+                                <th class="py-2 px-4  ">
+                                    <div class="items-center gap-1 flex w-fit">Type <img src="./assets/car-assets.svg"
+                                            alt=""></div>
+                                </th>
+                                <th class="py-2 px-4 ">
+                                    <div class="items-center gap-1 flex w-fit">Amount<img src="./assets/car-assets.svg"
+                                            alt=""></div>
+                                </th>
+                                <th class="py-2 px-4 hidden md:block  ">
+                                    <div class="items-center gap-1 flex w-fit">Date <img src="./assets/car-assets.svg"
+                                            alt=""></div>
+                                </th>
+                                <th class="py-2 px-4  ">
+                                    <div class="items-center gap-1 flex w-fit">Status <img src="./assets/car-assets.svg"
+                                            alt=""></div>
+                                </th>
+                                <th class="py-2 px-4   hidden md:block ">
+                                    <div class="items-center gap-1 flex w-fit">Actions <img
+                                            src="./assets/car-assets.svg" alt=""></div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody >
+
+                            <td class="py-3 px-4 flex items-center gap-[7px]">
+                                <img src="./assets/deposit.svg" alt="">
+                               <div>
+                              <p> Deposit </p> 
+                               <p class="md:hidden  ">Feb 02, 2024 </p> 
+                                </div> 
+                            </td>
+                            <td class="py-3 px-4">$45,545.65</td>
+                            <td class="py-3 px-4 hidden md:block  ">Feb 02, 2024 </td>
+                            <td class="py-3 px-4">
+                                <span class="font-poppins text-xs py-1 px-3 rounded-[5px] bg-[#E2F2FF] text-[#3AB67A]" 
+                                     >
+                                   Completed
+                                </span>
+                            </td>
+                            <td class="py-3 px-4 hidden md:block  text-center">
+                                <button class="text-sm text-[#14233A] px-2 py-1 rounded-lg hover:bg-gray-100">
+                                    <img src="./assets/dot-menu.svg" alt="Action Menu">
+                                </button>
+                            </td>
+                        </tbody>
+                    </table>
                 </div>
+
                 <div class="foot pt-8 flex-col md:flex-row gap-[18px] flex justify-end">
                     <div class="sec flex gap-6 items-center">
                         <div class="flex items-center">
-                            <img src="./assets/asset-back.svg" class="cursor-pointer" alt="">
+                            <img src="./assets/asset-back.svg" class="cursor-pointer" alt="" id="prevPage">
                             <div class="t flex items-center gap-3 font-poppins font-semibold text-sm text-[#979797]">
-                                <p class="border border-[#E5E7EB] rounded-[6px] px-[18px] py-2 text-[#505050]">1</p>
+
+                                <p class="border border-[#E5E7EB] rounded-[6px] px-[18px] py-2 text-[#505050]"
+                                    id="currentPage">1</p>
                                 <p>of</p>
-                                <p>3</p>
+                                <p id="totalPages">30</p>
                             </div>
-                            <img src="./assets/asset-front.svg" class="cursor-pointer" alt="">
+                            <img src="./assets/asset-front.svg" class="cursor-pointer" id="nextPage" alt="">
                         </div>
-                        <p class="py-2 cursor-pointer px-[10px] border border-[#E5E7EB] rounded-[6px] font-poppins font-medium text-sm text-[#979797]">10 / page</p>
+                        <p
+                            class="py-2 cursor-pointer px-[10px] border border-[#E5E7EB] rounded-[6px] font-poppins font-medium text-sm text-[#979797]">
+                            10 / page</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="deposit-section absolute py-6 px-5 md:w-fit md:static w-full h-fit bg-white hidden md:flex flex-col">
-            <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img src="./assets/back.svg" alt="">Go Back</p>
+   
+        <div
+            class="deposit-section absolute py-6 px-5 md:w-fit md:static w-full h-fit bg-white hidden md:flex flex-col">
+            <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img
+                    src="./assets/back.svg" alt="">Go Back</p>
             <div class="head flex flex-col gap-[10px]">
                 <h2 class="font-fellixMedium text-lg text-[#505050]">Deposit</h2>
                 <p class="font-fellix text-sm text-[#717579]">Choose method of deposit</p>
             </div>
+
+            <form action="" method="post">
             <div class="form md:w-[303px] flex flex-col gap-[23px] pt-6">
                 <div class="rad flex flex-col gap-[10px]">
                     <div class="flex items-center gap-2">
@@ -242,7 +263,8 @@
                         <label for="account number" class="font-fellix text-sm text-[#979797]">Account Number</label>
                         <div class="in relative">
                             <img src="./assets/usdt.svg" class="absolute top-1/4 left-[18px]" alt="">
-                            <select class="border border-[#DDE2EB] p-3 pl-[52px] rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none">
+                            <select
+                                class="border border-[#DDE2EB] p-3 pl-[52px] rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none">
                                 <option value="usdt">USDT (ERC)</option>
                             </select>
                         </div>
@@ -250,15 +272,22 @@
                     <div class="input flex flex-col gap-[5px]">
                         <label for="address" class="font-fellix text-sm text-[#979797]">Address</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#717579] text-sm outline-none" placeholder="0x234sys52ggwsgsj2525256">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#717579] text-sm outline-none"
+                                placeholder="0x234sys52ggwsgsj2525256">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
-                    <p class="font-fellix text-xs text-[#717579] text-center">Kindly send a wire transfer to the above bank details and input amount below and click “I have made payment” to start processing your deposit swiftly, Alternatively you can send proof of payments to payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p>
+                    <p class="font-fellix text-xs text-[#717579] text-center">Kindly send a wire transfer to the above
+                        bank details and input amount below and click “I have made payment” to start processing your
+                        deposit swiftly, Alternatively you can send proof of payments to
+                        payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="amount" class="font-fellix text-sm text-[#979797]">Amount</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="$0">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="$0">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
@@ -266,89 +295,119 @@
                         <p class="text-[#717579] font-fellix text-xs">Min: $5000</p>
                         <p class="text-[#717579] font-fellix text-xs">Max: $10,000,000</p>
                     </div>
-                    <button class="text-white font-fellixMedium text-sm bg-periwinkle py-3 rounded-[5px] mt-10">I have made payment</button>
+                    <button class="text-white font-fellixMedium text-sm bg-periwinkle py-3 rounded-[5px] mt-10">I have
+                        made payment</button>
                 </div>
-                <div class="inputs flex flex-col gap-[19px]">
+            <div class="inputs flex flex-col gap-[19px]">
                     <div class="input flex flex-col gap-[5px]">
                         <label for="account number" class="font-fellix text-sm text-[#979797]">Account Number</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="0000 000 0000 000">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="0000 000 0000 000">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="account name" class="font-fellix text-sm text-[#979797]">Account Name</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="Itrust Holdings">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="Itrust Holdings">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="bank name" class="font-fellix text-sm text-[#979797]">Bank Name</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="Trust Bank">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="Trust Bank">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="bank name" class="font-fellix text-sm text-[#979797]">Reference</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="PL63TR19H">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="PL63TR19H">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px]">
-                        <label for="bank name" class="font-fellix text-sm text-[#979797]">Bank Code/Routing Number</label>
+                        <label for="bank name" class="font-fellix text-sm text-[#979797]">Bank Code/Routing
+                            Number</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="6253778">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="6253778">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="bank name" class="font-fellix text-sm text-[#979797]">Address</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="16 Main Hills">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="16 Main Hills">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
                     <div class="p w-full md:w-[303px]">
-                        <p class="font-fellix text-xs text-center text-[#717579]">Kindly send a wire transfer to the above bank details and input amount below and click “I have made payment” to start processing your deposit swiftly, Alternatively you can send proof of payments to payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p>
+                        <p class="font-fellix text-xs text-center text-[#717579]">Kindly send a wire transfer to the
+                            above bank details and input amount below and click “I have made payment” to start
+                            processing your deposit swiftly, Alternatively you can send proof of payments to
+                            payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p>
                     </div>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="amount" class="font-fellix text-sm text-[#979797]">Amount</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="$0">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="$0">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
-                    <button class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px]">I have made payment</button>
-                </div>
+                    <button class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px]">I have made
+                        payment</button>
+                </div>  
             </div>
+        </form>
         </div>
+  
         <div class="transfer absolute py-6 px-5 md:w-fit md:static w-full h-fit hidden bg-white flex-col">
-            <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img src="./assets/back.svg" alt="">Go Back</p>
+            <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img
+                    src="./assets/back.svg" alt="">Go Back</p>
             <h2 class="font-fellixMedium text-lg text-[#505050]">Transfer</h2>
             <div class="balance gap-1 flex flex-col pt-6">
                 <p class="font-fellixMedium text-[#979797]">Trading Balance</p>
-                <p class="flex items-center gap-[10px] font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">$46,650.27</p>
+                <p class="flex items-center gap-[10px] font-fellixMedium text-[#505050]"><img
+                        src="./assets/port-wallet.svg" alt="">$46,650.27</p>
                 <p class="font-poppins text-[11px] text-[#717579] pt-8">Send to:</p>
                 <div class="flex items-center gap-3 pt-[14px]">
                     <input type="radio" id="alexim" name="recipient" value="alexim">
                     <label for="alexim" class="font-fellix text-sm text-[#212325]">Cash Balance</label>
-                    <p class="flex items-center gap-[10px] font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">$0.27</p>
+                    <p class="flex items-center gap-[10px] font-fellixMedium text-[#505050]"><img
+                            src="./assets/port-wallet.svg" alt="">$0.27</p>
                 </div>
                 <div class="input flex flex-col gap-[5px] pt-6">
                     <label for="amount" class="font-fellix text-sm text-[#979797]">Amount</label>
                     <div class="in">
-                        <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="$0">
+                        <input type="text"
+                            class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                            placeholder="$0">
                     </div>
                 </div>
-                <button class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px] mt-6">Transfer</button>
+                <button
+                    class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px] mt-6">Transfer</button>
             </div>
         </div>
-        <div class="withdraw absolute py-6 px-5 md:w-fit md:static w-full h-fit hidden bg-white flex-col">
-            <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img src="./assets/back.svg" alt="">Go Back</p>
+        <div class="withdraw absolute  py-6 px-5 md:w-fit md:static  lg:info-text h-fit hidden bg-white flex-col">
+            <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img
+                    src="./assets/back.svg" alt="">Go Back</p>
             <h2 class="font-fellixMedium text-lg text-[#505050]">Withdrawal</h2>
+            <form action="" method="post">
             <div class="balance gap-1 flex flex-col">
                 <p class="font-poppins text-[11px] text-[#717579] pt-2 md:pt-8">Withdraw to:</p>
                 <div class="radios flex gap-10">
@@ -365,25 +424,34 @@
                     <div class="input flex flex-col gap-[5px] pt-6">
                         <label for="account-number" class="font-fellix text-sm text-[#979797]">Account Number</label>
                         <div class="in">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="0000 000 0000 000">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="0000 000 0000 000">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px] pt-6">
                         <label for="account-name" class="font-fellix text-sm text-[#979797]">Account Name</label>
                         <div class="in">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="Itrust Holdings">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="Itrust Holdings">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px] pt-6">
                         <label for="bank-name" class="font-fellix text-sm text-[#979797]">Bank Name</label>
                         <div class="in">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="Trust Bank">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="Trust Bank">
                         </div>
                     </div>
                     <div class="input flex flex-col gap-[5px] pt-6">
-                        <label for="bank-code" class="font-fellix text-sm text-[#979797]">Bank Code/Routing Number</label>
+                        <label for="bank-code" class="font-fellix text-sm text-[#979797]">Bank Code/Routing
+                            Number</label>
                         <div class="in">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="6253778">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="6253778">
                         </div>
                     </div>
                 </div>
@@ -392,7 +460,8 @@
                         <label for="account number" class="font-fellix text-sm text-[#979797]">Account Number</label>
                         <div class="in relative">
                             <img src="./assets/usdt.svg" class="absolute md:flex hidden top-1/4 left-[18px]" alt="">
-                            <select class="border border-[#DDE2EB] p-3 pl-[52px] rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none">
+                            <select
+                                class="border border-[#DDE2EB] p-3 pl-[52px] rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none">
                                 <option value="usdt">USDT (ERC)</option>
                             </select>
                         </div>
@@ -400,15 +469,24 @@
                     <div class="input flex flex-col gap-[5px]">
                         <label for="address" class="font-fellix text-sm text-[#979797]">Address</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#717579] text-sm outline-none" placeholder="0x234sys52ggwsgsj2525256">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#717579] text-sm outline-none"
+                                placeholder="0x234sys52ggwsgsj2525256">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
-                    <p class="font-fellix text-xs text-[#717579] text-center">Kindly send a wire transfer to the above bank details and input amount below and click “I have made payment” to start processing your deposit swiftly, Alternatively you can send proof of payments to payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p>
+                    <div class="info-text">
+                     <p class="font-fellix text-xs text-[#717579] text-center ">Kindly send a wire transfer to the above
+                        bank details and input amount below and click “I have made payment” to start processing your
+                        deposit swiftly, Alternatively you can send proof of payments to
+                        payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p> 
+                    </div>
                     <div class="input flex flex-col gap-[5px]">
                         <label for="amount" class="font-fellix text-sm text-[#979797]">Amount</label>
                         <div class="in relative">
-                            <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="$0">
+                            <input type="text"
+                                class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                                placeholder="$0">
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
@@ -418,15 +496,21 @@
                     </div>
                 </div>
                 <p class="font-fellixMedium text-[#979797] pt-[19px]">Cash Balance</p>
-                <p class="flex items-center gap-[10px] font-fellixMedium text-[#505050]"><img src="./assets/port-wallet.svg" alt="">$46,650.27</p>
+                <p class="flex items-center gap-[10px] font-fellixMedium text-[#505050]"><img
+                        src="./assets/port-wallet.svg" alt="">$46,650.27</p>
                 <div class="input flex flex-col gap-[5px] pt-6">
                     <label for="AMOUNT" class="font-fellix text-sm text-[#979797]">Amount</label>
                     <div class="in">
-                        <input type="text" class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none" placeholder="$0">
+                        <input type="text"
+                            class="border border-[#DDE2EB] p-3 rounded-[5px] w-full md:w-[303px] font-fellixMedium text-[#505050] text-sm outline-none"
+                            placeholder="$0">
                     </div>
                 </div>
-                <button class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px] mt-6">Withdraw</button>
+                <button
+                    class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px] mt-6">Withdraw</button>
             </div>
+        </form>
+        </div>
         </div>
     </div>
 
@@ -439,17 +523,21 @@
             <div class="flex flex-col gap-[10px] max-w-[306px]">
                 <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
                 <ul class="flex flex-col gap-[7px]">
-                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial system, regardless of their background or bank account balance. </li>
+                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial
+                        system, regardless of their background or bank account balance. </li>
                 </ul>
             </div>
             <div class="links flex md:flex-row flex-col gap-[30px] md:gap-[110px]">
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
                     <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
                     <ul class="flex flex-col gap-[7px]">
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a>
+                        </li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a>
+                        </li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
@@ -457,7 +545,8 @@
                     <ul class="flex flex-col gap-[7px]">
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./signin.html">Login</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor
+                                Relations</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
                         <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
                     </ul>
@@ -465,7 +554,9 @@
                 <div class="flex flex-col gap-[10px] max-w-[306px]">
                     <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
                     <ul class="flex flex-col gap-[7px]">
-                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1 9LX. <br> United Kingdom</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a
+                                href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1
+                                9LX. <br> United Kingdom</a></li>
                     </ul>
                 </div>
             </div>
@@ -473,4 +564,5 @@
         <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
     </footer>
 </body>
+
 </html>
