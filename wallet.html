@@ -24,11 +24,11 @@
 </head>
 
 <body>
-    <nav class="flex justify-around items-center relative py-[17px]">
-        <a href="./index.html" class="logo-container">
-            <img src="./assets/logo.svg" alt="Itrust logo">
+    <nav class="flex  px-5 md:px-[100px] justify-between relative  py-[17px] ">
+        <a href="./index.html" >
+            <img src="./assets/logo.svg" alt="Itrust logo" class="">
         </a>
-        <div class="list flex md:gap-[186px] items-center pl-5 gap-8">
+        <div class="list flex md:gap-[186px] items-center ">
             <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
                 <li><a href="./portfolio.html" class="md:text-base text-xs">Portfolio</a></li>
                 <li><a href="./market.html"
@@ -65,14 +65,14 @@
                     </a>
                 </div>
             </div>
-            <img src="./assets/ham.svg" class="md:hidden" alt="">
         </div>
+        <img src="./assets/ham.svg" class="md:hidden " alt="">
         <!-- </div> -->
     </nav>
 
     <div class="wrapper md:pb-[223px] md:pt-10 md:flex-row flex-col bg-[#F5F5FC] flex gap-7">
         <div class="vert md:ml-[120px]">
-            <div class="first bg-white p-6 rounded-[10px] md:w-[837px]">
+            <div class="first bg-white p-5 rounded-[10px] md:w-[837px]">
                 <div class="head flex justify-between">
                     <div class="text flex flex-col gap-[14px]">
                         <h2 class="font-fellixSemiBold md:text-2xl text-[#14233ACC]">Wallet</h2>
@@ -94,28 +94,25 @@
                         <div class="p flex gap-3 md:items-center">
                             <p id="port-value" class="font-fellixSemiBold text-xl md:text-[32px] text-[#505050]">$45,545.65</p>
                             <p id="port-hide"
-                                class="bg-[#E2F2FF] px-3 py-1 hidden md:flex gap-4 rounded-[5px] text-[#14233A99] font-poppins text-sm">
-                                Hide Price <img src="./assets/hide-eye.svg" alt=""></p>
-                            <div class="" class="md:hidden">
-                                <img src="./assets/hide-eye.svg" class="bg-[#E2F2FF] py-1 md:hidden px-3 rounded-[5px]"
-                                    alt="">
-                            </div>
+                                class="bg-[#E2F2FF] whitespace-nowrap  px-3 py-1 flex gap-4 rounded-[5px] text-[#14233A99] font-poppins text-sm">
+                              <span class=" hidden md:block">  Hide Price </span> <img src="./assets/hide-eye.svg" alt=""></p>
+                       
                         </div>
-                        <div class="mobile-buttons flex justify-between mt-6 md:hidden">
-                            <button class="w-[114px] active-tab px-3 py-2 rounded-[5px]">Deposit</button>
-                            <button class="w-[114px] inactive-tab px-3 py-2 rounded-[5px]">Transfer</button>
-                            <button class="w-[114px] inactive-tab px-3 py-2 rounded-[5px]">Withdraw</button>
+                        <div class="mobile-buttons  flex gap-3 justify-between mt-6 md:hidden">
+                            <button class=" w-full flex-1 active-tab px-3 py-2 rounded-[5px]">Deposit</button>
+                            <button class=" w-full flex-1 inactive-tab px-3 py-2 rounded-[5px]">Transfer</button>
+                            <button class=" w-full flex-1 inactive-tab px-3 py-2 rounded-[5px]">Withdraw</button>
                         </div>
                     </div>
                     <div
-                        class="deposits bg-[#E6E9F233] rounded-[10px] p-4 mb-9 relative top-10 flex gap-[93px] md:gap-[133px]">
+                        class="deposits bg-[#E6E9F233] rounded-[10px] p-4 mb-9 relative lg:gap  md:gap-[133px] top-10 flex  justify-between">
                         <div class="d flex flex-col gap-5">
                             <p class="font-fellixMedium text-[#212325CC] text-sm flex gap-2 items-center"><img
                                     src="./assets/inv-wallet.svg" alt="">Total Deposited</p>
                             <p class="font-fellixMedium text-[#212325CC] text-sm flex gap-2 items-center"><img
                                     src="./assets/inv-wallet.svg" alt="">Total Withdrawals</p>
                         </div>
-                        <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-5 lg:card-gap ">
                             <p class="flex gap-[6px] items-center text-[#212325] font-fellixMedium text-sm"><img
                                     src="./assets/green-download.svg" alt="">$45,2823.12</p>
                             <p class="flex gap-[6px] items-center text-[#212325] font-fellixMedium text-sm"><img
@@ -124,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="second md:w-[837px] mt-[30px] p-6 bg-white">
+            <div class="second md:w-[837px] mt-[30px] p-5 bg-white">
                 <div class="head flex justify-between items-center">
                     <h2 class="font-fellixMedium text-2xl text-[#14233ACC]">Transaction History</h2>
                     <div class="input hidden md:flex relative">
@@ -137,10 +134,11 @@
                     <p class="flex flex-col gap-3 items-start font-poppins font-semibold text-[#14233AB2] text-xs">
                         Wallet History <img src="./assets/inter-bar.svg" alt=""></p>
                     <div class="flex mt-3 md:mt-0 items-center gap-2 md:gap-0">
-                        <div class="input md:hidden relative">
-                            <img src="./assets/o-magnifier.svg" alt="" class="absolute top-1/3 left-6">
-                            <input type="text" placeholder="Search by date"
-                                class="md:w-[303px] outline-none  py-3 text-[#8B98B1] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] pl-[56px]">
+                        <div class="input md:hidden flex items-center px-3 overflow-hidden  gap-1   py-3 text-[#234584] font-fellix text-sm border border-[#D7DCE4] rounded-[5px] ">
+                            <img src="./assets/o-magnifier.svg" alt="" class="">
+                           
+                            <input type="text" placeholder="Search by date" class=" outline-none w-full">
+            
                         </div>
                         <div class="select relative">
                             <img src="./assets/a-month.svg" class="absolute top-[20%] left-3" alt="">
@@ -164,11 +162,11 @@
                     </div>
                 </div>
                 <div class=" mt-9 ">
-                    <table class="w-full border-collapse">
+                    <table class="w-full border-collapse font-fellix">
 
                         <thead class=" w-full ">
                             <tr class="text-left text-sm font-poppins text-[#14233A99]   w-full ">
-                                <th class="py-2 px-4  ">
+                                <th class="py-2 px-4  w-[200px] ">
                                     <div class="items-center gap-1 flex w-fit">Type <img src="./assets/car-assets.svg"
                                             alt=""></div>
                                 </th>
@@ -190,17 +188,18 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody >
+                        <tbody class=" text-[#979797]" >
 
                             <td class="py-3 px-4 flex items-center gap-[7px]">
                                 <img src="./assets/deposit.svg" alt="">
                                <div>
                               <p> Deposit </p> 
-                               <p class="md:hidden  ">Feb 02, 2024 </p> 
+                               <p class="md:hidden  table-date  ">Feb 02, 2024 </p> 
                                 </div> 
                             </td>
-                            <td class="py-3 px-4">$45,545.65</td>
-                            <td class="py-3 px-4 hidden md:block  ">Feb 02, 2024 </td>
+                            <td class="py-3 px-4  md:inline-block">$45,545.65</td>
+                            <td class="py-3 px-4 hidden md:block">Feb 02, 2024 </td>
+                            
                             <td class="py-3 px-4">
                                 <span class="font-poppins text-xs py-1 px-3 rounded-[5px] bg-[#E2F2FF] text-[#3AB67A]" 
                                      >
@@ -216,7 +215,7 @@
                     </table>
                 </div>
 
-                <div class="foot pt-8 flex-col md:flex-row gap-[18px] flex justify-end">
+                <div class="foot pt-8 flex-col md:flex-row gap-[18px] hidden  lg:flex justify-end">
                     <div class="sec flex gap-6 items-center">
                         <div class="flex items-center">
                             <img src="./assets/asset-back.svg" class="cursor-pointer" alt="" id="prevPage">
@@ -403,11 +402,11 @@
                     class="text-white font-fellixMedium text-xs py-3 bg-periwinkle rounded-[5px] mt-6">Transfer</button>
             </div>
         </div>
-        <div class="withdraw absolute  py-6 px-5 md:w-fit md:static  lg:info-text h-fit hidden bg-white flex-col">
+        <div class="withdraw absolute w-full  py-6 px-5 md:w-fit md:static  lg:info-text h-fit hidden bg-white flex-col">
             <p class="go-back md:hidden flex items-center gap-[9px] font-fellix text-xs text-[#526179] pb-4"><img
                     src="./assets/back.svg" alt="">Go Back</p>
             <h2 class="font-fellixMedium text-lg text-[#505050]">Withdrawal</h2>
-            <form action="" method="post">
+            <form action="" method="post" class="">
             <div class="balance gap-1 flex flex-col">
                 <p class="font-poppins text-[11px] text-[#717579] pt-2 md:pt-8">Withdraw to:</p>
                 <div class="radios flex gap-10">
@@ -475,12 +474,12 @@
                             <img src="./assets/copy.svg" class="absolute right-3 top-1/4 cursor-pointer" alt="">
                         </div>
                     </div>
-                    <div class="info-text">
+                   
                      <p class="font-fellix text-xs text-[#717579] text-center ">Kindly send a wire transfer to the above
                         bank details and input amount below and click “I have made payment” to start processing your
                         deposit swiftly, Alternatively you can send proof of payments to
                         payments@itrustinvestment.com. Bank Deposits process within 2 - 14 business days </p> 
-                    </div>
+                     
                     <div class="input flex flex-col gap-[5px]">
                         <label for="amount" class="font-fellix text-sm text-[#979797]">Amount</label>
                         <div class="in relative">

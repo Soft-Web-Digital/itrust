@@ -39,6 +39,7 @@ module.exports = {
         desaturatedBlue: "#526179",
         isabelline: "#F0F0F0",
         darkGray: "#A9A9A9",
+        lightGray: "#979797"
       }
     },
   },

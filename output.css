@@ -3214,6 +3214,19 @@ video {
 .faq-search{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
 }
+.no-wrap{
+  white-space: nowrap;
+}
+.gap{
+  gap:100px
+}
+.logo-size{
+  width:70px
+}
+.table-date{
+  font-size: 10px;
+  white-space: nowrap;
+}
 
 .car{
   box-shadow: 6px 8px 0.6px 0px rgba(0, 0, 0, 0.15);
@@ -3255,6 +3268,9 @@ video {
   /* Dark gray on hover */
 }
 
+.input-padding {
+  padding: 0 2px;
+}
 /* Label styles */
 
 .file-upload-label {
