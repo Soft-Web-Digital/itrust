@@ -1,51 +1,7 @@
-const timeframe = document.querySelector('.timeframe');
-const time = timeframe.querySelectorAll('p');
 
-time.forEach(item => {
-    // item.classList.remove('active-time');
-    item.addEventListener('click', () => {
-        time.forEach(t => {
-            t.classList.remove('active-time');
-            t.classList.add('inactive-time');
-        });
-        item.classList.add('active-time');
-        item.classList.remove('inactive-time');
-    })
-})
-
-const tradeOptions = document.querySelector('.trade .h');
-
-const options = tradeOptions.querySelectorAll('p');
-
-options.forEach(item => {
-    // item.classList.remove('active-option');
-    item.addEventListener('click', () => {
-        options.forEach(t => {
-            t.classList.remove('active-option');
-            t.classList.add('inactive-option');
-        });
-        item.classList.add('active-option');
-        item.classList.remove('inactive-option');
-    })
-})
-
-const radioOptions = document.querySelector('.radio-options form');
-const radios = radioOptions.querySelectorAll('.in');
-
-radios.forEach(item => {
-    // item.classList.remove('active-radio');
-    const rad = item.querySelector('input');
-    item.addEventListener(('click'), () => {
-        radios.forEach(t => {
-            t.classList.remove('active-radio');
-            t.classList.add('inactive-radio');
-            rad.checked = false;
-        });
-        item.classList.add('active-radio');
-        item.classList.remove('inactive-radio');
-        rad.checked = true;
-    })
-})
+const toggleButton = document.getElementById('toggle-button');
+const moreText = document.getElementById('more-text');
+const arrow = document.getElementById('arrow');
 
 const navigationItem = document.querySelector('.navigation .flex');
 const navItems = navigationItem.querySelectorAll('p');
@@ -62,47 +18,37 @@ navItems.forEach((item) => {
 })
 
 const overview = document.querySelector('.overview');
-const assets = document.querySelector('.assets');
-const trade = document.querySelector('.trade');
-const pending = document.querySelector('.pending');
+const holdings = document.querySelector('.holdings');
+const history = document.querySelector('.history');
+const position = document.querySelector('.positions');
+const account = document.querySelector('.account');
 
 navItems.forEach((item) => {
     item.addEventListener('click', () => {
-        const sections = [overview, assets, trade, pending];
+        const sections = [overview, holdings, history, position,account];
         sections.forEach(section => {
-            section.classList.remove('flex');
+            section.classList.remove('block');
             section.classList.add('hidden');
         });
         if(item.textContent === 'Overview'){
-            overview.classList.add('flex');
+            overview.classList.add('block');
             overview.classList.remove('hidden');
-        } else if(item.textContent === 'Assets'){
-            assets.classList.add('flex');
-            assets.classList.remove('hidden');
-        } else if(item.textContent === 'Trade'){
-            trade.classList.add('flex');
-            trade.classList.remove('hidden');
         } else if(item.textContent === 'Holdings'){
-            pending.classList.add('flex');
-            pending.classList.remove('hidden');
+            holdings.classList.add('block');
+            holdings.classList.remove('hidden');
+        } else if(item.textContent === 'History'){
+            history.classList.add('block');
+            history.classList.remove('hidden');
+        } else if(item.textContent === 'Positions'){
+            position.classList.add('block');
+            position.classList.remove('hidden');
+        }
+        else if(item.textContent === 'Accounts'){
+            account.classList.add('block');
+            account.classList.remove('hidden');
         }
     })
 })
-
-const choice = document.querySelector('.choice');
-const choices = choice.querySelectorAll('p');
-
-choices.forEach((item) => {
-    item.addEventListener('click', () => {
-        choices.forEach(t => {
-            t.classList.remove('active-choice');
-            t.classList.add('inactive-choice');
-        });
-        item.classList.add('active-choice');
-        item.classList.remove('inactive-choice');
-    })
-})
-
 const portfolioHide = document.getElementById('port-hide');
 const portfolioValue = document.getElementById('port-value');
 
@@ -114,27 +60,27 @@ portfolioHide.addEventListener('click', () => {
     }
 })
 
-const hideMobile = document.getElementById('hide-mobile');
-const mobileValue = document.getElementById('mobile-value');
+// const hideMobile = document.getElementById('hide-mobile');
+// const mobileValue = document.getElementById('mobile-value');
 
-hideMobile.addEventListener('click', () => {
-    if(mobileValue.textContent == "$45,545.65"){
-        mobileValue.textContent = "$*******";
-    }else{
-        mobileValue.textContent = "$45,545.65";
-    }
-})
+// hideMobile.addEventListener('click', () => {
+//     if(mobileValue.textContent == "$45,545.65"){
+//         mobileValue.textContent = "$*******";
+//     }else{
+//         mobileValue.textContent = "$45,545.65";
+//     }
+// })
 
 const invHide = document.getElementById('inv-hide');
 const mobileInv = document.getElementById('mobile-inv');
 
-invHide.addEventListener('click', () => {
-    if(mobileInv.textContent == "$0.00"){
-        mobileInv.textContent = "$***";
-    }else{
-        mobileInv.textContent = "$0.00";
-    }
-})
+// invHide.addEventListener('click', () => {
+//     if(mobileInv.textContent == "$0.00"){
+//         mobileInv.textContent = "$***";
+//     }else{
+//         mobileInv.textContent = "$0.00";
+//     }
+// })
 
 document.querySelectorAll('.showInput').forEach((toggleButton) => {
     toggleButton.addEventListener('click', () => {
@@ -157,6 +103,97 @@ document.querySelectorAll('.showInput').forEach((toggleButton) => {
 const hamMenu = document.getElementById('ham-menu');
 const dropdown = document.querySelector('.secoss')
 
-hamMenu.addEventListener(('click'), () => {
-    dropdown.classList.toggle('hidden')
-})
+// hamMenu.addEventListener(('click'), () => {
+//     dropdown.classList.toggle('hidden')
+// })
+
+toggleButton.addEventListener('click', () => {
+    moreText.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180'); 
+    if (moreText.classList.contains('hidden')) {
+      toggleButton.querySelector('span').textContent = 'Show More';
+    } else {
+      toggleButton.querySelector('span').textContent = 'Show Less';
+    }
+  });
+
+
+
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(110, 116, 244, 0.3)'); // Top color (lighter)
+gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');   // Bottom color (transparent)
+  const myChart  = new Chart(ctx, {
+    type: 'line', // Line chart type for area chart
+    data: {
+      labels: ['January', 'February', 'March', 'April', 'May'], // Labels for the x-axis
+      datasets: [{
+        label: 'Sales',
+        data: [12, 19, 3, 5, 2], 
+        fill: true, 
+        backgroundColor: gradient,
+        borderColor: '#5156BE',
+        borderWidth: 1,
+        tension: 0.4, 
+        cubicInterpolationMode: 'monotone' 
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true // Ensure y-axis starts from 0
+        }
+      }
+    }
+  });
+
+
+
+  const ctxDonut = document.getElementById('myDonutChart').getContext('2d');
+
+
+  const myDonutChart = new Chart(ctxDonut, {
+    type: 'doughnut', // Donut chart type
+    data: {
+      datasets: [{
+        label: 'Dataset 1',
+        data: [300, 50, 100,222], // Data points for the donut chart
+        backgroundColor: ['#6E74F4', '#F1CF24', '#3AB67A','#8284BF'],
+      
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        tooltip: {
+          enabled: true
+        }
+      },
+        cutout: '70%'
+    }
+  });
+
+  function updateRowProgress(rowSelector, progressPercentage) {
+    const progressCell = document.querySelector(`${rowSelector} td.absolute`);
+    if (progressCell) {
+      progressCell.style.width = `${progressPercentage}%`;
+    }
+  }
+
+  updateRowProgress('tr', 75);
+
+
+
+
+  
+
+
+
+
+  
+
+  

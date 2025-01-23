@@ -233,7 +233,9 @@ b,
 strong {
   font-weight: bolder;
 }
-
+.md\:table-cell {
+  display: table-cell;
+}
 /*
 1. Use the user's configured `mono` font-family by default.
 2. Use the user's configured `mono` font-feature-settings by default.
@@ -1634,6 +1636,11 @@ video {
 .overflow-x-auto{
   overflow-x: auto;
 }
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
 
 .scroll-smooth{
   scroll-behavior: smooth;
@@ -3665,6 +3672,7 @@ input[type="radio"]:checked + span .radio-in{
 
   .md\:flex{
     display: flex;
+    align-items: center;
   }
 
   .md\:hidden{
@@ -4162,11 +4170,19 @@ input[type="radio"]:checked + span .radio-in{
     padding-top: 0px;
   }
 
+.md\:w-\[300px\]{
+width: 300px;
+}
+
   .md\:pt-10{
     padding-top: 2.5rem;
   }
 
   .md\:pt-11{
+    padding-top: 2.75rem;
+  }
+
+    .md\:pt-11{
     padding-top: 2.75rem;
   }
 
