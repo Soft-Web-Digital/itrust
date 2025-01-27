@@ -26,17 +26,18 @@
 </head>
 
 <body>
-    <header class="flex  px-5 md:px-[100px]  justify-between relative  py-[17px] ">
+    <header >
+        <div  class="flex  px-5 md:px-[100px]  justify-between relative  py-[17px] ">
         <div class=" flex items-center gap-10 md:gap-[186px]">
             <a href="./index.html" class="logo-container">
-                <img src="./assets/logo.svg" alt="Itrust logo" class="md:flex hidden">
-                <img src="./assets/mobile-logo.svg" class="md:hidden" alt="">
+                <img src="./assets/logo.svg" alt="Itrust logo" class="">
             </a>
-            <ul class="flex gap-5 md:gap-6 text-[#4F4F4F80] items-center font-jakarta font-semibold text-sm">
-                <li>
-                    <a href="./portfolio.html"
-                        class="md:text-base md:text-[#122A44] border-b-[3px] md:border-b-[#122A44] text-periwinkle border-b-periwinkle pb-2 text-xs">Portfolio</a>
+            <ul class="md:flex gap-5 md:gap-6 text-[#4F4F4F80] hidden  items-center font-jakarta font-semibold text-sm">
 
+
+                <li class="relative"><a href="./portfolio.html"
+                        class="md:text-base  text-[#5156BE]   text-xs">Portfolio</a> <span
+                        class="absolute -bottom-3 md:-bottom-5 left-1/2 w-[80%] border-b-[5px] rounded-md border-[#5156BE] transform -translate-x-1/2"></span>
                 </li>
                 <li><a href="./market.html" class="md:text-base text-xs">Market</a>
                 </li>
@@ -46,17 +47,17 @@
         </div>
         <nav class=" flex items-center  ">
 
-            <div class="seco hidden items-center md:flex gap-3">
+            <div class="seco items-center md:flex gap-3">
                 <ul class="flex gap-2 items-center">
-                    <li
-                        class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
+                    <button
+                        class="md:flex gap-2 py-[10px] hidden  px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
                         <img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a>
-                    </li>
-                    <li
-                        class="flex gap-2 py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
+                </button>
+                    <button
+                        class="gap-2 py-[10px] md:flex hidden px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
                         <img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a>
-                    </li>
-                    <li>
+                    </button>
+                    <li class="md:flex hidden">
                         <select name="english" id="english"
                             class="py-2 px-3 border border-[#9797974D] rounded-[5px] bg-[#FAFAFA] font-poppins font-medium text-xs text-[#505050]">
                             <option value="engusd">English | USD</option>
@@ -67,20 +68,78 @@
                 </ul>
                 <div class="pro flex items-center gap-[10px]">
                     <div class="img">
-                        <img src="./assets/notifications.svg" alt="notif">
+                        <img src="./assets/notifications.svg" alt="notif" class=" w-10 md:w-fit">
                     </div>
                     <a href="./dashboard.html" class="p flex items-center gap-3">
-                        <img src="./assets/person.svg" alt="person">
-                        <select name="name" id="name" class="font-lufga text-[#505050]">
+                        <img src="./assets/person.svg" alt="person"  class=" w-10 md:w-fit">
+                        <img src="./assets/angledown.svg" alt="" class=" md:hidden">
+                        <select name="name" id="name" class="font-lufga text-[#505050] hidden md:block">
                             <option value="Alexim">Alexim</option>
                         </select>
                     </a>
                 </div>
             </div>
+            <img src="./assets/ham.svg" class="md:hidden ml-5 " id="hamburger" alt="" >
         </nav>
-        <img src="./assets/ham.svg" class="md:hidden " alt="">
+
+
+        <!-- ===================   hamburger ============= -->
+  <div  class=" hidden absolute  w-full left-0 right-0 h-[92.5vh] bottom-0 top-[70px] bg-[#1D1D1D33] z-[999999]" id="menu">
+    <div class=" bg-white border-t ">
+        <nav class=" px-5 py-6">
+            <ul class=" space-y-5">
+                <li id="port-toggle">
+                    <div class=" flex items-center w-full justify-between">
+                        <a class=" text-[#5156BE] font-semibold text-[16px]" href="./portfolio.html">Portfolio</a>
+                        <img src="./assets/arrowdownpurple.svg" alt="">
+                    </div>
+
+
+                </li>
+                <li>
+                    <ul class=" hidden  text-[14px]   " id="port-menu">
+                        <div class="navigation md:hidden flex  text-[14px] font-bold pl-6">
+                            <div class="flex flex-col space-y-4 ">
+                                <p class="cursor-pointer active-nav  text-[#4F4F4F80]">Overview</p>
+                                <p class="cursor-pointer inactive-nav text-[#4F4F4F80]">Accounts</p>
+                                <p class="inactive-nav cursor-pointer text-[#4F4F4F80]">Holdings</p>
+                                <p class="inactive-nav cursor-pointer text-[#4F4F4F80]">Positions</p>
+                                <p class="inactive-nav cursor-pointer text-[#4F4F4F80]">History</p>
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+                <li>
+                    <div class=" flex items-center w-full justify-between">
+                        <a class=" text-[#4F4F4F80] font-semibold text-[16px]" href="./market.html">Market</a>
+                    </div>
+                </li>
+                <li>
+                    <div class=" flex items-center w-full justify-between">
+                        <a class=" text-[#4F4F4F80] font-semibold text-[16px]" href="./savings.html">Savings</a>
+                    </div>
+                </li>
+                <button
+                    class="flex gap-2 py-[10px] w-fit px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
+                    <img src="./assets/wallet.svg" alt="wallet"><a href="./wallet.html">Cash</a>
+                </button>
+                <button
+                    class="flex gap-2 w-fit py-[10px] px-3 font-poppins font-medium text-xs text-[#505050] bg-[#FAFAFA] border border-[#9797974D] rounded-[5px]">
+                    <img src="./assets/clock.svg" alt="clock"><a href="./history.html">Trade history</a>
+            </button>
+
+            </ul>
+        </nav>
+    </div>
+</div>
 
     </header>
+
+
+  
+
+
 
     <div class=" transition md:pb-[136px] bg-[#F5F5FC] md:pt-10">
         <div class="navigation md:hidden flex p-4">
@@ -222,8 +281,8 @@
                                                 class=" text-[#3AB67A]">(+4.28%)</span></p>
                                     </div>
                                 </div>
-                             
-                             
+
+
 
 
                             </div>
@@ -270,6 +329,8 @@
                                 </div>
                             </div>
                         </div>
+
+
 
 
                     </div>
@@ -346,7 +407,7 @@
                                 <tr class="align-middle">
 
                                     <td class="px-4   hidden lg:block ">
-                                        <div class="flex items-center gap-2">
+                                        <div class="flex items-center py-2 gap-2">
                                             <div class=" bg-[#F04444] p-1 rounded">
                                                 <img src="./assets/arrowup.svg" alt="Icon" class="min-w-4 h-4">
                                             </div>
@@ -361,9 +422,14 @@
                                         <div class=" flex items-start gap-2">
                                             <img src="./assets/pr-bitcoin.svg" alt="" class=" w-7 h-7">
                                             <p>
-                                                <span class=" hidden md:block">Bitcoin</span>
-                                                <span class=" text-xs font-semibold text-[14px]">BTC <span
-                                                        class=" text-[12px] font-normal md:hidden">Buy</span></span>
+                                                <span class=" flex items- gap-1">
+                                                    <span class=" hidden md:block">Bitcoin</span>
+
+                                                    <span class=" text-xs font-semibold md:font-normal text-[14px]">BTC
+                                                    </span>
+                                                    <span class=" text-[12px] font-normal md:hidden">Buy</span>
+                                                </span>
+
                                                 <span class=" md:hidden">0.1233</span>
                                             </p>
                                         </div>
@@ -383,29 +449,36 @@
                                             <p class=" text-xs text-[#13B799]">0.1233</p>
                                         </div>
                                         <div class=" md:hidden flex items-center gap-2">
-                                            <div class=" flex items-center flex-col space-y-1">
-                                                <span
-                                                    class="font-poppins rounded-md text-xs py-1 px-3  bg-[#E2F2FF] text-[#3AB67A]">
-                                                    Completed
-                                                </span>
-                                                <p class=" text-xs text-gray-500">Feb 02, 2024</p>
+                                            <div class=" flex items-center  space-y-1">
+
+                                                <div>
+                                                    <span
+                                                        class="font-poppins rounded-md text-xs py-1 px-3  bg-[#E2F2FF] text-[#3AB67A]">
+                                                        open
+                                                    </span>
+                                                    <p class=" text-xs text-gray-500 mt-1">Feb 02, 2024</p>
+                                                </div>
+                                                <button
+                                                    class="text-sm text-[#14233A]  md:hidden  px-2 rounded-[10px] overflow-hidden  hover:bg-gray-100">
+                                                    <img src="./assets/dot-menu.svg" alt="Action Menu" class=" w-1 h-3">
+                                                </button>
 
                                             </div>
 
                                         </div>
                                     </td>
 
-                                    <td class="px-4 py-2 hidden lg:block">
+                                    <td class="px-4 py-2 hidden md:table-cell">
                                         <span
                                             class="font-poppins rounded-md text-xs py-1 px-3  bg-[#E2F2FF] text-[#3AB67A]">
-                                            Completed
+                                            open
                                         </span>
                                     </td>
 
                                     <td class="px-4 py-2 hidden md:table-cell text-center ">
                                         <button
-                                            class="text-sm text-[#14233A] h-4   px-2 rounded-[10px] overflow-hidden  hover:bg-gray-100">
-                                            <img src="./assets/dot-menu.svg" alt="Action Menu" class="">
+                                            class="text-sm text-[#14233A]   px-2 rounded-[10px] overflow-hidden  hover:bg-gray-100">
+                                            <img src="./assets/dot-menu.svg" alt="Action Menu" class=" w-2 h-3">
                                         </button>
                                     </td>
                                 </tr>
@@ -417,8 +490,9 @@
                             <div class="sec flex gap-6 items-center">
                                 <div class="flex items-center">
                                     <img src="./assets/asset-back.svg" class="cursor-pointer" alt="" id="prevPage">
-                                    <div class="t flex items-center gap-3 font-poppins font-semibold text-sm text-[#979797]">
-        
+                                    <div
+                                        class="t flex items-center gap-3 font-poppins font-semibold text-sm text-[#979797]">
+
                                         <p class="border border-[#E5E7EB] rounded-[6px] px-[18px] py-2 text-[#505050]"
                                             id="currentPage">1</p>
                                         <p>of</p>
@@ -468,43 +542,43 @@
                     </div>
 
                     <div class=" bg-white my-5 p-5 shadow-md">
-                        
+
                         <p id="port-value" class="font-fellixSemiBold  text-[24px] text-[#2C2E3E]">Total $45,545.65
                         <div class=" flex items-center gap-5">
                             <div class="w-[60%] ">
-                        <canvas id="myDonutChart" class=""></canvas>
-                    </div>
-                         <div class=" text-[10px] text-[#505050] max-w-[35%] font-fellix space-y-7">
-                            <div class=" flex items-center gap-2">
-                           <div class=" h-2 min-w-5 bg-[#8E54E9]"></div>
-                              <p>Cash</p>
-                              <p>43%</p>
+                                <canvas id="myDonutChart" class=""></canvas>
                             </div>
+                            <div class=" text-[10px] text-[#505050] max-w-[35%] font-fellix space-y-7">
+                                <div class=" flex items-center gap-2">
+                                    <div class=" h-2 min-w-5 bg-[#8E54E9]"></div>
+                                    <p>Cash</p>
+                                    <p>43%</p>
+                                </div>
 
-                            <div class=" flex items-center gap-2">
-                                <div class=" h-2 min-w-5 bg-[#3AB67A]"></div>
-                                   <p>Automated
-                                    Investing</p>
-                                   <p>43%</p>
-                                 </div>
-                                 <div class=" flex items-center gap-2">
+                                <div class=" flex items-center gap-2">
+                                    <div class=" h-2 min-w-5 bg-[#3AB67A]"></div>
+                                    <p>Automated
+                                        Investing</p>
+                                    <p>43%</p>
+                                </div>
+                                <div class=" flex items-center gap-2">
                                     <div class=" h-2 min-w-5 bg-[#F1CF24]"></div>
-                                       <p> ROTH IRA</p>
-                                       <p>43%</p>
-                                     </div>
+                                    <p> ROTH IRA</p>
+                                    <p>43%</p>
+                                </div>
 
-                                     <div class=" flex items-center gap-2">
-                                        <div class=" h-2 min-w-5 bg-[#8E54E9]"></div>
-                                           <p> HYSA</p>
-                                           <p>43%</p>
-                                         </div>
-                         </div>
-                    </div>
-                  
+                                <div class=" flex items-center gap-2">
+                                    <div class=" h-2 min-w-5 bg-[#8E54E9]"></div>
+                                    <p> HYSA</p>
+                                    <p>43%</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div>
 
-                    </div>
+                        <div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -610,51 +684,52 @@
 
     <footer class="hidden md:flex flex-col items-start gap-[30px] mx-4 pt-11 px-20">
         <div class=" border-b pb-10">
-        <div class="logo mb-10">
-            <img src="./assets/footer-logo.svg" alt="Logo">
+            <div class="logo mb-10">
+                <img src="./assets/footer-logo.svg" alt="Logo">
+            </div>
+
+            <div class="grid grid-cols-4 ">
+                <div class="flex flex-col gap-y-[10px] ">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the
+                            financial
+                            system, regardless of their background or bank account balance. </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-y-[10px] pl-[100px] ">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a>
+                        </li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a>
+                        </li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] pl-[50px] ">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./signin.html">Login</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor
+                                Relations</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-[10px] ">
+                    <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
+                    <ul class="flex flex-col gap-[7px]">
+                        <li class="font-fellix text-sm text-desaturatedBlue"><a
+                                href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1
+                                9LX. <br> United Kingdom</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-       
-        <div class="grid grid-cols-4 ">
-            <div class="flex flex-col gap-y-[10px] ">
-                <div class="head font-fellixBold text-lg text-gunMetal">Join the community</div>
-                <ul class="flex flex-col gap-[7px]">
-                    <li class="font-fellix text-sm text-desaturatedBlue">We aim to give everyone access to the financial
-                        system, regardless of their background or bank account balance. </li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-[10px] pl-[100px] ">
-                <div class="head font-fellixBold text-lg text-gunMetal">Need Help?</div>
-                <ul class="flex flex-col gap-[7px]">
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./howto.html">How to Invest</a>
-                    </li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./faq.html">F.A.Q</a></li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./terms.html">Terms of Use</a>
-                    </li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./privacy.html">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-[10px] pl-[50px] ">
-                <div class="head font-fellixBold text-lg text-gunMetal">Learn More</div>
-                <ul class="flex flex-col gap-[7px]">
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./signin.html">Login</a></li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">About Us</a></li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./about.html">Investor
-                            Relations</a></li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="#">Our Commitments</a></li>
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a href="./article.html">Our Blog</a></li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-[10px] ">
-                <div class="head font-fellixBold text-lg text-gunMetal">Get in touch</div>
-                <ul class="flex flex-col gap-[7px]">
-                    <li class="font-fellix text-sm text-desaturatedBlue"><a
-                            href="https://maps.app.goo.gl/h8Nko4kChuayfpUEA">57 Stamford St London, London, <br>SE1
-                            9LX. <br> United Kingdom</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
         <p class="text-desaturatedBlue text-sm font-fellix">&copy; 2021 Itrust Investment.</p>
     </footer>
 </body>

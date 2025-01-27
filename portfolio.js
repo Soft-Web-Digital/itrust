@@ -3,52 +3,50 @@ const toggleButton = document.getElementById('toggle-button');
 const moreText = document.getElementById('more-text');
 const arrow = document.getElementById('arrow');
 
-const navigationItem = document.querySelector('.navigation .flex');
-const navItems = navigationItem.querySelectorAll('p');
+const menuIcon = './assets/ham.svg'; 
+const closeIcon = './assets/Close.svg'; 
+// Select all navigation items across different navigation sections
+const navigationItems = document.querySelectorAll('.navigation p');
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
 
-navItems.forEach((item) => {
+const sections = {
+    Overview: document.querySelector('.overview'),
+    Accounts: document.querySelector('.account'),
+    Holdings: document.querySelector('.holdings'),
+    Positions: document.querySelector('.positions'),
+    History: document.querySelector('.history'),
+};
+
+// Function to set the active state
+function setActiveNav(targetTextContent) {
+    // Update the classes for navigation items
+    navigationItems.forEach((item) => {
+        const isActive = item.textContent === targetTextContent;
+        item.classList.toggle('active-nav', isActive);
+        item.classList.toggle('inactive-nav', !isActive);
+        menu.classList.add('hidden');
+        hamburger.src = menuIcon; 
+    });
+
+    // Update the visibility of sections
+    Object.keys(sections).forEach((key) => {
+        const section = sections[key];
+        const isVisible = key === targetTextContent;
+        section.classList.toggle('block', isVisible);
+        section.classList.toggle('hidden', !isVisible);
+        menu.classList.add('hidden');
+        hamburger.src = menuIcon; 
+    });
+}
+
+// Add click event listeners to navigation items
+navigationItems.forEach((item) => {
     item.addEventListener('click', () => {
-        navItems.forEach(t => {
-            t.classList.remove('active-nav');
-            t.classList.add('inactive-nav');
-        });
-        item.classList.add('active-nav');
-        item.classList.remove('inactive-nav');
-    })
-})
+        setActiveNav(item.textContent);
+    });
+});
 
-const overview = document.querySelector('.overview');
-const holdings = document.querySelector('.holdings');
-const history = document.querySelector('.history');
-const position = document.querySelector('.positions');
-const account = document.querySelector('.account');
-
-navItems.forEach((item) => {
-    item.addEventListener('click', () => {
-        const sections = [overview, holdings, history, position,account];
-        sections.forEach(section => {
-            section.classList.remove('block');
-            section.classList.add('hidden');
-        });
-        if(item.textContent === 'Overview'){
-            overview.classList.add('block');
-            overview.classList.remove('hidden');
-        } else if(item.textContent === 'Holdings'){
-            holdings.classList.add('block');
-            holdings.classList.remove('hidden');
-        } else if(item.textContent === 'History'){
-            history.classList.add('block');
-            history.classList.remove('hidden');
-        } else if(item.textContent === 'Positions'){
-            position.classList.add('block');
-            position.classList.remove('hidden');
-        }
-        else if(item.textContent === 'Accounts'){
-            account.classList.add('block');
-            account.classList.remove('hidden');
-        }
-    })
-})
 const portfolioHide = document.getElementById('port-hide');
 const portfolioValue = document.getElementById('port-value');
 
@@ -60,16 +58,30 @@ portfolioHide.addEventListener('click', () => {
     }
 })
 
-// const hideMobile = document.getElementById('hide-mobile');
-// const mobileValue = document.getElementById('mobile-value');
 
-// hideMobile.addEventListener('click', () => {
-//     if(mobileValue.textContent == "$45,545.65"){
-//         mobileValue.textContent = "$*******";
-//     }else{
-//         mobileValue.textContent = "$45,545.65";
-//     }
-// })
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  portMenu.classList.add('hidden');
+
+  if (menu.classList.contains('hidden')) {
+    hamburger.src = menuIcon; 
+  } else {
+
+    hamburger.src = closeIcon; 
+  }
+});
+
+
+const portToggle = document.getElementById('port-toggle');
+const portMenu = document.getElementById('port-menu');
+
+portToggle.addEventListener('click', () => {
+  portMenu.classList.toggle('hidden');
+});
+
+
+
+
 
 const invHide = document.getElementById('inv-hide');
 const mobileInv = document.getElementById('mobile-inv');

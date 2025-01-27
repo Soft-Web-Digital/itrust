@@ -3311,7 +3311,12 @@ input[type="file"] {
 }
 
 .active-option{
-  border-bottom: 3px #13B799 solid;
+  border-bottom: 2.5px #13B799 solid;
+  color: #14233A;
+  font-family: 'Fellix-Bold';
+}
+.sell-option{
+  border-bottom: 2.5px #FD5353 solid;
   color: #14233A;
   font-family: 'Fellix-Bold';
 }

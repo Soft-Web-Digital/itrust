@@ -94,18 +94,24 @@ select.addEventListener('change', () => {
 const tradeOptions = document.querySelector('.trade .h');
 
 const options = tradeOptions.querySelectorAll('p');
-
 options.forEach(item => {
-    // item.classList.remove('active-option');
     item.addEventListener('click', () => {
         options.forEach(t => {
             t.classList.remove('active-option');
+            t.classList.remove('sell-option'); // Remove sell class if previously added
             t.classList.add('inactive-option');
         });
+
         item.classList.add('active-option');
         item.classList.remove('inactive-option');
-    })
-})
+
+        // Check if the textContent is "sell" and add a specific class
+        if (item.textContent.trim().toLowerCase() === 'sell') {
+            item.classList.add('sell-option');
+        }
+    });
+});
+
 
 const radioOptions = document.querySelector('.radio-options form');
 const radios = radioOptions.querySelectorAll('.in');
