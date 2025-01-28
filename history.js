@@ -22,7 +22,7 @@ tabss.forEach((tab) => {
             section.classList.add('hidden');
         })
         if(tab.textContent === "Trade History"){
-            trade.classList.add('flex');
+            trade.classList.add('block');
             trade.classList.remove('hidden');
         }else if(tab.textContent === "Transaction History"){
             transaction.classList.add('flex');

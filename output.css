@@ -3309,6 +3309,25 @@ input[type="file"] {
   color: white;
   background-color: #5156BE;
 }
+/* Default styles */
+.radio-switch {
+  border-color: #979797; /* Default border color */
+}
+
+.radio-circle {
+  background-color: white; /* Default circle color */
+}
+
+/* Active styles */
+.radio-switch.active {
+  border-color: #3AB67A; /* Border color for active */
+}
+
+.radio-circle.active {
+  background-color: #3AB67A; /* Background color for active */
+}
+
+
 
 .active-option{
   border-bottom: 2.5px #13B799 solid;
